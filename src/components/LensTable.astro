@@ -2,6 +2,7 @@
 import type { Lens } from '../lib/types';
 import { focalLengthLabel, apertureLabel, weightLabel, weightBucketId } from '../lib/lenses';
 import { dict } from '../lib/i18n-dict.js';
+import CompareToggleButton from './CompareToggleButton.astro';
 
 interface Props {
   lenses: Lens[];
@@ -28,6 +29,7 @@ function brandZhName(brand: string): string {
         <th data-i18n="table.maxAperture">Max aperture</th>
         <th data-i18n="table.weight">Weight</th>
         <th data-i18n="table.year">Year</th>
+        <th data-i18n="table.compare">Compare</th>
       </tr>
     </thead>
     <tbody>
@@ -64,6 +66,9 @@ function brandZhName(brand: string): string {
             <td>{apertureLabel(lens)}</td>
             <td>{weightLabel(lens)}</td>
             <td>{lens.releaseYear}</td>
+            <td class="lens-table__compare-cell">
+              <CompareToggleButton lens={lens} />
+            </td>
           </tr>
         );
       })}

@@ -2,6 +2,7 @@
 import type { Lens } from '../lib/types';
 import { focalLengthLabel, apertureLabel, weightLabel, weightBucketId } from '../lib/lenses';
 import { dict } from '../lib/i18n-dict.js';
+import CompareToggleButton from './CompareToggleButton.astro';
 
 interface Props {
   lens: Lens;
@@ -15,9 +16,8 @@ const brandZh = (dict.zh as Record<string, string>)[brandKey] ?? lens.brand;
 const searchText = `${lens.brand} ${brandZh} ${lens.model} ${focalLengthLabel(lens)}`.toLowerCase();
 const formatKey = lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc';
 ---
-<a
+<div
   class="lens-card"
-  href={`${base}lenses/${lens.id}`}
   data-lens-row
   data-brand={lens.brand}
   data-format={lens.format}
@@ -32,6 +32,8 @@ const formatKey = lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filter
   data-release-year={lens.releaseYear}
   data-search={searchText}
 >
+  <a class="lens-card__link" href={`${base}lenses/${lens.id}`} aria-label={`${lens.brand} ${lens.model}`}></a>
+  <CompareToggleButton lens={lens} class="lens-card__compare-toggle" />
   <div class="lens-card__badges">
     <span
       class={`badge ${lens.allianceMember ? 'badge--alliance' : 'badge--third-party'}`}
@@ -54,4 +56,4 @@ const formatKey = lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filter
     <dt data-i18n="card.released">Released</dt>
     <dd>{lens.releaseYear}</dd>
   </dl>
-</a>
+</div>

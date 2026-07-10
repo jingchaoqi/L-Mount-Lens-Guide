@@ -10,6 +10,10 @@
   --color-badge-third-party: #8a5a1f;
   --color-warning-bg: #fff6e5;
   --color-warning-border: #e8c67a;
+  --color-success: #2f9e44;
+  --color-success-contrast: #ffffff;
+  --color-danger: #d1373f;
+  --color-danger-contrast: #ffffff;
   --radius: 8px;
   --max-width: 1200px;
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -28,6 +32,10 @@
     --color-badge-third-party: #b8863f;
     --color-warning-bg: #2a2412;
     --color-warning-border: #6b5a26;
+    --color-success: #3fb556;
+    --color-success-contrast: #06210b;
+    --color-danger: #e5646b;
+    --color-danger-contrast: #2a0507;
   }
 }
 
@@ -594,6 +602,350 @@ a {
   #view-container.view-cards .lens-table-wrap {
     display: none;
   }
+}
+
+/* ---------- compare: add/remove toggle buttons ---------- */
+
+.compare-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-bg);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  /* Skips the browser's double-tap-to-zoom gesture disambiguation on
+     this element, which otherwise can delay or even swallow a quick
+     second tap (relevant for #compare-bar below, which requires exactly
+     that — tap once to arm it, tap again to navigate). */
+  touch-action: manipulation;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.compare-toggle:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.compare-toggle__icon {
+  transition: transform 0.15s ease;
+}
+
+/* Rotating the plus into an "x" (rather than only recoloring it) makes the
+   selected state legible without relying on color alone. */
+.compare-toggle.is-active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-accent-contrast);
+}
+
+.compare-toggle.is-active .compare-toggle__icon {
+  transform: rotate(45deg);
+}
+
+/* Card placement: the card itself is no longer an <a> (see .lens-card__link)
+   so this button can sit on top of it without nesting interactive elements. */
+.lens-card {
+  position: relative;
+}
+
+.lens-card__link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.lens-card__compare-toggle {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  z-index: 2;
+}
+
+.lens-table__compare-cell {
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ---------- compare: floating widget (bar + expandable panel) ---------- */
+
+.compare-widget {
+  position: fixed;
+  right: 1rem;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.compare-widget.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .compare-widget,
+  .compare-panel {
+    transition: none;
+  }
+}
+
+.compare-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.1rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  /* This button needs two taps in quick succession on mobile (one to
+     arm it, one to navigate) — without this, some mobile browsers treat
+     back-to-back taps on the same element as a possible double-tap-zoom
+     gesture and delay/suppress the second click. */
+  touch-action: manipulation;
+  transition: background-color 0.2s ease;
+}
+
+/* "Armed" state — the widget's panel is open and this button now acts as
+   the confirm/navigate action, so it swaps to a distinct color (not just
+   different text) to signal its changed role. */
+.compare-bar.is-armed {
+  background: var(--color-success);
+  color: var(--color-success-contrast);
+}
+
+/* Both labels ("Compare lenses (N)" / "Start comparing") are stacked in
+   the same grid cell at all times, so this element's size is always the
+   larger of the two — swapping which one is visible (.is-current) never
+   resizes the button, only the text content on top changes. */
+.compare-bar__label-stack {
+  display: inline-grid;
+}
+
+.compare-bar__label {
+  grid-area: 1 / 1;
+  white-space: nowrap;
+  visibility: hidden;
+}
+
+.compare-bar__label.is-current {
+  visibility: visible;
+}
+
+/* ---------- compare: floating panel (queued-lens list) ---------- */
+
+.compare-panel {
+  width: min(300px, calc(100vw - 2rem));
+  max-height: min(60vh, 420px);
+  overflow-y: auto;
+  margin-bottom: 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.compare-panel.is-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.compare-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.compare-panel__title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.compare-panel__clear {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--color-danger);
+  border-radius: 999px;
+  background: var(--color-bg);
+  color: var(--color-danger);
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.compare-panel__clear:hover {
+  background: var(--color-danger);
+  color: var(--color-danger-contrast);
+}
+
+.compare-panel__list {
+  list-style: none;
+  margin: 0;
+  padding: 0.3rem;
+}
+
+.compare-panel__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0.45rem 0.5rem;
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.compare-panel__item:hover {
+  background: var(--color-bg-alt);
+}
+
+.compare-panel__item-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.85rem;
+}
+
+.compare-panel__item-remove {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* ---------- compare page ---------- */
+
+.compare-wrap {
+  margin: 1.5rem 0 4rem;
+}
+
+.compare-grid {
+  display: flex;
+  align-items: stretch;
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.compare-labels,
+.compare-column {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.compare-labels {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--color-bg-alt);
+  min-width: 160px;
+  border-right: 1px solid var(--color-border);
+}
+
+.compare-column {
+  /* Fixed (not just min-) width: without it, a flex item with no width
+     constraint grows to fit its content — a long model name in the
+     header row would stretch the whole column instead of wrapping. */
+  width: 220px;
+  min-width: 220px;
+  border-right: 1px solid var(--color-border);
+}
+
+.compare-column:last-child {
+  border-right: none;
+}
+
+.compare-row {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding: 0.5rem 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.88rem;
+  overflow-wrap: anywhere;
+}
+
+.compare-labels .compare-row {
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+/* Value cells stay single-line (fixed row height, above) so a long spec
+   value can never grow just one column's row and break alignment with
+   its siblings — truncate instead. The header row below is the one
+   deliberate exception: it gets its own fixed (taller) height and wraps. */
+.compare-column .compare-row:not(.compare-row--header) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.compare-row--header {
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+  /* Fixed, not min-height: every header cell (including the empty label
+     spacer) must be exactly this tall so the rows below stay aligned
+     across columns, regardless of how many lines a given model name
+     wraps to. Sized for the longest real model names (~3 wrapped lines
+     at the column width above); -webkit-line-clamp below guarantees it
+     never grows past that even for a longer name in the future. */
+  height: 5rem;
+}
+
+.compare-row--header a {
+  /* min-width: 0 lets this flex item shrink below its text's natural
+     width so it can actually wrap inside the fixed-width column instead
+     of forcing the column wider. */
+  min-width: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.compare-empty {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+.compare-empty .btn {
+  margin-top: 0.75rem;
 }
 
 /* ---------- detail page ---------- */

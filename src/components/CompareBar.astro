@@ -1,0 +1,53 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+<div class="compare-widget" id="compare-widget" hidden>
+  <div class="compare-panel" id="compare-panel" hidden>
+    <div class="compare-panel__header">
+      <span class="compare-panel__title" data-i18n="compare.panelTitle">Comparing</span>
+      <button
+        type="button"
+        class="compare-panel__clear"
+        id="compare-clear-all"
+        aria-label="Clear all"
+        data-i18n-aria-label="compare.clearAll"
+        title="Clear all"
+      >
+        <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false">
+          <path
+            d="M4 7h16M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2m-9 0 1 13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1l1-13"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+    <ul class="compare-panel__list" id="compare-panel-list"></ul>
+  </div>
+
+  <button
+    type="button"
+    id="compare-bar"
+    class="compare-bar"
+    data-href={`${base}compare`}
+    aria-controls="compare-panel"
+    aria-expanded="false"
+  >
+    <svg class="compare-bar__icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+      <path
+        d="M4 6h16M4 12h10M4 18h16"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.2"
+        stroke-linecap="round"
+      />
+    </svg>
+    <span class="compare-bar__label-stack">
+      <span class="compare-bar__label is-current" data-compare-count-text>Compare lenses (0)</span>
+      <span class="compare-bar__label" data-compare-armed-text>Start comparing</span>
+    </span>
+  </button>
+</div>

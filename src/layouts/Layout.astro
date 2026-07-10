@@ -1,6 +1,8 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import CompareBar from '../components/CompareBar.astro';
+import { getAllLenses } from '../lib/lenses';
 import '../styles/global.css';
 
 interface Props {
@@ -10,6 +12,17 @@ interface Props {
 
 const { title, description } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+
+// Minimal id -> {brand, model} index so compare.js can render
+// human-readable names in the floating comparison panel on any page —
+// not just the home page, where the full card/table markup (and thus
+// the lens names) already happens to be present in the DOM.
+// Escaped defensively before embedding below: a literal closing script
+// delimiter inside the JSON string would otherwise end the element
+// early. No current lens name contains one, but it costs nothing.
+const lensIndexJson = JSON.stringify(
+  getAllLenses().map((lens) => ({ id: lens.id, brand: lens.brand, model: lens.model }))
+).replace(/</g, '\\u003c');
 ---
 <!doctype html>
 <html lang="en">
@@ -64,6 +77,9 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       <slot />
     </main>
     <Footer />
+    <CompareBar />
+    <script type="application/json" id="lens-index" is:inline set:html={lensIndexJson}></script>
     <script src="../scripts/i18n.js"></script>
+    <script src="../scripts/compare.js"></script>
   </body>
 </html>
