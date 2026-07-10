@@ -2,6 +2,14 @@
 
 English | [中文](README.zh-CN.md)
 
+<div align="center">
+
+### ✨ 👉 **[Try the live site — jingchaoqi.github.io/L-Mount-Lens-Guide](https://jingchaoqi.github.io/L-Mount-Lens-Guide/)** 👈 ✨
+
+</div>
+
+---
+
 An unofficial, community-maintained lens database and navigation site for the
 **L-Mount** lens mount system. It indexes lenses from L-Mount Alliance members
 (Leica, Panasonic, Sigma, and other brands publicly listed at
