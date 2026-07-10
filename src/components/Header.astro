@@ -1,0 +1,18 @@
+---
+import { SITE_CONFIG } from '../lib/site';
+const base = import.meta.env.BASE_URL;
+---
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-header__brand" href={base}>
+      L-Mount Lens Guide
+      <small data-i18n="site.tagline">Unofficial &middot; community-maintained</small>
+    </a>
+    <nav class="site-header__nav">
+      <a href={base} data-i18n="nav.lenses">Lenses</a>
+      <a href={`${base}about`} data-i18n="nav.about">About &amp; Disclaimer</a>
+      <a href={SITE_CONFIG.repoUrl} target="_blank" rel="noopener noreferrer" data-i18n="nav.github">GitHub</a>
+      <button type="button" class="btn" data-lang-toggle aria-label="Switch language / 切换语言">中文</button>
+    </nav>
+  </div>
+</header>

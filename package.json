@@ -1,0 +1,22 @@
+{
+  "name": "l-mount-lens-guide",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Unofficial, community-maintained navigation site for L-Mount lenses.",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "npm run validate:data && astro build",
+    "preview": "astro preview",
+    "lint": "astro check",
+    "check": "astro check",
+    "validate:data": "node scripts/validate-data.mjs"
+  },
+  "dependencies": {
+    "astro": "^4.16.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "typescript": "^5.6.3"
+  }
+}

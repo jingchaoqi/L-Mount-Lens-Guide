@@ -1,0 +1,22 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+*.log
+
+# editor / OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+
+# env
+.env
+.env.*
+
+# local Claude Code settings (machine-specific, not shared)
+.claude/settings.local.json

@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FilterBar from '../components/FilterBar.astro';
+import LensCard from '../components/LensCard.astro';
+import LensTable from '../components/LensTable.astro';
+import { getAllLenses } from '../lib/lenses';
+
+const lenses = getAllLenses();
+const title = 'L-Mount Lens Guide — Unofficial L-Mount Lens Database';
+const description = `Browse, search, and filter ${lenses.length} L-Mount lenses from L-Mount Alliance members `
+  + `(Leica, Panasonic, Sigma, and other Alliance brands) and third-party manufacturers. Unofficial, community-maintained.`;
+---
+<Layout title={title} description={description}>
+  <h1 style="margin-top:1.5rem;" data-i18n="home.title">L-Mount Lens Database</h1>
+  <p style="color:var(--color-text-muted); max-width:70ch;" data-i18n="home.intro">
+    An unofficial, community-maintained directory of L-Mount lenses.
+  </p>
+
+  <FilterBar />
+
+  <div id="view-container" class="view-cards">
+    <div class="lens-grid" id="lens-grid">
+      {lenses.map((lens) => <LensCard lens={lens} />)}
+    </div>
+    <LensTable lenses={lenses} />
+  </div>
+
+  <p class="no-results" id="no-results" hidden data-i18n="filterBar.noResults">
+    No lenses match your filters. Try clearing some filters.
+  </p>
+
+  <script src="../scripts/filter.js"></script>
+</Layout>

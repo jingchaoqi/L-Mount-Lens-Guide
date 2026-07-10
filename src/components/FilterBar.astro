@@ -1,0 +1,164 @@
+---
+import { getBrandsGrouped, getFocalRange, COMMON_FOCAL_LENGTHS, WEIGHT_BUCKETS } from '../lib/lenses';
+
+const { alliance: allianceBrands, thirdParty: thirdPartyBrands } = getBrandsGrouped();
+const focalRange = getFocalRange();
+
+// The slider itself runs on a log scale (raw 0-1000) rather than linear mm,
+// since focal lengths cluster heavily at the wide-angle end (14-50mm) — a
+// linear scale would give the whole 14-100mm range only ~15% of the track.
+// Tick positions are computed with the same formula client-side (filter.js).
+const focalLogMin = Math.log(focalRange.min);
+const focalLogMax = Math.log(focalRange.max);
+function focalToPercent(mm: number): number {
+  return ((Math.log(mm) - focalLogMin) / (focalLogMax - focalLogMin)) * 100;
+}
+const focalTicks = COMMON_FOCAL_LENGTHS.filter((v) => v >= focalRange.min && v <= focalRange.max);
+---
+<div class="filter-bar" id="filter-bar">
+  <input
+    type="search"
+    id="search-input"
+    class="filter-bar__search"
+    placeholder="Search brand, model, or focal length (e.g. &quot;Sigma 35mm&quot;)"
+    data-i18n-placeholder="filterBar.searchPlaceholder"
+    aria-label="Search lenses"
+  />
+
+  <div class="filter-bar__grid">
+    <div class="filter-group">
+      <label for="filter-brand" data-i18n="filterBar.brand">Brand</label>
+      <select id="filter-brand" data-filter="brand">
+        <option value="all" data-i18n="filterBar.allBrands">All brands</option>
+        <optgroup label="L-Mount Alliance members" data-i18n-label="filterBar.allianceBrandsGroup">
+          {allianceBrands.map((brand) => <option value={brand} data-i18n={`brand.${brand}`}>{brand}</option>)}
+        </optgroup>
+        <optgroup label="Third-party (non-Alliance)" data-i18n-label="filterBar.thirdPartyBrandsGroup">
+          {thirdPartyBrands.map((brand) => <option value={brand} data-i18n={`brand.${brand}`}>{brand}</option>)}
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="filter-format" data-i18n="filterBar.format">Format</label>
+      <select id="filter-format" data-filter="format">
+        <option value="all" data-i18n="filterBar.allFormats">All formats</option>
+        <option value="Full Frame" data-i18n="filterBar.fullFrame">Full Frame</option>
+        <option value="APS-C" data-i18n="filterBar.apsc">APS-C</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="filter-focus" data-i18n="filterBar.focus">AF / MF</label>
+      <select id="filter-focus" data-filter="focusType">
+        <option value="all" data-i18n="filterBar.allFocus">AF &amp; MF</option>
+        <option value="AF" data-i18n="filterBar.af">Autofocus</option>
+        <option value="MF" data-i18n="filterBar.mf">Manual focus</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="filter-lenstype" data-i18n="filterBar.lensType">Prime / Zoom</label>
+      <select id="filter-lenstype" data-filter="lensType">
+        <option value="all" data-i18n="filterBar.allLensTypes">Prime &amp; Zoom</option>
+        <option value="Prime" data-i18n="filterBar.prime">Prime</option>
+        <option value="Zoom" data-i18n="filterBar.zoom">Zoom</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="filter-alliance" data-i18n="filterBar.alliance">Alliance status</label>
+      <select id="filter-alliance" data-filter="alliance">
+        <option value="all" data-i18n="filterBar.allLenses">All lenses</option>
+        <option value="true" data-i18n="filterBar.allianceMember">L-Mount Alliance member</option>
+        <option value="false" data-i18n="filterBar.thirdParty">Third-party (non-Alliance)</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="filter-weight" data-i18n="filterBar.weight">Weight</label>
+      <select id="filter-weight" data-filter="weight">
+        <option value="all" data-i18n="filterBar.anyWeight">Any weight</option>
+        {WEIGHT_BUCKETS.map((bucket) => <option value={bucket.id}>{bucket.label}</option>)}
+      </select>
+    </div>
+
+    <div class="filter-group filter-group--wide">
+      <label id="focal-range-label" data-i18n="filterBar.focalLength">Focal length</label>
+      <div
+        class="range-slider"
+        id="focal-range"
+        role="group"
+        aria-labelledby="focal-range-label"
+        data-focal-min={focalRange.min}
+        data-focal-max={focalRange.max}
+      >
+        <div class="range-slider__track">
+          <div class="range-slider__fill" id="focal-range-fill"></div>
+        </div>
+        <input
+          type="range"
+          id="focal-range-min-input"
+          min="0"
+          max="1000"
+          value="0"
+          step="1"
+          data-i18n-aria-label="filterBar.focalMinLabel"
+          aria-label="Minimum focal length"
+        />
+        <input
+          type="range"
+          id="focal-range-max-input"
+          min="0"
+          max="1000"
+          value="1000"
+          step="1"
+          data-i18n-aria-label="filterBar.focalMaxLabel"
+          aria-label="Maximum focal length"
+        />
+      </div>
+      <div class="range-slider__ticks" id="focal-range-ticks">
+        {focalTicks.map((v) => (
+          <button
+            type="button"
+            class="range-slider__tick"
+            data-focal-value={v}
+            style={`left:calc((100% - 16px) * ${focalToPercent(v)} / 100 + 8px)`}
+            aria-label={`${v}mm`}
+          >
+            <span class="range-slider__tick-mark" aria-hidden="true"></span>
+            <span class="range-slider__tick-label">{v}</span>
+          </button>
+        ))}
+      </div>
+      <div class="range-slider__value" id="focal-range-value">{focalRange.min}mm – {focalRange.max}mm</div>
+      <p class="filter-hint" data-i18n="filterBar.focalRangeHint">
+        Lenses whose focal range overlaps your selection are shown, so zoom lenses are included.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="filter-bar__footer">
+    <span class="filter-count" id="filter-count" aria-live="polite">Showing all lenses</span>
+    <div style="display:flex; gap:0.75rem; align-items:center; flex-wrap:wrap;">
+      <div class="sort-bar">
+        <label for="sort-select" data-i18n="filterBar.sortBy">Sort by</label>
+        <select id="sort-select">
+          <option value="focal-asc" data-i18n="filterBar.sort.focalAsc">Focal length (short to long)</option>
+          <option value="focal-desc" data-i18n="filterBar.sort.focalDesc">Focal length (long to short)</option>
+          <option value="aperture-asc" data-i18n="filterBar.sort.apertureAsc">Max aperture (fastest first)</option>
+          <option value="weight-asc" data-i18n="filterBar.sort.weightAsc">Weight (lightest first)</option>
+          <option value="weight-desc" data-i18n="filterBar.sort.weightDesc">Weight (heaviest first)</option>
+          <option value="year-desc" data-i18n="filterBar.sort.yearDesc">Release year (newest first)</option>
+          <option value="year-asc" data-i18n="filterBar.sort.yearAsc">Release year (oldest first)</option>
+        </select>
+      </div>
+      <div class="view-toggle" id="view-toggle">
+        <button type="button" class="btn is-active" data-view="cards" data-i18n="filterBar.cards">Cards</button>
+        <button type="button" class="btn" data-view="table" data-i18n="filterBar.table">Table</button>
+      </div>
+      <button type="button" class="btn" id="clear-filters" data-i18n="filterBar.clear">Clear filters</button>
+    </div>
+  </div>
+</div>

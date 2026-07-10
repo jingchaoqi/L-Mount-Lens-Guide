@@ -1,0 +1,72 @@
+---
+import type { Lens } from '../lib/types';
+import { focalLengthLabel, apertureLabel, weightLabel, weightBucketId } from '../lib/lenses';
+import { dict } from '../lib/i18n-dict.js';
+
+interface Props {
+  lenses: Lens[];
+}
+
+const { lenses } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+function brandZhName(brand: string): string {
+  return (dict.zh as Record<string, string>)[`brand.${brand}`] ?? brand;
+}
+---
+<div class="lens-table-wrap" id="lens-table-wrap">
+  <table class="lens-table">
+    <thead>
+      <tr>
+        <th data-i18n="table.brand">Brand</th>
+        <th data-i18n="table.model">Model</th>
+        <th data-i18n="table.alliance">Alliance</th>
+        <th data-i18n="table.format">Format</th>
+        <th data-i18n="table.type">Type</th>
+        <th data-i18n="table.focus">Focus</th>
+        <th data-i18n="table.focalLength">Focal length</th>
+        <th data-i18n="table.maxAperture">Max aperture</th>
+        <th data-i18n="table.weight">Weight</th>
+        <th data-i18n="table.year">Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      {lenses.map((lens) => {
+        const brandKey = `brand.${lens.brand}`;
+        const searchText = `${lens.brand} ${brandZhName(lens.brand)} ${lens.model} ${focalLengthLabel(lens)}`.toLowerCase();
+        const formatKey = lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc';
+        const lensTypeKey = lens.lensType === 'Prime' ? 'filterBar.prime' : 'filterBar.zoom';
+        return (
+          <tr
+            data-lens-row
+            data-brand={lens.brand}
+            data-format={lens.format}
+            data-focus-type={lens.focusType}
+            data-lens-type={lens.lensType}
+            data-alliance={String(lens.allianceMember)}
+            data-weight-bucket={weightBucketId(lens.weightGram)}
+            data-weight={lens.weightGram}
+            data-focal-min={lens.focalLengthMin}
+            data-focal-max={lens.focalLengthMax}
+            data-max-aperture={lens.maxAperture}
+            data-release-year={lens.releaseYear}
+            data-search={searchText}
+          >
+            <td data-i18n={brandKey}>{lens.brand}</td>
+            <td><a href={`${base}lenses/${lens.id}`}>{lens.model}</a></td>
+            <td data-i18n={lens.allianceMember ? 'table.member' : 'table.thirdParty'}>
+              {lens.allianceMember ? 'Member' : 'Third-party'}
+            </td>
+            <td data-i18n={formatKey}>{lens.format}</td>
+            <td data-i18n={lensTypeKey}>{lens.lensType}</td>
+            <td>{lens.focusType}</td>
+            <td>{focalLengthLabel(lens)}</td>
+            <td>{apertureLabel(lens)}</td>
+            <td>{weightLabel(lens)}</td>
+            <td>{lens.releaseYear}</td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</div>

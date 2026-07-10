@@ -1,0 +1,57 @@
+---
+import type { Lens } from '../lib/types';
+import { focalLengthLabel, apertureLabel, weightLabel, weightBucketId } from '../lib/lenses';
+import { dict } from '../lib/i18n-dict.js';
+
+interface Props {
+  lens: Lens;
+}
+
+const { lens } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const brandKey = `brand.${lens.brand}`;
+const brandZh = (dict.zh as Record<string, string>)[brandKey] ?? lens.brand;
+// Include the Chinese brand name too, so search still matches after switching languages.
+const searchText = `${lens.brand} ${brandZh} ${lens.model} ${focalLengthLabel(lens)}`.toLowerCase();
+const formatKey = lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc';
+---
+<a
+  class="lens-card"
+  href={`${base}lenses/${lens.id}`}
+  data-lens-row
+  data-brand={lens.brand}
+  data-format={lens.format}
+  data-focus-type={lens.focusType}
+  data-lens-type={lens.lensType}
+  data-alliance={String(lens.allianceMember)}
+  data-weight-bucket={weightBucketId(lens.weightGram)}
+  data-weight={lens.weightGram}
+  data-focal-min={lens.focalLengthMin}
+  data-focal-max={lens.focalLengthMax}
+  data-max-aperture={lens.maxAperture}
+  data-release-year={lens.releaseYear}
+  data-search={searchText}
+>
+  <div class="lens-card__badges">
+    <span
+      class={`badge ${lens.allianceMember ? 'badge--alliance' : 'badge--third-party'}`}
+      data-i18n={lens.allianceMember ? 'card.allianceMember' : 'card.thirdParty'}
+    >
+      {lens.allianceMember ? 'Alliance member' : 'Third-party'}
+    </span>
+    <span class="badge badge--outline" data-i18n={formatKey}>{lens.format}</span>
+    <span class="badge badge--outline">{lens.focusType}</span>
+  </div>
+  <div class="lens-card__brand" data-i18n={brandKey}>{lens.brand}</div>
+  <div class="lens-card__model">{lens.model}</div>
+  <dl class="lens-card__specs">
+    <dt data-i18n="card.focalLength">Focal length</dt>
+    <dd>{focalLengthLabel(lens)}</dd>
+    <dt data-i18n="card.maxAperture">Max aperture</dt>
+    <dd>{apertureLabel(lens)}</dd>
+    <dt data-i18n="card.weight">Weight</dt>
+    <dd>{weightLabel(lens)}</dd>
+    <dt data-i18n="card.released">Released</dt>
+    <dd>{lens.releaseYear}</dd>
+  </dl>
+</a>
