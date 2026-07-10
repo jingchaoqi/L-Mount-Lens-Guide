@@ -8,7 +8,7 @@ import { defineConfig } from 'astro/config';
 const REPO_NAME = 'L-Mount-Lens-Guide';
 
 export default defineConfig({
-  site: `https://your-github-username.github.io`,
+  site: `https://jingchaoqi.github.io`,
   base: `/${REPO_NAME}/`,
   outDir: './dist',
 });
