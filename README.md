@@ -1,5 +1,7 @@
 # L-Mount Lens Guide
 
+English | [中文](README.zh-CN.md)
+
 An unofficial, community-maintained lens database and navigation site for the
 **L-Mount** lens mount system. It indexes lenses from L-Mount Alliance members
 (Leica, Panasonic, Sigma, and other brands publicly listed at

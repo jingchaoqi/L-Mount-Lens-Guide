@@ -20,3 +20,6 @@ npm-debug.log*
 
 # local Claude Code settings (machine-specific, not shared)
 .claude/settings.local.json
+
+# agent-only project notes, not meant for the public repo
+CLAUDE.md
