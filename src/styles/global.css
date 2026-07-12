@@ -870,6 +870,12 @@ a {
   overflow-x: auto;
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
+  /* Hug the selected columns instead of stretching the border across the
+     full page width — with only one or two lenses queued that left a large
+     empty area inside the box. Capped at 100% so a long selection still
+     scrolls horizontally inside the box rather than overflowing the page. */
+  width: max-content;
+  max-width: 100%;
 }
 
 .compare-labels,
@@ -883,17 +889,31 @@ a {
   position: sticky;
   left: 0;
   z-index: 1;
-  background: var(--color-bg-alt);
-  min-width: 160px;
+  /* Fixed width, not just a min-: as a flex item with flex-shrink:0 and an
+     auto width, this column would otherwise size itself to its single
+     longest label — "L-Mount Alliance 联盟成员" — and permanently eat that
+     much room from the lens columns, which are the part the reader actually
+     came to compare. Pinning the width makes long labels wrap instead. */
+  width: 150px;
+  min-width: 150px;
   border-right: 1px solid var(--color-border);
+  /* No background here: the row stripes below supply it, and they must be
+     opaque so the lens columns scroll *under* this sticky column. */
 }
 
 .compare-column {
   /* Fixed (not just min-) width: without it, a flex item with no width
      constraint grows to fit its content — a long model name in the
-     header row would stretch the whole column instead of wrapping. */
-  width: 220px;
-  min-width: 220px;
+     header row would stretch the whole column instead of wrapping.
+
+     190px is the narrowest width at which no lens in the dataset overflows
+     the header's four-line clamp, measured across all 112 lenses in both
+     languages. English is the binding constraint, not Chinese: at 180px
+     "Panasonic LUMIX S 70-300mm F4.5-5.6 MACRO O.I.S." needs a fifth line
+     and would be silently ellipsised. Re-measure before narrowing further
+     or before adding a lens with a longer name. */
+  width: 190px;
+  min-width: 190px;
   border-right: 1px solid var(--color-border);
 }
 
@@ -904,16 +924,38 @@ a {
 .compare-row {
   display: flex;
   align-items: center;
-  height: 3rem;
+  /* Shared by the label column and every lens column — that identical height
+     is what keeps the rows lined up across columns, so it has to be tall
+     enough for the tallest thing in any of them: a two-line wrapped label. */
+  height: 3.5rem;
   padding: 0.5rem 0.9rem;
   border-bottom: 1px solid var(--color-border);
   font-size: 0.88rem;
   overflow-wrap: anywhere;
 }
 
+/* Alternating row shading, so the eye can track a spec straight across a
+   wide table without sliding onto the neighbouring row.
+
+   Applied per-row rather than per-column, and with the *same* nth-child rule
+   in the label column and in every lens column — each column holds the same
+   15 rows in the same order, so stripe N lines up across all of them. The
+   colours must be opaque (not a translucent overlay) because the label
+   column is position:sticky and the lens columns scroll underneath it. */
+.compare-row:nth-child(odd) {
+  background: var(--color-bg);
+}
+
+.compare-row:nth-child(even) {
+  background: var(--color-bg-alt);
+}
+
 .compare-labels .compare-row {
   color: var(--color-text-muted);
   font-weight: 600;
+  /* Labels wrap; values (below) don't. Tightened so two lines sit
+     comfortably inside the row height above rather than grazing it. */
+  line-height: 1.25;
 }
 
 /* Value cells stay single-line (fixed row height, above) so a long spec
@@ -933,10 +975,10 @@ a {
   /* Fixed, not min-height: every header cell (including the empty label
      spacer) must be exactly this tall so the rows below stay aligned
      across columns, regardless of how many lines a given model name
-     wraps to. Sized for the longest real model names (~3 wrapped lines
-     at the column width above); -webkit-line-clamp below guarantees it
-     never grows past that even for a longer name in the future. */
-  height: 5rem;
+     wraps to. Sized to hold the four lines that -webkit-line-clamp below
+     allows (4 x 1.2 x 0.88rem of text + 1rem of padding = ~5.25rem), which
+     is what lets the columns be as narrow as they are. */
+  height: 5.75rem;
 }
 
 .compare-row--header a {
@@ -947,7 +989,10 @@ a {
   overflow-wrap: anywhere;
   line-height: 1.2;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  /* Four lines, not three: the columns were narrowed to fit more lenses on
+     screen, so the longest model names need the extra line to stay whole.
+     Verified against every lens in the dataset — nothing is truncated. */
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-weight: 700;
