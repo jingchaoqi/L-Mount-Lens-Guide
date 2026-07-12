@@ -92,7 +92,13 @@ export const dict = {
     'category.Macro': 'Macro',
     'category.Cine': 'Cine',
 
-    'card.allianceMember': 'Alliance member',
+    // Deliberately shorter than the detail page's "L-Mount Alliance member":
+    // the card's badge row has to share one line with the compare button, and
+    // the longer wording pushed the third badge onto a second line on most
+    // cards. The badge's colour already distinguishes it from "Third-party",
+    // and the detail page spells the status out in full. Used only by
+    // LensCard.astro — the filter bar and detail page have their own keys.
+    'card.allianceMember': 'Alliance',
     'card.thirdParty': 'Third-party',
     'card.focalLength': 'Focal length',
     'card.maxAperture': 'Max aperture',

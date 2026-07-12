@@ -516,11 +516,26 @@ a {
   border-color: var(--color-accent);
 }
 
+/* Badge row and compare button, side by side. The button is a flow sibling
+   rather than an overlay, so the badges are laid out in the space that is
+   actually left over and can never run underneath it — see LensCard.astro. */
+.lens-card__top {
+  display: flex;
+  /* Centred, not flex-start: the button (30px) is taller than a badge (~24px),
+     so aligning their tops left their centres visibly off by a few pixels. */
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .lens-card__badges {
   display: flex;
   align-items: center;
   gap: 0.4rem;
   flex-wrap: wrap;
+  /* Take the width the button leaves behind, and allow shrinking below the
+     badges' natural width so they wrap instead of pushing the button out. */
+  flex: 1;
+  min-width: 0;
 }
 
 .lens-card__brand {
@@ -676,10 +691,11 @@ a {
   z-index: 1;
 }
 
+/* In normal flow (inside .lens-card__top), but still needs to sit above the
+   full-bleed .lens-card__link overlay to stay clickable — hence a stacking
+   context of its own rather than the absolute positioning it used to have. */
 .lens-card__compare-toggle {
-  position: absolute;
-  top: 0.6rem;
-  right: 0.6rem;
+  position: relative;
   z-index: 2;
 }
 

@@ -39,15 +39,23 @@ const brand = brandName(lang, lens.brand);
     href={localeHref(lang, `lenses/${lens.id}`)}
     aria-label={`${brand} ${lens.model}`}
   ></a>
-  <CompareToggleButton lens={lens} lang={lang} class="lens-card__compare-toggle" />
-  <div class="lens-card__badges">
-    <span class={`badge ${lens.allianceMember ? 'badge--alliance' : 'badge--third-party'}`}>
-      {t(lang, lens.allianceMember ? 'card.allianceMember' : 'card.thirdParty')}
-    </span>
-    <span class="badge badge--outline">
-      {t(lang, lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc')}
-    </span>
-    <span class="badge badge--outline">{lens.focusType}</span>
+  {/* The compare button is a flow sibling of the badges, not an overlay on top
+      of them. As an absolutely-positioned overlay it was invisible to the badge
+      row's layout, so badges simply ran underneath it — which only looked fine
+      in Chinese by accident, because the Chinese badge text happens to be short
+      enough. Keeping the two in one flex row means the badges can never claim
+      the button's space, in any language. */}
+  <div class="lens-card__top">
+    <div class="lens-card__badges">
+      <span class={`badge ${lens.allianceMember ? 'badge--alliance' : 'badge--third-party'}`}>
+        {t(lang, lens.allianceMember ? 'card.allianceMember' : 'card.thirdParty')}
+      </span>
+      <span class="badge badge--outline">
+        {t(lang, lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc')}
+      </span>
+      <span class="badge badge--outline">{lens.focusType}</span>
+    </div>
+    <CompareToggleButton lens={lens} lang={lang} class="lens-card__compare-toggle" />
   </div>
   <div class="lens-card__brand">{brand}</div>
   <div class="lens-card__model">{lens.model}</div>
