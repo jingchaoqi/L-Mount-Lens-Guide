@@ -549,6 +549,10 @@ a {
   font-size: 1.05rem;
   font-weight: 600;
   line-height: 1.3;
+  /* Reserve two lines even for a one-line name, so the spec block below starts
+     at the same y in every card. Model names are never truncated — a rare name
+     that needs a third line is allowed to take it (see .lens-card__specs). */
+  min-height: 2.6em;
 }
 
 .lens-card__specs {
@@ -557,7 +561,11 @@ a {
   gap: 0.25rem 0.75rem;
   font-size: 0.82rem;
   color: var(--color-text-muted);
-  margin-top: 0.25rem;
+  /* Pinned to the bottom of the card, not spaced off the title: grid items
+     stretch to the row's height, so this keeps the specs aligned across a row
+     even when one card's name does spill onto a third line. */
+  margin-top: auto;
+  padding-top: 0.25rem;
 }
 
 .lens-card__specs dt {
