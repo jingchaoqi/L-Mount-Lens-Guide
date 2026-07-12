@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { SITE_CONFIG } from '../../lib/site';
+import { t, localeStaticPaths, langFromParam } from '../../lib/i18n';
+
+export function getStaticPaths() {
+  return localeStaticPaths();
+}
+
+const lang = langFromParam(Astro.params.locale);
+
+// Several of these strings carry inline markup (<strong>, <code>, <a>) and
+// are therefore rendered with set:html. The dictionary is maintainer-authored
+// — never route user-supplied text through it.
+---
+<Layout
+  lang={lang}
+  path="about"
+  title={t(lang, 'seo.aboutTitle')}
+  description={t(lang, 'seo.aboutDescription')}
+>
+  <div class="prose">
+    <h1>{t(lang, 'about.title')}</h1>
+
+    <p set:html={t(lang, 'about.intro')} />
+
+    <h2>{t(lang, 'about.h.noAffiliation')}</h2>
+    <p set:html={t(lang, 'about.noAffiliation1')} />
+    <p set:html={t(lang, 'about.noAffiliation2')} />
+    <p>{t(lang, 'about.noAffiliation3')}</p>
+
+    <h2>{t(lang, 'about.h.allianceMeaning')}</h2>
+    <p set:html={t(lang, 'about.allianceMeaning1')} />
+    <ul>
+      <li set:html={t(lang, 'about.allianceMeaning.member')} />
+      <li set:html={t(lang, 'about.allianceMeaning.thirdParty')} />
+    </ul>
+
+    <h2>{t(lang, 'about.h.dataAccuracy')}</h2>
+    <p>
+      <span>{t(lang, 'about.dataAccuracy1')}</span>
+      (<a href={SITE_CONFIG.repoUrl}>{t(lang, 'about.repoLink')}</a>)
+    </p>
+
+    {/* Temporarily hidden per request — re-enable by uncommenting.
+    <h2>{t(lang, 'about.h.commercialLinks')}</h2>
+    <p set:html={t(lang, 'about.commercialLinks1')} />
+    */}
+
+    <h2>{t(lang, 'about.h.license')}</h2>
+    <p set:html={t(lang, 'about.license1')} />
+
+    <h2>{t(lang, 'about.h.contact')}</h2>
+    <p>
+      <span set:html={t(lang, 'about.contact1')} />
+      {' '}<a href={SITE_CONFIG.repoUrl}>{t(lang, 'about.repoLink2')}</a>
+    </p>
+  </div>
+</Layout>

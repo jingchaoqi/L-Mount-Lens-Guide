@@ -3,6 +3,12 @@
 // the shared `data-lens-id` attribute, so no data is re-fetched or
 // re-rendered in JS.
 
+// The "Showing X of Y" line is the one string this file generates itself, so
+// it is the one string it has to translate. Imported directly rather than read
+// off a global, so it cannot run before translation is available and fall back
+// to English on a non-English page.
+import { t } from '../lib/i18n-runtime.js';
+
 function init() {
   const searchInput = document.getElementById('search-input');
   const selects = Array.from(document.querySelectorAll('[data-filter]'));
@@ -169,9 +175,10 @@ function init() {
     const sortedTableRows = sortRows(tableRows, sortKey);
     sortedTableRows.forEach((row) => tableBody.appendChild(row));
 
-    filterCount.textContent = window.__i18n
-      ? window.__i18n.t('filterBar.showingCount', { count: visibleCount, total: totalCount })
-      : `Showing ${visibleCount} of ${totalCount} lenses`;
+    filterCount.textContent = t('filterBar.showingCount', {
+      count: visibleCount,
+      total: totalCount,
+    });
     noResults.hidden = visibleCount !== 0;
   }
 
@@ -256,8 +263,6 @@ function init() {
       viewContainer.classList.add(`view-${btn.dataset.view}`);
     });
   }
-
-  document.addEventListener('i18n:change', applyFilters);
 
   updateFocalSliderUI();
   applyFilters();

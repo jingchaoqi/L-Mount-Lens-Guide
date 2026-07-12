@@ -1,0 +1,88 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CompareToggleButton from '../../components/CompareToggleButton.astro';
+import { getAllLenses, focalLengthLabel, apertureLabel, weightLabel } from '../../lib/lenses';
+import { t, brandName, localeHref, localeStaticPaths, langFromParam } from '../../lib/i18n';
+
+export function getStaticPaths() {
+  return localeStaticPaths();
+}
+
+const lang = langFromParam(Astro.params.locale);
+const lenses = getAllLenses();
+const homeHref = localeHref(lang);
+---
+<Layout
+  lang={lang}
+  path="compare"
+  title={t(lang, 'seo.compareTitle')}
+  description={t(lang, 'seo.compareDescription')}
+>
+  <a class="back-link" href={homeHref}>{t(lang, 'detail.back')}</a>
+
+  <h1>{t(lang, 'compare.title')}</h1>
+  <p style="color:var(--color-text-muted); max-width:70ch;">{t(lang, 'compare.intro')}</p>
+
+  <div class="compare-wrap" id="compare-wrap">
+    <div class="compare-grid" id="compare-grid" hidden>
+      <div class="compare-labels">
+        <div class="compare-row compare-row--header"></div>
+        <div class="compare-row">{t(lang, 'spec.allianceMember')}</div>
+        <div class="compare-row">{t(lang, 'spec.format')}</div>
+        <div class="compare-row">{t(lang, 'spec.lensType')}</div>
+        <div class="compare-row">{t(lang, 'spec.focusType')}</div>
+        <div class="compare-row">{t(lang, 'spec.focalLength')}</div>
+        <div class="compare-row">{t(lang, 'spec.maxAperture')}</div>
+        <div class="compare-row">{t(lang, 'spec.minAperture')}</div>
+        <div class="compare-row">{t(lang, 'spec.weight')}</div>
+        <div class="compare-row">{t(lang, 'spec.filterThread')}</div>
+        <div class="compare-row">{t(lang, 'spec.minFocusDistance')}</div>
+        <div class="compare-row">{t(lang, 'spec.maxMagnification')}</div>
+        <div class="compare-row">{t(lang, 'spec.stabilization')}</div>
+        <div class="compare-row">{t(lang, 'spec.weatherSealed')}</div>
+        <div class="compare-row">{t(lang, 'spec.releaseYear')}</div>
+      </div>
+
+      {lenses.map((lens) => (
+        <div class="compare-column" data-lens-id={lens.id} hidden>
+          <div class="compare-row compare-row--header">
+            <a
+              href={localeHref(lang, `lenses/${lens.id}`)}
+              title={`${brandName(lang, lens.brand)} ${lens.model}`}
+            >
+              <span>{brandName(lang, lens.brand)}</span> {lens.model}
+            </a>
+            <CompareToggleButton lens={lens} lang={lang} class="compare-remove" />
+          </div>
+          <div class="compare-row">{t(lang, lens.allianceMember ? 'spec.yes' : 'spec.noThirdParty')}</div>
+          <div class="compare-row">{t(lang, lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc')}</div>
+          <div class="compare-row">{t(lang, lens.lensType === 'Prime' ? 'filterBar.prime' : 'filterBar.zoom')}</div>
+          <div class="compare-row">{t(lang, lens.focusType === 'AF' ? 'detail.af' : 'detail.mf')}</div>
+          <div class="compare-row">{focalLengthLabel(lens)}</div>
+          <div class="compare-row">{apertureLabel(lens)}</div>
+          <div class="compare-row">f/{lens.minAperture}</div>
+          <div class="compare-row">{weightLabel(lens)}</div>
+          <div class="compare-row">
+            {lens.filterThreadMm ? `${lens.filterThreadMm}mm` : t(lang, 'spec.filterThreadNone')}
+          </div>
+          <div class="compare-row">{lens.minFocusDistanceM}m</div>
+          <div class="compare-row">{lens.maxMagnification}x</div>
+          <div class="compare-row">{t(lang, lens.stabilization ? 'spec.yes' : 'spec.no')}</div>
+          <div class="compare-row">
+            {lens.weatherSealed === null
+              ? t(lang, 'spec.notSpecified')
+              : t(lang, lens.weatherSealed ? 'spec.yes' : 'spec.no')}
+          </div>
+          <div class="compare-row">{lens.releaseYear}</div>
+        </div>
+      ))}
+    </div>
+
+    <p class="compare-empty" id="compare-empty">
+      <span>{t(lang, 'compare.empty')}</span><br />
+      <a class="btn" href={homeHref}>{t(lang, 'compare.emptyAction')}</a>
+    </p>
+  </div>
+
+  <a class="back-link" href={homeHref}>{t(lang, 'detail.back')}</a>
+</Layout>

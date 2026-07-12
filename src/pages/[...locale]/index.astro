@@ -1,0 +1,40 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FilterBar from '../../components/FilterBar.astro';
+import LensCard from '../../components/LensCard.astro';
+import LensTable from '../../components/LensTable.astro';
+import { getAllLenses } from '../../lib/lenses';
+import { t, localeStaticPaths, langFromParam } from '../../lib/i18n';
+
+// One statically-rendered page per locale: '/' for the default locale,
+// '/<code>/' for every other one. Adding a language to locales.js adds its
+// pages here automatically.
+export function getStaticPaths() {
+  return localeStaticPaths();
+}
+
+const lang = langFromParam(Astro.params.locale);
+const lenses = getAllLenses();
+---
+<Layout
+  lang={lang}
+  path=""
+  title={t(lang, 'seo.homeTitle')}
+  description={t(lang, 'seo.homeDescription', { count: lenses.length })}
+>
+  <h1 style="margin-top:1.5rem;">{t(lang, 'home.title')}</h1>
+  <p style="color:var(--color-text-muted); max-width:70ch;">{t(lang, 'home.intro')}</p>
+
+  <FilterBar lang={lang} total={lenses.length} />
+
+  <div id="view-container" class="view-cards">
+    <div class="lens-grid" id="lens-grid">
+      {lenses.map((lens) => <LensCard lens={lens} lang={lang} />)}
+    </div>
+    <LensTable lenses={lenses} lang={lang} />
+  </div>
+
+  <p class="no-results" id="no-results" hidden>{t(lang, 'filterBar.noResults')}</p>
+
+  <script src="../../scripts/filter.js"></script>
+</Layout>

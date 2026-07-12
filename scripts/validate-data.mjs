@@ -6,6 +6,8 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
+import { LOCALE_CODES, DEFAULT_LOCALE } from '../src/lib/locales.js';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, '..', 'src', 'data', 'lenses.json');
 
@@ -18,7 +20,6 @@ const REQUIRED_STRING_FIELDS = [
   'lensType',
   'focusType',
   'officialUrl',
-  'notes',
 ];
 
 const REQUIRED_NUMBER_FIELDS = [
@@ -103,8 +104,21 @@ function validateLens(lens, index) {
     errors.push(`${where}: weatherSealed must be a boolean or null`);
   }
 
-  if (lens.notesZh !== undefined && (typeof lens.notesZh !== 'string' || lens.notesZh.trim() === '')) {
-    errors.push(`${where}: notesZh, if present, must be a non-empty string`);
+  if (typeof lens.notes !== 'object' || lens.notes === null || Array.isArray(lens.notes)) {
+    errors.push(`${where}: notes must be an object keyed by locale code (allowed: ${LOCALE_CODES.join(', ')})`);
+  } else {
+    const defaultNote = lens.notes[DEFAULT_LOCALE];
+    if (typeof defaultNote !== 'string' || defaultNote.trim() === '') {
+      errors.push(`${where}: notes must have a non-empty string for the default locale "${DEFAULT_LOCALE}"`);
+    }
+
+    for (const [locale, text] of Object.entries(lens.notes)) {
+      if (!LOCALE_CODES.includes(locale)) {
+        errors.push(`${where}: notes has unknown locale key "${locale}" (allowed: ${LOCALE_CODES.join(', ')})`);
+      } else if (typeof text !== 'string' || text.trim() === '') {
+        errors.push(`${where}: notes["${locale}"] must be a non-empty string`);
+      }
+    }
   }
 
   if (!Array.isArray(lens.category) || lens.category.length === 0) {

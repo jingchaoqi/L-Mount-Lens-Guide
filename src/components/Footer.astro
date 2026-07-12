@@ -1,27 +1,27 @@
 ---
 import { SITE_CONFIG } from '../lib/site';
-const base = import.meta.env.BASE_URL;
+import { t, localeHref, type Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
 const year = new Date().getFullYear();
-const yearVars = JSON.stringify({ year });
 ---
 <footer class="site-footer">
   <div class="container">
     <p>
-      <span data-i18n="footer.copyright" data-i18n-vars={yearVars}>&copy; {year} L-Mount Lens Guide contributors</span> &middot;
-      <span data-i18n="footer.codeUnder">Code under</span>
-      <a href={`${SITE_CONFIG.repoUrl}/blob/main/LICENSE`} target="_blank" rel="noopener noreferrer" data-i18n="footer.mit">MIT</a><span data-i18n="footer.dataUnder">, data under</span>
-      <a href={`${SITE_CONFIG.repoUrl}/blob/main/DATA_LICENSE.md`} target="_blank" rel="noopener noreferrer" data-i18n="footer.ccbysa">CC BY-SA 4.0</a> &middot;
-      <a href={SITE_CONFIG.repoUrl} target="_blank" rel="noopener noreferrer" data-i18n="footer.contribute">Contribute on GitHub</a>
+      <span>{t(lang, 'footer.copyright', { year })}</span> &middot;
+      <span>{t(lang, 'footer.codeUnder')}</span>
+      <a href={`${SITE_CONFIG.repoUrl}/blob/main/LICENSE`} target="_blank" rel="noopener noreferrer">{t(lang, 'footer.mit')}</a><span>{t(lang, 'footer.dataUnder')}</span>
+      <a href={`${SITE_CONFIG.repoUrl}/blob/main/DATA_LICENSE.md`} target="_blank" rel="noopener noreferrer">{t(lang, 'footer.ccbysa')}</a> &middot;
+      <a href={SITE_CONFIG.repoUrl} target="_blank" rel="noopener noreferrer">{t(lang, 'footer.contribute')}</a>
     </p>
     <p>
-      <span data-i18n="footer.disclaimer">
-        This is an unofficial, community-maintained project. It is not affiliated with,
-        sponsored by, or endorsed by Leica Camera AG, the L-Mount Alliance, Panasonic, Sigma,
-        or any other manufacturer. "L-Mount" is a trademark of Leica Camera AG.
-        See the About &amp; Disclaimer page for details.
-      </span>
-      <a href={`${base}about`} data-i18n="footer.aboutLink">About &amp; Disclaimer</a>
-      <span data-i18n="footer.aboutLinkSuffix">page for details.</span>
+      <span>{t(lang, 'footer.disclaimer')}</span>
+      <a href={localeHref(lang, 'about')}>{t(lang, 'footer.aboutLink')}</a>
+      <span>{t(lang, 'footer.aboutLinkSuffix')}</span>
     </p>
   </div>
 </footer>

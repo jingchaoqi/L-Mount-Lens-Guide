@@ -9,7 +9,11 @@ export const dict = {
     'nav.lenses': 'Lenses',
     'nav.about': 'About & Disclaimer',
     'nav.github': 'GitHub',
-    'lang.toggleLabel': '中文',
+    // Accessible name for the language switcher. The links inside it are
+    // labelled with each language's own name (see src/lib/locales.js), which
+    // is deliberately *not* translated — someone who can't read the current
+    // page still has to be able to find their language.
+    'lang.switchLabel': 'Switch language',
 
     // Brand display names — identity mapping in English, translated in zh
     // (see below). Keyed by the exact `brand` string used in lenses.json.
@@ -40,6 +44,7 @@ export const dict = {
     'home.intro': 'An unofficial, community-maintained directory of L-Mount lenses.',
 
     'filterBar.searchPlaceholder': 'Search brand, model, or focal length (e.g. "Sigma 35mm")',
+    'filterBar.searchAriaLabel': 'Search lenses',
     'filterBar.brand': 'Brand',
     'filterBar.allBrands': 'All brands',
     'filterBar.allianceBrandsGroup': 'L-Mount Alliance members',
@@ -207,6 +212,23 @@ export const dict = {
       + 'submissions are welcome via GitHub. See <code>CONTRIBUTING.md</code> for how to submit a new lens entry.',
     'about.repoLink': 'the project repository',
     'about.repoLink2': 'GitHub',
+
+    // Page <title> and <meta description>. Rendered per locale at build
+    // time, which is what makes each language separately indexable.
+    'seo.homeTitle': 'L-Mount Lens Guide — Unofficial L-Mount Lens Database',
+    'seo.homeDescription': 'Browse, search, and filter {count} L-Mount lenses from L-Mount Alliance '
+      + 'members (Leica, Panasonic, Sigma, and other Alliance brands) and third-party manufacturers. '
+      + 'Unofficial, community-maintained.',
+    'seo.aboutTitle': 'About & Disclaimer — L-Mount Lens Guide',
+    'seo.aboutDescription': 'L-Mount Lens Guide is an unofficial, community-maintained project. It is '
+      + 'not affiliated with, sponsored by, or endorsed by Leica Camera AG, the L-Mount Alliance, '
+      + 'Panasonic, Sigma, or any other manufacturer.',
+    'seo.compareTitle': 'Lens Comparison — L-Mount Lens Guide',
+    'seo.compareDescription': 'Compare specifications of selected L-Mount lenses side by side.',
+    'seo.lensTitle': '{brand} {model} — L-Mount Lens Guide',
+    'seo.lensDescription': '{brand} {model}: {focal} {aperture}, {format}, {focus}, {weight}. {alliance}',
+    'seo.lensAlliance': 'L-Mount Alliance member.',
+    'seo.lensThirdParty': 'Third-party L-Mount lens (not an Alliance member).',
   },
 
   zh: {
@@ -214,7 +236,7 @@ export const dict = {
     'nav.lenses': '镜头列表',
     'nav.about': '关于与免责声明',
     'nav.github': 'GitHub',
-    'lang.toggleLabel': 'EN',
+    'lang.switchLabel': '切换语言',
 
     'brand.Leica': '徕卡',
     'brand.Panasonic': '松下',
@@ -242,6 +264,7 @@ export const dict = {
     'home.intro': '一个非官方、社区维护的 L 卡口镜头目录',
 
     'filterBar.searchPlaceholder': '搜索品牌、型号或焦段（例如 "适马 35mm"）',
+    'filterBar.searchAriaLabel': '搜索镜头',
     'filterBar.brand': '品牌',
     'filterBar.allBrands': '全部品牌',
     'filterBar.allianceBrandsGroup': 'L-Mount Alliance 联盟成员',
@@ -399,5 +422,18 @@ export const dict = {
       + '的方法请见 <code>CONTRIBUTING.md</code>。',
     'about.repoLink': '项目仓库',
     'about.repoLink2': 'GitHub',
+
+    'seo.homeTitle': 'L 卡口镜头指南 — 非官方 L 卡口镜头数据库',
+    'seo.homeDescription': '浏览、搜索并筛选 {count} 支 L 卡口镜头，涵盖 L 卡口联盟成员'
+      + '（徕卡、松下、适马及其他联盟品牌）与第三方厂商产品。非官方，社区维护。',
+    'seo.aboutTitle': '关于与免责声明 — L 卡口镜头指南',
+    'seo.aboutDescription': 'L 卡口镜头指南是一个非官方、由社区维护的项目，与徕卡相机股份公司、'
+      + 'L 卡口联盟、松下、适马或任何其他厂商均无从属、赞助或背书关系。',
+    'seo.compareTitle': '镜头对比 — L 卡口镜头指南',
+    'seo.compareDescription': '并排对比所选 L 卡口镜头的规格参数。',
+    'seo.lensTitle': '{brand} {model} — L 卡口镜头指南',
+    'seo.lensDescription': '{brand} {model}：{focal} {aperture}，{format}，{focus}，{weight}。{alliance}',
+    'seo.lensAlliance': 'L 卡口联盟成员产品。',
+    'seo.lensThirdParty': '第三方 L 卡口镜头（非联盟成员）。',
   },
 };

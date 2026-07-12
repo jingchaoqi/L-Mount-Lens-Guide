@@ -3,20 +3,49 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CompareBar from '../components/CompareBar.astro';
 import { getAllLenses } from '../lib/lenses';
+import {
+  LOCALES,
+  DEFAULT_LOCALE,
+  LANG_STORAGE_KEY,
+  getLocale,
+  localeHref,
+  localeAlternates,
+  type Lang,
+  type PagePath,
+} from '../lib/i18n';
 import '../styles/global.css';
 
 interface Props {
+  /** Locale this page was rendered in. */
+  lang: Lang;
+  /** This page's identity, with no base and no locale prefix: '' | 'about' |
+   *  'compare' | 'lenses/<id>'. Used to link to the same page in every other
+   *  language (hreflang alternates + the header's language switcher). */
+  path: PagePath;
+  /** Already translated by the page — this layout does not translate them. */
   title: string;
   description: string;
 }
 
-const { title, description } = Astro.props;
-const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const { lang, path, title, description } = Astro.props;
+
+const locale = getLocale(lang);
+const isDefaultLocale = lang === DEFAULT_LOCALE;
+const base = import.meta.env.BASE_URL;
+const canonicalUrl = new URL(localeHref(lang, path), Astro.site);
+const alternates = localeAlternates(path);
+
+// Data for the first-visit language redirect below. The matching *rules*
+// (which navigator.language tags map to which locale) come straight from
+// the locale registry, so adding a language never means editing the script.
+const redirectLocales = LOCALES.map((l) => ({ code: l.code, prefixes: l.matchPrefixes }));
 
 // Minimal id -> {brand, model} index so compare.js can render
 // human-readable names in the floating comparison panel on any page —
 // not just the home page, where the full card/table markup (and thus
-// the lens names) already happens to be present in the DOM.
+// the lens names) already happens to be present in the DOM. The brand is
+// left untranslated here; compare.js localizes it through the same
+// dictionary, so one index serves every locale.
 // Escaped defensively before embedding below: a literal closing script
 // delimiter inside the JSON string would otherwise end the element
 // early. No current lens name contains one, but it costs nothing.
@@ -25,59 +54,121 @@ const lensIndexJson = JSON.stringify(
 ).replace(/</g, '\\u003c');
 ---
 <!doctype html>
-<html lang="en">
+<html lang={locale.htmlLang} data-locale={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--
-      Anti-flash: the page is server-rendered in English, but i18n.js may
-      immediately switch it to Chinese (saved preference or browser locale).
-      Hide the page until that first pass completes so visitors never see
-      an English → Chinese flicker. i18n.js marks `data-i18n-ready` on
-      <html> as soon as it has applied the correct language. The timeout
-      is a safety net in case JS fails to load.
-    -->
-    <style is:inline>
-      html:not([data-i18n-ready]) body {
-        visibility: hidden;
-      }
-    </style>
-    <noscript>
-      <style is:inline>
-        body {
-          visibility: visible !important;
-        }
-      </style>
-    </noscript>
-    <script is:inline>
-      setTimeout(function revealFallback() {
-        document.documentElement.setAttribute('data-i18n-ready', '');
-      }, 1500);
-    </script>
+    {/*
+      First-visit language routing. Written as an expression comment rather
+      than an HTML one so this explanation stays in the source without being
+      shipped to every visitor.
+
+      Every page is server-rendered per language (see the [...locale] routes),
+      so what the browser paints is already correct — there is no translation
+      pass to wait for and therefore no wrong-language flash to hide. The only
+      thing left to decide is *which* language's page a visitor who landed on
+      an un-prefixed (default-locale) URL should get. That is this script's
+      whole job.
+
+      It must stay a plain blocking inline script in the document head: it
+      runs before the body is parsed, so nothing has painted yet when it
+      redirects, and the visitor never sees the default language. A
+      module/deferred script would run after first paint — i.e. exactly the
+      flash we are avoiding. That is also why the locale-matching loop is
+      spelled out here rather than imported: an inline script cannot import,
+      so the registry is passed in as data via define:vars instead, keeping
+      the matching rules single-sourced in locales.js.
+
+      Locale-prefixed URLs (/zh/...) deliberately never redirect — an explicit
+      URL wins, stays shareable, and cannot bounce in a loop.
+    */}
+    {isDefaultLocale && (
+      <script
+        is:inline
+        define:vars={{
+          base,
+          defaultLocale: DEFAULT_LOCALE,
+          storageKey: LANG_STORAGE_KEY,
+          redirectLocales,
+        }}
+      >
+        (function () {
+          try {
+            var stored = null;
+            try {
+              stored = localStorage.getItem(storageKey);
+            } catch (e) {
+              /* localStorage blocked (privacy mode) — fall back to the browser's languages. */
+            }
+
+            var codes = redirectLocales.map(function (l) { return l.code; });
+            var picked = codes.indexOf(stored) !== -1 ? stored : null;
+
+            if (!picked) {
+              var tags = (navigator.languages && navigator.languages.length)
+                ? navigator.languages
+                : [navigator.language || ''];
+              for (var i = 0; i < tags.length && !picked; i++) {
+                var tag = String(tags[i] || '').toLowerCase();
+                for (var j = 0; j < redirectLocales.length && !picked; j++) {
+                  var prefixes = redirectLocales[j].prefixes;
+                  for (var k = 0; k < prefixes.length; k++) {
+                    if (tag === prefixes[k] || tag.indexOf(prefixes[k] + '-') === 0) {
+                      picked = redirectLocales[j].code;
+                      break;
+                    }
+                  }
+                }
+              }
+            }
+
+            if (!picked || picked === defaultLocale) return;
+
+            // Reuse the current pathname verbatim (rather than rebuilding it)
+            // so any trailing slash the host added is preserved and we don't
+            // bounce through a second redirect.
+            var here = location.pathname;
+            if (here.indexOf(base) !== 0) return;
+            location.replace(
+              base + picked + '/' + here.slice(base.length) + location.search + location.hash
+            );
+          } catch (e) {
+            /* Language routing must never be able to block rendering. */
+          }
+        })();
+      </script>
+    )}
+
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
     <meta name="robots" content="index, follow" />
 
+    {alternates.map((alt) => (
+      <link rel="alternate" hreflang={alt.htmlLang} href={new URL(alt.href, Astro.site)} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={new URL(localeHref(DEFAULT_LOCALE, path), Astro.site)} />
+
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:locale" content={locale.htmlLang.replace('-', '_')} />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
 
-    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
   </head>
   <body>
-    <Header />
+    <Header lang={lang} path={path} />
     <main class="container">
       <slot />
     </main>
-    <Footer />
-    <CompareBar />
+    <Footer lang={lang} />
+    <CompareBar lang={lang} />
     <script type="application/json" id="lens-index" is:inline set:html={lensIndexJson}></script>
     <script src="../scripts/i18n.js"></script>
     <script src="../scripts/compare.js"></script>

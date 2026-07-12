@@ -27,15 +27,17 @@
     "sourceUrls": [
       "https://leica-camera.com/en-int/photography/lenses/summicron-sl"
     ],
-    "notes": "All-metal build typical of Leica SL primes; heavier than most 35mm f/2 lenses in this class.",
+    "notes": {
+      "en": "All-metal build typical of Leica SL primes; heavier than most 35mm f/2 lenses in this class.",
+      "zh": "全金属机身是徕卡 SL 定焦头的典型做法，比同规格的大多数 35mm f/2 镜头更重。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Leica+Summicron-SL+35mm+f2+ASPH"
       }
-    ],
-    "notesZh": "全金属机身是徕卡 SL 定焦头的典型做法，比同规格的大多数 35mm f/2 镜头更重。"
+    ]
   },
   {
     "id": "leica-summilux-sl-50mm-f1-4-asph",
@@ -65,15 +67,17 @@
     "sourceUrls": [
       "https://leica-camera.com/en-int/photography/lenses/summilux-sl"
     ],
-    "notes": "One of the launch lenses for the Leica SL system.",
+    "notes": {
+      "en": "One of the launch lenses for the Leica SL system.",
+      "zh": "徕卡 SL 系统的首发镜头之一。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Leica+Summilux-SL+50mm+f1.4+ASPH"
       }
-    ],
-    "notesZh": "徕卡 SL 系统的首发镜头之一。"
+    ]
   },
   {
     "id": "leica-apo-summicron-sl-90mm-f2-asph",
@@ -103,15 +107,17 @@
     "sourceUrls": [
       "https://leica-camera.com/en-int/photography/lenses/apo-summicron-sl"
     ],
-    "notes": "APO-corrected telephoto prime, praised for near-zero chromatic aberration.",
+    "notes": {
+      "en": "APO-corrected telephoto prime, praised for near-zero chromatic aberration.",
+      "zh": "APO 复消色差长焦定焦头，色差控制接近于零，广受好评。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Leica+APO-Summicron-SL+90mm+f2"
       }
-    ],
-    "notesZh": "APO 复消色差长焦定焦头，色差控制接近于零，广受好评。"
+    ]
   },
   {
     "id": "leica-vario-elmarit-sl-24-70mm-f2-8-asph",
@@ -141,15 +147,17 @@
     "sourceUrls": [
       "https://leica-camera.com/en-int/photography/lenses/vario-elmarit-sl"
     ],
-    "notes": "Standard zoom launch lens for the Leica SL system.",
+    "notes": {
+      "en": "Standard zoom launch lens for the Leica SL system.",
+      "zh": "徕卡 SL 系统的首发标准变焦头。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Leica+Vario-Elmarit-SL+24-70mm+f2.8"
       }
-    ],
-    "notesZh": "徕卡 SL 系统的首发标准变焦头。"
+    ]
   },
   {
     "id": "leica-apo-vario-elmarit-sl-90-280mm-f2-8-4",
@@ -178,15 +186,17 @@
     "sourceUrls": [
       "https://leica-camera.com/en-int/photography/lenses/apo-vario-elmarit-sl"
     ],
-    "notes": "Telephoto zoom counterpart to the 24-70mm launch lens.",
+    "notes": {
+      "en": "Telephoto zoom counterpart to the 24-70mm launch lens.",
+      "zh": "与 24-70mm 首发镜头搭配的长焦变焦头。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Leica+APO-Vario-Elmarit-SL+90-280mm"
       }
-    ],
-    "notesZh": "与 24-70mm 首发镜头搭配的长焦变焦头。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-24-105mm-f4-macro-ois",
@@ -217,15 +227,17 @@
     "sourceUrls": [
       "https://www.panasonic.com/global/consumer/lumix/lenses/s-series/s-r24105.html"
     ],
-    "notes": "Kit-style standard zoom for the Lumix S system with close-focus macro capability.",
+    "notes": {
+      "en": "Kit-style standard zoom for the Lumix S system with close-focus macro capability.",
+      "zh": "Lumix S 系统的套机式标准变焦头，具备近摄微距能力。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Panasonic+Lumix+S+24-105mm+F4+Macro"
       }
-    ],
-    "notesZh": "Lumix S 系统的套机式标准变焦头，具备近摄微距能力。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-pro-50mm-f1-4",
@@ -255,15 +267,17 @@
     "sourceUrls": [
       "https://www.panasonic.com/global/consumer/lumix/lenses/s-series/s-x50.html"
     ],
-    "notes": "Part of Panasonic's flagship PRO line co-engineered with Leica optical standards.",
+    "notes": {
+      "en": "Part of Panasonic's flagship PRO line co-engineered with Leica optical standards.",
+      "zh": "松下旗舰 PRO 系列之一，与徕卡共同制定光学标准。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Panasonic+Lumix+S+PRO+50mm+F1.4"
       }
-    ],
-    "notesZh": "松下旗舰 PRO 系列之一，与徕卡共同制定光学标准。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-pro-70-200mm-f2-8-ois",
@@ -292,15 +306,17 @@
     "sourceUrls": [
       "https://www.panasonic.com/global/consumer/lumix/lenses/s-series/s-e70200.html"
     ],
-    "notes": "Professional telephoto zoom with dual-mode dust/splash resistant construction.",
+    "notes": {
+      "en": "Professional telephoto zoom with dual-mode dust/splash resistant construction.",
+      "zh": "专业级长焦变焦头，采用双重防尘防溅结构。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Panasonic+Lumix+S+PRO+70-200mm+F2.8"
       }
-    ],
-    "notesZh": "专业级长焦变焦头，采用双重防尘防溅结构。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-20-60mm-f3-5-5-6",
@@ -330,15 +346,17 @@
     "sourceUrls": [
       "https://www.panasonic.com/global/consumer/lumix/lenses/s-series/s-r2060.html"
     ],
-    "notes": "Compact, lightweight kit zoom bundled with entry-level Lumix S bodies.",
+    "notes": {
+      "en": "Compact, lightweight kit zoom bundled with entry-level Lumix S bodies.",
+      "zh": "紧凑轻便的套机变焦头，常随入门级 Lumix S 机身搭售。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Panasonic+Lumix+S+20-60mm"
       }
-    ],
-    "notesZh": "紧凑轻便的套机变焦头，常随入门级 Lumix S 机身搭售。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-85mm-f1-8",
@@ -367,15 +385,17 @@
     "sourceUrls": [
       "https://www.panasonic.com/global/consumer/lumix/lenses/s-series/s-85mm.html"
     ],
-    "notes": "Compact, budget-friendly portrait prime for the Lumix S line.",
+    "notes": {
+      "en": "Compact, budget-friendly portrait prime for the Lumix S line.",
+      "zh": "Lumix S 系列里紧凑、平价的人像定焦头。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Panasonic+Lumix+S+85mm+F1.8"
       }
-    ],
-    "notesZh": "Lumix S 系列里紧凑、平价的人像定焦头。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-100mm-f2-8-macro",
@@ -405,15 +425,17 @@
     "sourceUrls": [
       "https://www.panasonic.com/global/consumer/lumix/lenses/s-series/s-100mm-macro.html"
     ],
-    "notes": "True 1:1 macro reproduction ratio in a compact, lightweight body.",
+    "notes": {
+      "en": "True 1:1 macro reproduction ratio in a compact, lightweight body.",
+      "zh": "机身紧凑轻便，可实现真正的 1:1 微距放大倍率。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Panasonic+Lumix+S+100mm+F2.8+Macro"
       }
-    ],
-    "notesZh": "机身紧凑轻便，可实现真正的 1:1 微距放大倍率。"
+    ]
   },
   {
     "id": "sigma-35mm-f1-4-dg-dn-art",
@@ -443,15 +465,17 @@
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c027_35_14/"
     ],
-    "notes": "Redesigned mirrorless-native version of Sigma's popular 35mm Art prime.",
+    "notes": {
+      "en": "Redesigned mirrorless-native version of Sigma's popular 35mm Art prime.",
+      "zh": "适马人气 35mm Art 定焦头的无反原生重新设计版本。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Sigma+35mm+F1.4+DG+DN+Art"
       }
-    ],
-    "notesZh": "适马人气 35mm Art 定焦头的无反原生重新设计版本。"
+    ]
   },
   {
     "id": "sigma-24mm-f1-4-dg-dn-art",
@@ -480,15 +504,17 @@
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c029_24_14/"
     ],
-    "notes": "Popular for astro and landscape work due to low coma at f/1.4.",
+    "notes": {
+      "en": "Popular for astro and landscape work due to low coma at f/1.4.",
+      "zh": "f/1.4 光圈下彗差控制出色，深受星空摄影和风光摄影爱好者喜爱。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Sigma+24mm+F1.4+DG+DN+Art"
       }
-    ],
-    "notesZh": "f/1.4 光圈下彗差控制出色，深受星空摄影和风光摄影爱好者喜爱。"
+    ]
   },
   {
     "id": "sigma-65mm-f2-dg-dn-contemporary",
@@ -518,15 +544,17 @@
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c028_65_2/"
     ],
-    "notes": "Part of the I-series all-metal compact prime lineup.",
+    "notes": {
+      "en": "Part of the I-series all-metal compact prime lineup.",
+      "zh": "I 系列全金属紧凑定焦头阵容之一。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Sigma+65mm+F2+DG+DN+Contemporary"
       }
-    ],
-    "notesZh": "I 系列全金属紧凑定焦头阵容之一。"
+    ]
   },
   {
     "id": "sigma-100-400mm-f5-6-3-dg-dn-os-contemporary",
@@ -555,15 +583,17 @@
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c032_100_400/"
     ],
-    "notes": "Affordable super-telephoto zoom for wildlife and sports.",
+    "notes": {
+      "en": "Affordable super-telephoto zoom for wildlife and sports.",
+      "zh": "价格亲民的超长焦变焦头，适合野生动物和体育摄影。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Sigma+100-400mm+F5-6.3+DG+DN+OS"
       }
-    ],
-    "notesZh": "价格亲民的超长焦变焦头，适合野生动物和体育摄影。"
+    ]
   },
   {
     "id": "sigma-28-70mm-f2-8-dg-dn-contemporary",
@@ -593,15 +623,17 @@
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c031_28_70_28/"
     ],
-    "notes": "Compact f/2.8 standard zoom, notably lighter than most competitors.",
+    "notes": {
+      "en": "Compact f/2.8 standard zoom, notably lighter than most competitors.",
+      "zh": "紧凑型 f/2.8 标准变焦头，比大多数同类竞品更轻。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Sigma+28-70mm+F2.8+DG+DN"
       }
-    ],
-    "notesZh": "紧凑型 f/2.8 标准变焦头，比大多数同类竞品更轻。"
+    ]
   },
   {
     "id": "sigma-105mm-f2-8-dg-dn-macro-art",
@@ -631,15 +663,17 @@
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c030_105_28/"
     ],
-    "notes": "1:1 macro prime built to Sigma's Art-line optical standard.",
+    "notes": {
+      "en": "1:1 macro prime built to Sigma's Art-line optical standard.",
+      "zh": "按适马 Art 系列光学标准打造的 1:1 微距定焦头。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Sigma+105mm+F2.8+DG+DN+Macro+Art"
       }
-    ],
-    "notesZh": "按适马 Art 系列光学标准打造的 1:1 微距定焦头。"
+    ]
   },
   {
     "id": "sigma-150-600mm-f5-6-3-dg-dn-os-sports",
@@ -668,15 +702,17 @@
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c033_150_600/"
     ],
-    "notes": "Flagship Sports-line super-telephoto zoom with 1:1 macro capability at 600mm.",
+    "notes": {
+      "en": "Flagship Sports-line super-telephoto zoom with 1:1 macro capability at 600mm.",
+      "zh": "Sports 系列旗舰超长焦变焦头，600mm 端也能实现 1:1 微距放大。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Sigma+150-600mm+F5-6.3+DG+DN+OS+Sports"
       }
-    ],
-    "notesZh": "Sports 系列旗舰超长焦变焦头，600mm 端也能实现 1:1 微距放大。"
+    ]
   },
   {
     "id": "viltrox-af-35mm-f1-8-fe",
@@ -706,15 +742,17 @@
     "sourceUrls": [
       "https://www.viltrox.com/"
     ],
-    "notes": "Budget full-frame autofocus prime; L-mount firmware/version added after initial Sony E release.",
+    "notes": {
+      "en": "Budget full-frame autofocus prime; L-mount firmware/version added after initial Sony E release.",
+      "zh": "平价全画幅自动对焦定焦头；L 卡口固件/版本是在索尼 E 卡口首发后追加的。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "Viltrox Store (AliExpress)",
         "url": "https://www.aliexpress.com/wholesale?SearchText=Viltrox+35mm+F1.8+FE+L-mount"
       }
-    ],
-    "notesZh": "平价全画幅自动对焦定焦头；L 卡口固件/版本是在索尼 E 卡口首发后追加的。"
+    ]
   },
   {
     "id": "viltrox-af-50mm-f1-8-fe",
@@ -744,15 +782,17 @@
     "sourceUrls": [
       "https://www.viltrox.com/"
     ],
-    "notes": "Very compact and light; popular low-cost nifty-fifty alternative.",
+    "notes": {
+      "en": "Very compact and light; popular low-cost nifty-fifty alternative.",
+      "zh": "体积小巧重量轻，是热门的平价标准定焦头替代选择。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "Viltrox Store (AliExpress)",
         "url": "https://www.aliexpress.com/wholesale?SearchText=Viltrox+50mm+F1.8+FE+L-mount"
       }
-    ],
-    "notesZh": "体积小巧重量轻，是热门的平价标准定焦头替代选择。"
+    ]
   },
   {
     "id": "viltrox-af-85mm-f1-8-fe-ii",
@@ -781,15 +821,17 @@
     "sourceUrls": [
       "https://www.viltrox.com/"
     ],
-    "notes": "Second-generation version adds weather sealing over the original AF 85mm F1.8.",
+    "notes": {
+      "en": "Second-generation version adds weather sealing over the original AF 85mm F1.8.",
+      "zh": "第二代版本相比初代 AF 85mm F1.8 增加了防尘防滴密封。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "Viltrox Store (AliExpress)",
         "url": "https://www.aliexpress.com/wholesale?SearchText=Viltrox+85mm+F1.8+FE+II+L-mount"
       }
-    ],
-    "notesZh": "第二代版本相比初代 AF 85mm F1.8 增加了防尘防滴密封。"
+    ]
   },
   {
     "id": "viltrox-af-23mm-f1-4",
@@ -819,15 +861,17 @@
     "sourceUrls": [
       "https://www.viltrox.com/"
     ],
-    "notes": "APS-C prime (roughly 35mm full-frame equivalent field of view).",
+    "notes": {
+      "en": "APS-C prime (roughly 35mm full-frame equivalent field of view).",
+      "zh": "APS-C 画幅定焦头（等效全画幅约 35mm 视角）。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "Viltrox Store (AliExpress)",
         "url": "https://www.aliexpress.com/wholesale?SearchText=Viltrox+23mm+F1.4+L-mount"
       }
-    ],
-    "notesZh": "APS-C 画幅定焦头（等效全画幅约 35mm 视角）。"
+    ]
   },
   {
     "id": "sirui-aurora-85mm-f1-4",
@@ -857,15 +901,17 @@
       "https://store.sirui.com/products/sirui-aurora-series-85mm-full-frame-autofocus-lens",
       "https://phillipreeve.net/blog/review-sirui-85mm-1-4-aurora/"
     ],
-    "notes": "Sirui's first full-frame autofocus lens and its debut L-Mount product, released alongside the brand joining the L-Mount Alliance.",
+    "notes": {
+      "en": "Sirui's first full-frame autofocus lens and its debut L-Mount product, released alongside the brand joining the L-Mount Alliance.",
+      "zh": "思锐首款全画幅自动对焦镜头，也是其加入 L-Mount Alliance 后推出的首款 L 卡口产品。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sirui+Aurora+85mm+F1.4+L-mount"
       }
-    ],
-    "notesZh": "思锐首款全画幅自动对焦镜头，也是其加入 L-Mount Alliance 后推出的首款 L 卡口产品。"
+    ]
   },
   {
     "id": "sirui-aurora-35mm-f1-4",
@@ -896,15 +942,17 @@
       "https://store.sirui.com/products/sirui-aurora-series-35mm-f1-4-full-frame-autofocus-lens",
       "https://dustinabbott.net/2025/11/sirui-aurora-35mm-f1-4-z-review/"
     ],
-    "notes": "Second Aurora-series lens, expanding the AF lineup to wide-angle; ships in Sony E, Nikon Z, Fuji X, and L-mount versions.",
+    "notes": {
+      "en": "Second Aurora-series lens, expanding the AF lineup to wide-angle; ships in Sony E, Nikon Z, Fuji X, and L-mount versions.",
+      "zh": "Aurora 系列第二款镜头，将自动对焦阵容扩展到广角端，提供索尼 E、尼康 Z、富士 X 和 L 卡口版本。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sirui+Aurora+35mm+F1.4+L-mount"
       }
-    ],
-    "notesZh": "Aurora 系列第二款镜头，将自动对焦阵容扩展到广角端，提供索尼 E、尼康 Z、富士 X 和 L 卡口版本。"
+    ]
   },
   {
     "id": "ttartisan-50mm-f1-4",
@@ -933,15 +981,17 @@
     "sourceUrls": [
       "https://en.ttartisan.com/"
     ],
-    "notes": "All-manual budget prime with all-metal construction; cross-mount, including L-mount.",
+    "notes": {
+      "en": "All-manual budget prime with all-metal construction; cross-mount, including L-mount.",
+      "zh": "全手动对焦的平价定焦头，全金属机身，支持多种卡口，包括 L 卡口。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "TTArtisan Store (AliExpress)",
         "url": "https://www.aliexpress.com/wholesale?SearchText=TTArtisan+50mm+F1.4+L-mount"
       }
-    ],
-    "notesZh": "全手动对焦的平价定焦头，全金属机身，支持多种卡口，包括 L 卡口。"
+    ]
   },
   {
     "id": "ttartisan-21mm-f1-5-asph",
@@ -970,15 +1020,17 @@
     "sourceUrls": [
       "https://en.ttartisan.com/"
     ],
-    "notes": "Fast manual-focus wide-angle prime aimed at astro and landscape shooters.",
+    "notes": {
+      "en": "Fast manual-focus wide-angle prime aimed at astro and landscape shooters.",
+      "zh": "大光圈手动对焦广角定焦头，主打星空与风光摄影。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "TTArtisan Store (AliExpress)",
         "url": "https://www.aliexpress.com/wholesale?SearchText=TTArtisan+21mm+F1.5+L-mount"
       }
-    ],
-    "notesZh": "大光圈手动对焦广角定焦头，主打星空与风光摄影。"
+    ]
   },
   {
     "id": "7artisans-35mm-f1-4",
@@ -1007,15 +1059,17 @@
     "sourceUrls": [
       "https://www.7artisans-photoelectric.com/"
     ],
-    "notes": "Entry-level manual prime, roughly 52.5mm full-frame equivalent on APS-C.",
+    "notes": {
+      "en": "Entry-level manual prime, roughly 52.5mm full-frame equivalent on APS-C.",
+      "zh": "入门级手动定焦头，在 APS-C 画幅上等效全画幅约 52.5mm 视角。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "7Artisans Store (AliExpress)",
         "url": "https://www.aliexpress.com/wholesale?SearchText=7artisans+35mm+F1.4+L-mount"
       }
-    ],
-    "notesZh": "入门级手动定焦头，在 APS-C 画幅上等效全画幅约 52.5mm 视角。"
+    ]
   },
   {
     "id": "7artisans-60mm-f2-8-macro",
@@ -1044,15 +1098,17 @@
     "sourceUrls": [
       "https://www.7artisans-photoelectric.com/"
     ],
-    "notes": "Budget 1:1 manual-focus macro lens for APS-C bodies.",
+    "notes": {
+      "en": "Budget 1:1 manual-focus macro lens for APS-C bodies.",
+      "zh": "面向 APS-C 机身的平价 1:1 手动对焦微距镜头。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "7Artisans Store (AliExpress)",
         "url": "https://www.aliexpress.com/wholesale?SearchText=7artisans+60mm+F2.8+Macro+L-mount"
       }
-    ],
-    "notesZh": "面向 APS-C 机身的平价 1:1 手动对焦微距镜头。"
+    ]
   },
   {
     "id": "laowa-15mm-f2-zero-d",
@@ -1081,15 +1137,17 @@
     "sourceUrls": [
       "https://www.venuslens.net/"
     ],
-    "notes": "Near-zero optical distortion ultra-wide, popular for architecture and astro.",
+    "notes": {
+      "en": "Near-zero optical distortion ultra-wide, popular for architecture and astro.",
+      "zh": "近乎零畸变的超广角镜头，常用于建筑摄影和星空摄影。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Laowa+15mm+F2+Zero-D+L-mount"
       }
-    ],
-    "notesZh": "近乎零畸变的超广角镜头，常用于建筑摄影和星空摄影。"
+    ]
   },
   {
     "id": "laowa-100mm-f2-8-2x-ultra-macro-apo",
@@ -1119,15 +1177,17 @@
     "sourceUrls": [
       "https://www.venuslens.net/"
     ],
-    "notes": "Reaches 2:1 magnification, double a standard 1:1 macro lens.",
+    "notes": {
+      "en": "Reaches 2:1 magnification, double a standard 1:1 macro lens.",
+      "zh": "可实现 2:1 放大倍率，是标准 1:1 微距镜头的两倍。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?q=Laowa+100mm+F2.8+2X+Macro+APO+L-mount"
       }
-    ],
-    "notesZh": "可实现 2:1 放大倍率，是标准 1:1 微距镜头的两倍。"
+    ]
   },
   {
     "id": "sigma-10-18mm-f2-8-dc-dn-contemporary",
@@ -1157,15 +1217,17 @@
       "https://www.sigma-global.com/en/lenses/c023_10_18_28/",
       "https://www.dpreview.com/news/9653545530/sigma-10-18mm-f2-8-dc-dn-sony-fujifilm-l-mount"
     ],
-    "notes": "APS-C ultra-wide constant-f/2.8 zoom whose weather sealing is limited to a rubber gasket at the mount rather than a full dust/splash-resistant barrel.",
+    "notes": {
+      "en": "APS-C ultra-wide constant-f/2.8 zoom whose weather sealing is limited to a rubber gasket at the mount rather than a full dust/splash-resistant barrel.",
+      "zh": "APS-C 画幅恒定 f/2.8 超广角变焦头，防护仅限于卡口处的橡胶密封圈，并非全金属桶身的防尘防溅结构。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma+10-18mm+F2.8+DC+DN+Contemporary+L-Mount"
       }
-    ],
-    "notesZh": "APS-C 画幅恒定 f/2.8 超广角变焦头，防护仅限于卡口处的橡胶密封圈，并非全金属桶身的防尘防溅结构。"
+    ]
   },
   {
     "id": "sigma-14-24mm-f2-8-dg-dn-art",
@@ -1195,15 +1257,17 @@
       "https://www.sigma-global.com/en/lenses/a019_14_24_28/",
       "https://www.dpreview.com/news/0635041465/sigma-announces-14-24mm-f2-8-dg-dn-art-for-full-frame-mirrorless"
     ],
-    "notes": "Ultra-wide full-frame f/2.8 zoom with a bulbous front element that precludes front filters, using a rear gel-filter holder instead.",
+    "notes": {
+      "en": "Ultra-wide full-frame f/2.8 zoom with a bulbous front element that precludes front filters, using a rear gel-filter holder instead.",
+      "zh": "全画幅 f/2.8 超广角变焦头，前镜片呈球面凸起无法安装前置滤镜，改用后置凝胶滤镜插槽。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma+14-24mm+F2.8+DG+DN+Art+L-Mount"
       }
-    ],
-    "notesZh": "全画幅 f/2.8 超广角变焦头，前镜片呈球面凸起无法安装前置滤镜，改用后置凝胶滤镜插槽。"
+    ]
   },
   {
     "id": "sigma-16-28mm-f2-8-dg-dn-contemporary",
@@ -1233,15 +1297,17 @@
       "https://www.sigma-global.com/en/lenses/c022_16_28_28/",
       "https://dustinabbott.net/2022/06/sigma-16-28mm-f2-8-dg-dn-review/"
     ],
-    "notes": "Compact full-frame wide-angle zoom; independent reviews note the weather sealing is limited to a mount gasket rather than full barrel sealing.",
+    "notes": {
+      "en": "Compact full-frame wide-angle zoom; independent reviews note the weather sealing is limited to a mount gasket rather than full barrel sealing.",
+      "zh": "紧凑型全画幅广角变焦头；据多方评测，其防护仅限于卡口处密封圈，并非整支镜身的防尘防溅结构。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma+16-28mm+F2.8+DG+DN+Contemporary+L-Mount"
       }
-    ],
-    "notesZh": "紧凑型全画幅广角变焦头；据多方评测，其防护仅限于卡口处密封圈，并非整支镜身的防尘防溅结构。"
+    ]
   },
   {
     "id": "sigma-16-300mm-f3-5-6-7-dc-os-contemporary",
@@ -1272,15 +1338,17 @@
       "https://www.sigma-global.com/en/lenses/c025_16_300_35_67/",
       "https://www.dpreview.com/news/0230340961/sigma-announces-16-300mm-f3-5-6-7-dc-os-contemporary-zoom"
     ],
-    "notes": "18.75x APS-C superzoom giving roughly 24-450mm full-frame-equivalent coverage in a single lens with OS2 stabilization.",
+    "notes": {
+      "en": "18.75x APS-C superzoom giving roughly 24-450mm full-frame-equivalent coverage in a single lens with OS2 stabilization.",
+      "zh": "18.75 倍 APS-C 超级变焦头，单支镜头即可覆盖等效全画幅约 24-450mm 焦段，配备 OS2 防抖。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma+16-300mm+F3.5-6.7+DC+OS+Contemporary+L-Mount"
       }
-    ],
-    "notesZh": "18.75 倍 APS-C 超级变焦头，单支镜头即可覆盖等效全画幅约 24-450mm 焦段，配备 OS2 防抖。"
+    ]
   },
   {
     "id": "sigma-18-50mm-f2-8-dc-dn-contemporary",
@@ -1310,15 +1378,17 @@
       "https://www.sigma-global.com/en/lenses/c021_18_50_28/",
       "https://www.dpreview.com/news/8653551237/sigma-launches-18-50mm-f2-8-dc-dn-for-e-and-l-mounts"
     ],
-    "notes": "Compact constant-f/2.8 standard zoom for APS-C, roughly equivalent to 27-75mm in full-frame terms; mount-only rubber sealing.",
+    "notes": {
+      "en": "Compact constant-f/2.8 standard zoom for APS-C, roughly equivalent to 27-75mm in full-frame terms; mount-only rubber sealing.",
+      "zh": "APS-C 画幅恒定 f/2.8 紧凑标准变焦头，等效全画幅约 27-75mm，仅卡口处有橡胶密封。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma+18-50mm+F2.8+DC+DN+Contemporary+L-Mount"
       }
-    ],
-    "notesZh": "APS-C 画幅恒定 f/2.8 紧凑标准变焦头，等效全画幅约 27-75mm，仅卡口处有橡胶密封。"
+    ]
   },
   {
     "id": "sigma-20-200mm-f3-5-6-3-dg-contemporary",
@@ -1349,15 +1419,17 @@
       "https://www.sigma-global.com/en/lenses/c025_20_200_35_63/",
       "https://petapixel.com/2025/09/09/sigma-20-200mm-f-3-5-6-3-dg-contemporary-is-a-worlds-first-full-frame-zoom-lens/"
     ],
-    "notes": "Marketed as the world's first full-frame 10x zoom for mirrorless; the official name omits OS and DN because it has no in-lens stabilization and relies on in-body IS.",
+    "notes": {
+      "en": "Marketed as the world's first full-frame 10x zoom for mirrorless; the official name omits OS and DN because it has no in-lens stabilization and relies on in-body IS.",
+      "zh": "官方宣传为全球首款全画幅无反 10 倍变焦头；官方型号名省略了 OS 和 DN 字样，因为它没有镜头内防抖，依赖机身防抖。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma+20-200mm+F3.5-6.3+DG+Contemporary+L-Mount"
       }
-    ],
-    "notesZh": "官方宣传为全球首款全画幅无反 10 倍变焦头；官方型号名省略了 OS 和 DN 字样，因为它没有镜头内防抖，依赖机身防抖。"
+    ]
   },
   {
     "id": "sigma-24-70mm-f2-8-dg-dn-art",
@@ -1387,15 +1459,17 @@
       "https://www.sigma-global.com/en/lenses/a019_24_70_28/",
       "https://www.dpreview.com/news/1360173616/sigma-announces-its-24-70mm-f2-8-dg-dn-lens-will-ship-early-december-for-1-099"
     ],
-    "notes": "Original DG DN Art standard zoom (later joined by a lighter 24-70mm F2.8 DG DN II Art in 2024); notable for higher magnification at the wide end than the tele end.",
+    "notes": {
+      "en": "Original DG DN Art standard zoom (later joined by a lighter 24-70mm F2.8 DG DN II Art in 2024); notable for higher magnification at the wide end than the tele end.",
+      "zh": "初代 DG DN Art 标准变焦头（2024 年推出更轻的 24-70mm F2.8 DG DN II Art 后继续在售）；广角端的放大倍率反而高于长焦端。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma+24-70mm+F2.8+DG+DN+Art+L-Mount"
       }
-    ],
-    "notesZh": "初代 DG DN Art 标准变焦头（2024 年推出更轻的 24-70mm F2.8 DG DN II Art 后继续在售）；广角端的放大倍率反而高于长焦端。"
+    ]
   },
   {
     "id": "sigma-28-45mm-f1-8-dg-dn-art",
@@ -1425,15 +1499,17 @@
       "https://www.sigma-global.com/en/lenses/a024_28_45_18/",
       "https://www.dpreview.com/news/7327961657/sigma-announces-28-45mm-f1-8-art-lens-for-full-frame-cameras"
     ],
-    "notes": "World's first full-frame zoom with a constant F1.8 maximum aperture across its entire focal range.",
+    "notes": {
+      "en": "World's first full-frame zoom with a constant F1.8 maximum aperture across its entire focal range.",
+      "zh": "全球首款全焦段恒定 F1.8 光圈的全画幅变焦头。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma+28-45mm+F1.8+DG+DN+Art+L-Mount"
       }
-    ],
-    "notesZh": "全球首款全焦段恒定 F1.8 光圈的全画幅变焦头。"
+    ]
   },
   {
     "id": "sigma-28-105mm-f2-8-dg-dn-art",
@@ -1464,15 +1540,17 @@
       "https://www.sigma-global.com/en/lenses/a024_28_105_28/",
       "https://petapixel.com/2024/09/05/sigma-28-105mm-f-2-8-dg-dn-art-review-versatility-without-much-compromise/"
     ],
-    "notes": "Constant-f/2.8 standard-to-telephoto zoom that maintains a fixed 0.40m minimum focus distance across the entire focal range.",
+    "notes": {
+      "en": "Constant-f/2.8 standard-to-telephoto zoom that maintains a fixed 0.40m minimum focus distance across the entire focal range.",
+      "zh": "恒定 f/2.8 标准至中长焦变焦头，全焦段最近对焦距离都固定在 0.40 米。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma+28-105mm+F2.8+DG+DN+Art+L-Mount"
       }
-    ],
-    "notesZh": "恒定 f/2.8 标准至中长焦变焦头，全焦段最近对焦距离都固定在 0.40 米。"
+    ]
   },
   {
     "id": "sigma-60-600mm-f4-5-6-3-dg-dn-os-sports",
@@ -1502,15 +1580,17 @@
       "https://www.sigma-global.com/en/lenses/s023_60_600_45_63/",
       "https://www.dpreview.com/news/8558248231/sigma-announces-1999-60-600mm-f4-5-6-3-ultra-zoom-for-e-mount-l-mount-cameras"
     ],
-    "notes": "10x super-telephoto zoom reaching 600mm, with peak 0.417x magnification achieved around 200mm rather than at either zoom extreme.",
+    "notes": {
+      "en": "10x super-telephoto zoom reaching 600mm, with peak 0.417x magnification achieved around 200mm rather than at either zoom extreme.",
+      "zh": "10 倍超长焦变焦头，最长可达 600mm；0.417 倍的最大放大倍率出现在约 200mm 焦段，而非两端极值处。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma+60-600mm+F4.5-6.3+DG+DN+OS+Sports+L-Mount"
       }
-    ],
-    "notesZh": "10 倍超长焦变焦头，最长可达 600mm；0.417 倍的最大放大倍率出现在约 200mm 焦段，而非两端极值处。"
+    ]
   },
   {
     "id": "sigma-70-200mm-f2-8-dg-dn-os-sports",
@@ -1541,15 +1621,17 @@
       "https://www.sigma-global.com/en/lenses/s023_70_200_28/",
       "https://www.newsshooter.com/2023/11/16/sigma-releases-70-200mm-f2-8-dg-dn-os-in-l-mount-sony-e-mount/"
     ],
-    "notes": "Constant-f/2.8 telephoto zoom with unusually worse close-focus at the tele end (1.00m) than at the wide end (0.65m).",
+    "notes": {
+      "en": "Constant-f/2.8 telephoto zoom with unusually worse close-focus at the tele end (1.00m) than at the wide end (0.65m).",
+      "zh": "恒定 f/2.8 长焦变焦头，比较特殊的是长焦端（1.00 米）最近对焦距离反而比广角端（0.65 米）更远。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma+70-200mm+F2.8+DG+DN+OS+Sports+L-Mount"
       }
-    ],
-    "notesZh": "恒定 f/2.8 长焦变焦头，比较特殊的是长焦端（1.00 米）最近对焦距离反而比广角端（0.65 米）更远。"
+    ]
   },
   {
     "id": "samyang-af-35-150mm-f2-2-8",
@@ -1580,15 +1662,17 @@
       "https://samyangus.com/products/af-35-150mm-f2-2-8-l",
       "https://www.digitalcameraworld.com/reviews/samyang-af-35-150mm-f2-28-review"
     ],
-    "notes": "Samyang's first L-Mount Alliance lens, a weather-sealed f/2-2.8 varying-aperture zoom released in July 2024.",
+    "notes": {
+      "en": "Samyang's first L-Mount Alliance lens, a weather-sealed f/2-2.8 varying-aperture zoom released in July 2024.",
+      "zh": "三阳/森养首款 L-Mount Alliance 镜头，2024 年 7 月发布，防尘防滴，光圈随焦段在 f/2 至 f/2.8 间变化。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Samyang%20AF%2035-150mm%20F2-2.8%20L"
       }
-    ],
-    "notesZh": "三阳/森养首款 L-Mount Alliance 镜头，2024 年 7 月发布，防尘防滴，光圈随焦段在 f/2 至 f/2.8 间变化。"
+    ]
   },
   {
     "id": "viltrox-af-16mm-f1-8",
@@ -1618,15 +1702,17 @@
       "https://viltrox.com/products/af-16mm-f1-8-l",
       "https://fstoppers.com/reviews/review-viltroxs-first-l-mount-af-16mm-f18-l-large-aperture-full-frame-ultra-wide-722697"
     ],
-    "notes": "Viltrox's first L-Mount Alliance lens, a weather-sealed ultra-wide prime released in February 2026.",
+    "notes": {
+      "en": "Viltrox's first L-Mount Alliance lens, a weather-sealed ultra-wide prime released in February 2026.",
+      "zh": "唯卓仕首款 L-Mount Alliance 镜头，2026 年 2 月发布，防尘防滴的超广角定焦头。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Viltrox%20AF%2016mm%20F1.8%20L"
       }
-    ],
-    "notesZh": "唯卓仕首款 L-Mount Alliance 镜头，2026 年 2 月发布，防尘防滴的超广角定焦头。"
+    ]
   },
   {
     "id": "7artisans-af-24mm-f1-8",
@@ -1656,15 +1742,17 @@
       "https://7artisans.store/products/af-24mm-f1-8-full-frame-lens-for-e",
       "https://dustinabbott.net/2025/05/7artisans-af-24mm-f1-8-review/"
     ],
-    "notes": "Part of 7Artisans' newer AF autofocus lineup (distinct from its older manual-focus lenses); not weather sealed; L-mount version released September 2025.",
+    "notes": {
+      "en": "Part of 7Artisans' newer AF autofocus lineup (distinct from its older manual-focus lenses); not weather sealed; L-mount version released September 2025.",
+      "zh": "属于七工匠较新的 AF 自动对焦系列（区别于其早期的手动对焦镜头）；不具备防尘防滴；L 卡口版本于 2025 年 9 月发布。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=7Artisans%20AF%2024mm%20F1.8%20L"
       }
-    ],
-    "notesZh": "属于七工匠较新的 AF 自动对焦系列（区别于其早期的手动对焦镜头）；不具备防尘防滴；L 卡口版本于 2025 年 9 月发布。"
+    ]
   },
   {
     "id": "7artisans-af-35mm-f1-8",
@@ -1694,15 +1782,17 @@
       "https://7artisans.store/products/af-35mm-f1-8-full-frame-lens-for-e-z-l",
       "https://phillipreeve.net/blog/review-7artisans-af-35mm-f-1-8/"
     ],
-    "notes": "7Artisans' AF autofocus 35mm prime (distinct from the older manual-focus 7Artisans 35mm f/1.4); has only a mount-area gasket rather than full weather sealing; maximum magnification is a best estimate based on its 0.4m minimum focus distance since no official figure was published.",
+    "notes": {
+      "en": "7Artisans' AF autofocus 35mm prime (distinct from the older manual-focus 7Artisans 35mm f/1.4); has only a mount-area gasket rather than full weather sealing; maximum magnification is a best estimate based on its 0.4m minimum focus distance since no official figure was published.",
+      "zh": "七工匠 AF 自动对焦 35mm 定焦头（区别于旧款手动对焦的七工匠 35mm f/1.4）；仅卡口处有密封圈，非全面防尘防滴；由于官方未公布最大放大倍率数据，此处数值是根据 0.4 米最近对焦距离估算得出。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=7Artisans%20AF%2035mm%20F1.8%20L"
       }
-    ],
-    "notesZh": "七工匠 AF 自动对焦 35mm 定焦头（区别于旧款手动对焦的七工匠 35mm f/1.4）；仅卡口处有密封圈，非全面防尘防滴；由于官方未公布最大放大倍率数据，此处数值是根据 0.4 米最近对焦距离估算得出。"
+    ]
   },
   {
     "id": "7artisans-af-50mm-f1-8",
@@ -1732,15 +1822,17 @@
       "https://7artisans.store/products/af-50mm-f1-8-full-frame-lens-for-l",
       "https://dustinabbott.net/2024/03/7artisans-af-50mm-f1-8-review/"
     ],
-    "notes": "7Artisans' first-ever autofocus lens; not weather sealed; the L-mount version was released in April 2025, after the original Sony E-mount launch.",
+    "notes": {
+      "en": "7Artisans' first-ever autofocus lens; not weather sealed; the L-mount version was released in April 2025, after the original Sony E-mount launch.",
+      "zh": "七工匠首款自动对焦镜头；不具备防尘防滴；L 卡口版本于 2025 年 4 月发布，晚于索尼 E 卡口首发。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=7Artisans%20AF%2050mm%20F1.8%20L"
       }
-    ],
-    "notesZh": "七工匠首款自动对焦镜头；不具备防尘防滴；L 卡口版本于 2025 年 4 月发布，晚于索尼 E 卡口首发。"
+    ]
   },
   {
     "id": "7artisans-af-85mm-f1-8",
@@ -1770,15 +1862,17 @@
       "https://7artisans.store/products/af-85mm-f1-8-full-frame-lens-for-l",
       "https://dustinabbott.net/2024/07/7artisans-af-85mm-f1-8-review/"
     ],
-    "notes": "7Artisans' AF autofocus portrait prime; not weather sealed; the L-mount version was released in May 2025, after the original Sony E-mount launch.",
+    "notes": {
+      "en": "7Artisans' AF autofocus portrait prime; not weather sealed; the L-mount version was released in May 2025, after the original Sony E-mount launch.",
+      "zh": "七工匠 AF 自动对焦人像定焦头；不具备防尘防滴；L 卡口版本于 2025 年 5 月发布，晚于索尼 E 卡口首发。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=7Artisans%20AF%2085mm%20F1.8%20L"
       }
-    ],
-    "notesZh": "七工匠 AF 自动对焦人像定焦头；不具备防尘防滴；L 卡口版本于 2025 年 5 月发布，晚于索尼 E 卡口首发。"
+    ]
   },
   {
     "id": "ttartisan-af-40mm-f2",
@@ -1808,15 +1902,17 @@
       "https://phillipreeve.net/blog/review-ttartisan-af-40mm-f-2/",
       "https://www.dpreview.com/news/5134026987/ttartisan-40mm-f2-l-mount-announcement"
     ],
-    "notes": "TTArtisan's first autofocus L-Mount lens, a compact all-metal pancake-style prime with a USB-C firmware port; maximum magnification is a best estimate since TTArtisan does not publish an official figure.",
+    "notes": {
+      "en": "TTArtisan's first autofocus L-Mount lens, a compact all-metal pancake-style prime with a USB-C firmware port; maximum magnification is a best estimate since TTArtisan does not publish an official figure.",
+      "zh": "铭匠光学首款自动对焦 L 卡口镜头，紧凑饼干头造型，全金属机身，配备 USB-C 固件升级接口；由于官方未公布最大放大倍率数据，此处为估算值。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=TTArtisan+AF+40mm+F2+L-Mount"
       }
-    ],
-    "notesZh": "铭匠光学首款自动对焦 L 卡口镜头，紧凑饼干头造型，全金属机身，配备 USB-C 固件升级接口；由于官方未公布最大放大倍率数据，此处为估算值。"
+    ]
   },
   {
     "id": "ttartisan-af-75mm-f2",
@@ -1846,15 +1942,17 @@
       "https://phillipreeve.net/blog/review-ttartisan-75mm-f-2/",
       "https://dustinabbott.net/2024/09/ttartisan-af-75mm-f2-review/"
     ],
-    "notes": "TTArtisan's first full-frame lens and second autofocus L-Mount prime; all-metal build with no weather sealing or stabilization; maximum magnification is a best estimate since TTArtisan does not publish an official figure.",
+    "notes": {
+      "en": "TTArtisan's first full-frame lens and second autofocus L-Mount prime; all-metal build with no weather sealing or stabilization; maximum magnification is a best estimate since TTArtisan does not publish an official figure.",
+      "zh": "铭匠光学首款全画幅镜头，也是其第二款自动对焦 L 卡口定焦头；全金属机身，不具备防尘防滴或防抖；由于官方未公布最大放大倍率数据，此处为估算值。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=TTArtisan+AF+75mm+F2+L-Mount"
       }
-    ],
-    "notesZh": "铭匠光学首款全画幅镜头，也是其第二款自动对焦 L 卡口定焦头；全金属机身，不具备防尘防滴或防抖；由于官方未公布最大放大倍率数据，此处为估算值。"
+    ]
   },
   {
     "id": "leica-super-vario-elmar-tl-11-23mm-f3-5-4-5-asph",
@@ -1884,15 +1982,17 @@
       "https://leica-camera.com/sites/default/files/pm-55635-Datenblatt_Super-Vario-Elmar-T%2011-23%20ASPH_d_Nov2017_1.pdf",
       "https://leica-camera.com/en-US/photography/lenses/cl-tl/super-vario-elmar-tl-11-23mm-f3-5-4-5-asph"
     ],
-    "notes": "Official Leica datasheet lists 386 g weight (without hood), E67 filter thread, and a 0.2 m working distance across the zoom range.",
+    "notes": {
+      "en": "Official Leica datasheet lists 386 g weight (without hood), E67 filter thread, and a 0.2 m working distance across the zoom range.",
+      "zh": "徕卡官方数据表标注重量 386 克（不含遮光罩）、E67 滤镜口径，全焦段工作距离为 0.2 米。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica%20Super-Vario-Elmar-TL%2011-23mm%20f%2F3.5-4.5%20ASPH"
       }
-    ],
-    "notesZh": "徕卡官方数据表标注重量 386 克（不含遮光罩）、E67 滤镜口径，全焦段工作距离为 0.2 米。"
+    ]
   },
   {
     "id": "leica-super-vario-elmar-sl-16-35mm-f3-5-4-5-asph",
@@ -1922,15 +2022,17 @@
       "https://leica-camera.com/sites/default/files/pm-54143-11177_Datenblatt_Super-Vario-Elmar-16-35-ASPH_DE.pdf",
       "https://petapixel.com/2018/04/09/leica-unveils-the-super-vario-elmar-sl-16-35mm-f-3-5-4-5-lens/"
     ],
-    "notes": "Official Leica datasheet lists 990 g weight, E82 filter thread, no built-in optical image stabilization, and dust/moisture-sealed construction.",
+    "notes": {
+      "en": "Official Leica datasheet lists 990 g weight, E82 filter thread, no built-in optical image stabilization, and dust/moisture-sealed construction.",
+      "zh": "徕卡官方数据表标注重量 990 克、E82 滤镜口径，无内置光学防抖，具备防尘防潮密封结构。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica%20Super-Vario-Elmar-SL%2016-35mm%20f%2F3.5-4.5%20ASPH"
       }
-    ],
-    "notesZh": "徕卡官方数据表标注重量 990 克、E82 滤镜口径，无内置光学防抖，具备防尘防潮密封结构。"
+    ]
   },
   {
     "id": "leica-vario-elmar-tl-18-56mm-f3-5-5-6-asph",
@@ -1960,15 +2062,17 @@
       "https://leica-camera.com/sites/default/files/pm-55659-Datenblatt_Vario-Elmar-TL-18-56_e_Nov2017_1.pdf",
       "https://leica-camera.com/en-US/photography/lenses/cl-tl/vario-elmar-tl-18-56mm-f3-5-5-6-asph-black"
     ],
-    "notes": "Official Leica datasheet lists 256 g weight (without hood), E52 filter thread, and maximum magnification of 1:7.5 at 56mm.",
+    "notes": {
+      "en": "Official Leica datasheet lists 256 g weight (without hood), E52 filter thread, and maximum magnification of 1:7.5 at 56mm.",
+      "zh": "徕卡官方数据表标注重量 256 克（不含遮光罩）、E52 滤镜口径，56mm 端最大放大倍率为 1:7.5。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica%20Vario-Elmar-TL%2018-56mm%20f%2F3.5-5.6%20ASPH"
       }
-    ],
-    "notesZh": "徕卡官方数据表标注重量 256 克（不含遮光罩）、E52 滤镜口径，56mm 端最大放大倍率为 1:7.5。"
+    ]
   },
   {
     "id": "leica-vario-elmarit-sl-24-90mm-f2-8-4-asph",
@@ -1999,15 +2103,17 @@
       "https://leica-camera.com/sites/default/files/pm-55652-Datenblatt_Vario-Elmarit-SL_24-90_en.pdf",
       "https://www.bhphotovideo.com/c/product/1192094-REG/leica_11176_vario_elmarit_sl_24_90_f_2_8_4_asph.html"
     ],
-    "notes": "Official Leica datasheet lists 1140 g weight, E82 filter thread, integrated multi-axis optical image stabilization rated at 3.5 stops (CIPA), and dust/moisture-sealed construction.",
+    "notes": {
+      "en": "Official Leica datasheet lists 1140 g weight, E82 filter thread, integrated multi-axis optical image stabilization rated at 3.5 stops (CIPA), and dust/moisture-sealed construction.",
+      "zh": "徕卡官方数据表标注重量 1140 克、E82 滤镜口径，内置多轴光学防抖（CIPA 标准约 3.5 档），具备防尘防潮密封结构。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica%20Vario-Elmarit-SL%2024-90mm%20f%2F2.8-4%20ASPH"
       }
-    ],
-    "notesZh": "徕卡官方数据表标注重量 1140 克、E82 滤镜口径，内置多轴光学防抖（CIPA 标准约 3.5 档），具备防尘防潮密封结构。"
+    ]
   },
   {
     "id": "leica-apo-vario-elmar-tl-55-135mm-f3-5-4-5-asph",
@@ -2037,15 +2143,17 @@
       "https://leica-camera.com/sites/default/files/pm-55509-Datenblatt_APO-Vario-Elmar-T%2055-135%20ASPH_e_Nov2017_1.pdf",
       "https://leica-camera.com/en-US/photography/lenses/cl-tl/apo-vario-elmar-tl-55-135mm-f3-5-4-5-asph-black"
     ],
-    "notes": "Official Leica datasheet lists 500 g weight (without hood), E60 filter thread, and maximum magnification of 1:8.0 at 135mm with apochromatic correction.",
+    "notes": {
+      "en": "Official Leica datasheet lists 500 g weight (without hood), E60 filter thread, and maximum magnification of 1:8.0 at 135mm with apochromatic correction.",
+      "zh": "徕卡官方数据表标注重量 500 克（不含遮光罩）、E60 滤镜口径，135mm 端配合复消色差校正可达 1:8.0 最大放大倍率。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica%20APO-Vario-Elmar-TL%2055-135mm%20f%2F3.5-4.5%20ASPH"
       }
-    ],
-    "notesZh": "徕卡官方数据表标注重量 500 克（不含遮光罩）、E60 滤镜口径，135mm 端配合复消色差校正可达 1:8.0 最大放大倍率。"
+    ]
   },
   {
     "id": "leica-vario-elmar-sl-100-400mm-f5-6-3",
@@ -2075,15 +2183,17 @@
       "https://www.reddotforum.com/content/2023/03/leica-vario-elmar-sl-100-400mm-f-5-6-3-and-leica-extender-l-1-4x/",
       "https://petapixel.com/2023/03/09/the-vario-elmar-100-400mm-f-5-6-3-is-leicas-longest-sl-system-lens/"
     ],
-    "notes": "Variable-aperture full-frame telephoto zoom with built-in multi-axis optical stabilization (rated approximately 4 stops) and gasketed weather sealing.",
+    "notes": {
+      "en": "Variable-aperture full-frame telephoto zoom with built-in multi-axis optical stabilization (rated approximately 4 stops) and gasketed weather sealing.",
+      "zh": "光圈可变的全画幅长焦变焦头，内置多轴光学防抖（约 4 档），配备防尘防潮密封垫圈。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica+Vario-Elmar-SL+100-400mm+f%2F5-6.3"
       }
-    ],
-    "notesZh": "光圈可变的全画幅长焦变焦头，内置多轴光学防抖（约 4 档），配备防尘防潮密封垫圈。"
+    ]
   },
   {
     "id": "leica-elmarit-tl-18mm-f2-8-asph",
@@ -2113,15 +2223,17 @@
       "https://www.imaging-resource.com/news/2017/11/21/leica-announces-pancake-elmarit-tl-18mm-f-2.8-asph.-lens-for-leica-l-mount",
       "https://cameradecision.com/lenses/faq/what-is-the-Filter-Thread-Size-of-Leica-Elmarit-TL-18mm-F2.8-ASPH"
     ],
-    "notes": "Pancake-style APS-C wide-angle prime (27mm full-frame equivalent) with an all-metal barrel and no weather sealing.",
+    "notes": {
+      "en": "Pancake-style APS-C wide-angle prime (27mm full-frame equivalent) with an all-metal barrel and no weather sealing.",
+      "zh": "饼干头造型的 APS-C 广角定焦头（等效全画幅约 27mm），全金属镜身，不具备防尘防滴。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica+Elmarit-TL+18mm+f%2F2.8+ASPH"
       }
-    ],
-    "notesZh": "饼干头造型的 APS-C 广角定焦头（等效全画幅约 27mm），全金属镜身，不具备防尘防滴。"
+    ]
   },
   {
     "id": "leica-super-apo-summicron-sl-21mm-f2-asph",
@@ -2151,15 +2263,17 @@
       "https://www.cined.com/leica-super-apo-summicron-sl-21mm-f-2-asph-announced-high-end-wide-angle-prime-lens/",
       "https://www.bhphotovideo.com/c/product/1791232-REG/leica_11181_21mm_f_2_super_apo.html"
     ],
-    "notes": "World's first APO-corrected 21mm full-frame prime, using a Dual Synchro Drive autofocus motor and AquaDura weather-sealed coating.",
+    "notes": {
+      "en": "World's first APO-corrected 21mm full-frame prime, using a Dual Synchro Drive autofocus motor and AquaDura weather-sealed coating.",
+      "zh": "全球首款复消色差校正的全画幅 21mm 定焦头，采用双重同步驱动自动对焦马达和 AquaDura 防水涂层。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica+Super-APO-Summicron-SL+21mm+f%2F2+ASPH"
       }
-    ],
-    "notesZh": "全球首款复消色差校正的全画幅 21mm 定焦头，采用双重同步驱动自动对焦马达和 AquaDura 防水涂层。"
+    ]
   },
   {
     "id": "leica-summicron-tl-23mm-f2-asph",
@@ -2189,15 +2303,17 @@
       "https://www.sansmirror.com/lenses/lens-database/lenses-from-camera-makers/leica-t-lenses/leica-summicron-23mm-f2.html",
       "https://leica-camera.com/sites/default/files/pm-55625-Datenblatt_Summicron-TL%2023_e_Nov2017_1.pdf"
     ],
-    "notes": "APS-C standard prime with a 35mm full-frame-equivalent field of view, originally launched for the Leica T.",
+    "notes": {
+      "en": "APS-C standard prime with a 35mm full-frame-equivalent field of view, originally launched for the Leica T.",
+      "zh": "APS-C 标准定焦头，等效全画幅约 35mm 视角，最初为徕卡 T 系统而生。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica+Summicron-TL+23mm+f%2F2+ASPH"
       }
-    ],
-    "notesZh": "APS-C 标准定焦头，等效全画幅约 35mm 视角，最初为徕卡 T 系统而生。"
+    ]
   },
   {
     "id": "leica-summilux-tl-35mm-f1-4-asph",
@@ -2228,15 +2344,17 @@
       "https://leicarumors.com/2016/03/22/leica-summilux-tl-35mm-f1-4-asph-lens-officially-announced.aspx/",
       "https://www.neocamera.com/lens/leica/tl_summilux_35mm_f1.4_asph"
     ],
-    "notes": "Fast APS-C prime equivalent to 52.5mm, Leica's brightest native TL-mount lens with an internal focusing design.",
+    "notes": {
+      "en": "Fast APS-C prime equivalent to 52.5mm, Leica's brightest native TL-mount lens with an internal focusing design.",
+      "zh": "大光圈 APS-C 定焦头，等效全画幅约 52.5mm，是徕卡原生 TL 卡口镜头中光圈最大的一款，采用内对焦设计。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica+Summilux-TL+35mm+f%2F1.4+ASPH"
       }
-    ],
-    "notesZh": "大光圈 APS-C 定焦头，等效全画幅约 52.5mm，是徕卡原生 TL 卡口镜头中光圈最大的一款，采用内对焦设计。"
+    ]
   },
   {
     "id": "leica-apo-summicron-sl-35mm-f2-asph",
@@ -2266,15 +2384,17 @@
       "https://leica-camera.com/sites/default/files/pm-55403-11184_Datenblatt_APO_Summicron-SL-35mm-ASPH_en.pdf",
       "https://leicarumors.com/2019/02/28/leica-apo-summicron-sl-35mm-f-2-asph-lens-officially-released.aspx/"
     ],
-    "notes": "Apochromatic prime with Dual Syncro Drive stepping-motor autofocus, dust/moisture sealing, and no built-in image stabilization, released 2019.",
+    "notes": {
+      "en": "Apochromatic prime with Dual Syncro Drive stepping-motor autofocus, dust/moisture sealing, and no built-in image stabilization, released 2019.",
+      "zh": "复消色差定焦头，配备双重同步驱动步进马达自动对焦，具备防尘防潮密封，无内置防抖，2019 年发布。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica+APO-Summicron-SL+35mm+f%2F2+ASPH"
       }
-    ],
-    "notesZh": "复消色差定焦头，配备双重同步驱动步进马达自动对焦，具备防尘防潮密封，无内置防抖，2019 年发布。"
+    ]
   },
   {
     "id": "leica-summicron-sl-50mm-f2-asph",
@@ -2304,15 +2424,17 @@
       "https://leicastoremiami.com/products/leica-summicron-sl-50-f-2-asph",
       "https://www.cined.com/leica-summicron-sl-35-and-50mm-f2-asph-prime-lenses-released/"
     ],
-    "notes": "Lighter, non-apochromatic redesign released 2023, roughly half the weight of the earlier APO-Summicron-SL 50mm f/2, with no built-in image stabilization.",
+    "notes": {
+      "en": "Lighter, non-apochromatic redesign released 2023, roughly half the weight of the earlier APO-Summicron-SL 50mm f/2, with no built-in image stabilization.",
+      "zh": "2023 年发布的更轻量、非复消色差重新设计版本，重量约为早期 APO-Summicron-SL 50mm f/2 的一半，无内置防抖。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica+Summicron-SL+50mm+f%2F2+ASPH"
       }
-    ],
-    "notesZh": "2023 年发布的更轻量、非复消色差重新设计版本，重量约为早期 APO-Summicron-SL 50mm f/2 的一半，无内置防抖。"
+    ]
   },
   {
     "id": "leica-apo-summicron-sl-50mm-f2-asph",
@@ -2342,15 +2464,17 @@
       "https://www.macfilos.com/2019/08/15/review-leica-apo-summicron-sl-50mm-f2-asph/",
       "https://www.dpreview.com/news/3465162553/leica-announces-apo-summicron-sl-50mm-f2-l-mount-lens"
     ],
-    "notes": "Apochromatic 12-element/10-group design announced August 2019, predating the lighter non-APO Summicron-SL 50mm f/2 released in 2023; no built-in image stabilization.",
+    "notes": {
+      "en": "Apochromatic 12-element/10-group design announced August 2019, predating the lighter non-APO Summicron-SL 50mm f/2 released in 2023; no built-in image stabilization.",
+      "zh": "2019 年 8 月发布的复消色差 12 片 10 组光学结构，早于 2023 年发布的更轻量非 APO 版 Summicron-SL 50mm f/2；无内置防抖。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica+APO-Summicron-SL+50mm+f%2F2+ASPH"
       }
-    ],
-    "notesZh": "2019 年 8 月发布的复消色差 12 片 10 组光学结构，早于 2023 年发布的更轻量非 APO 版 Summicron-SL 50mm f/2；无内置防抖。"
+    ]
   },
   {
     "id": "leica-apo-macro-elmarit-tl-60mm-f2-8-asph",
@@ -2381,15 +2505,17 @@
       "https://leicacamerausa.com/leica-apo-macro-elmarit-tl-60mm-f-2-8-asph-silver-anodized.html",
       "https://leicarumors.com/2016/09/01/leica-apo-macro-elmarit-tl-60mm-f2-8-asph-lens-officially-announced.aspx/"
     ],
-    "notes": "True 1:1 macro prime for T/TL/CL APS-C mount, announced September 2016, lacks weather sealing and built-in stabilization.",
+    "notes": {
+      "en": "True 1:1 macro prime for T/TL/CL APS-C mount, announced September 2016, lacks weather sealing and built-in stabilization.",
+      "zh": "面向 T/TL/CL APS-C 卡口的真 1:1 微距定焦头，2016 年 9 月发布，不具备防尘防滴或内置防抖。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica+APO-Macro-Elmarit-TL+60mm+f%2F2.8+ASPH"
       }
-    ],
-    "notesZh": "面向 T/TL/CL APS-C 卡口的真 1:1 微距定焦头，2016 年 9 月发布，不具备防尘防滴或内置防抖。"
+    ]
   },
   {
     "id": "leica-apo-summicron-sl-75mm-f2-asph",
@@ -2419,15 +2545,17 @@
       "https://leica-camera.com/sites/default/files/pm-55397-11178_Datenblatt_APO-Summicron-SL-75mm-ASPH_e.pdf",
       "https://leicarumors.com/2018/01/15/leica-officially-announces-the-apo-summicron-sl-75mm-f-2-and-90mm-f-2-asph-lenses.aspx/"
     ],
-    "notes": "Apochromatic portrait prime announced January 2018 with sealed metal housing and Dual Syncro Drive autofocus, no built-in image stabilization.",
+    "notes": {
+      "en": "Apochromatic portrait prime announced January 2018 with sealed metal housing and Dual Syncro Drive autofocus, no built-in image stabilization.",
+      "zh": "复消色差人像定焦头，2018 年 1 月发布，配备密封金属机身和双重同步驱动自动对焦，无内置防抖。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica+APO-Summicron-SL+75mm+f%2F2+ASPH"
       }
-    ],
-    "notesZh": "复消色差人像定焦头，2018 年 1 月发布，配备密封金属机身和双重同步驱动自动对焦，无内置防抖。"
+    ]
   },
   {
     "id": "sigma-14mm-f1-4-dg-dn-art",
@@ -2457,15 +2585,17 @@
       "https://www.sigma-global.com/en/lenses/a023_14_14/",
       "https://dustinabbott.net/2023/06/sigma-14mm-f1-4-dg-dn-art-review/"
     ],
-    "notes": "Designed primarily for astrophotography, it has a built-in tripod collar and a rear gel-filter holder instead of a front filter thread.",
+    "notes": {
+      "en": "Designed primarily for astrophotography, it has a built-in tripod collar and a rear gel-filter holder instead of a front filter thread.",
+      "zh": "主要面向星空摄影设计，内置三脚架环，并配备后置凝胶滤镜插槽而非前置滤镜口。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2014mm%20F1.4%20DG%20DN%20Art"
       }
-    ],
-    "notesZh": "主要面向星空摄影设计，内置三脚架环，并配备后置凝胶滤镜插槽而非前置滤镜口。"
+    ]
   },
   {
     "id": "sigma-14mm-f1-8-dg-hsm-art",
@@ -2495,15 +2625,17 @@
       "https://www.sigma-global.com/en/lenses/a017_14_18/",
       "http://findingrange.com/2023/09/21/sigma-14mm-f1-8-dg-hsm-art-review-l-mount/"
     ],
-    "notes": "Originally released for DSLR mounts in 2017, Sigma later added a native L-Mount SKU that retains the older HSM autofocus motor rather than a DN linear motor.",
+    "notes": {
+      "en": "Originally released for DSLR mounts in 2017, Sigma later added a native L-Mount SKU that retains the older HSM autofocus motor rather than a DN linear motor.",
+      "zh": "最初于 2017 年为单反卡口发布，适马后续推出的原生 L 卡口版本仍保留旧款 HSM 自动对焦马达，而非 DN 直线马达。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2014mm%20F1.8%20DG%20HSM%20Art%20L-Mount"
       }
-    ],
-    "notesZh": "最初于 2017 年为单反卡口发布，适马后续推出的原生 L 卡口版本仍保留旧款 HSM 自动对焦马达，而非 DN 直线马达。"
+    ]
   },
   {
     "id": "sigma-15mm-f1-4-dg-dn-diagonal-fisheye-art",
@@ -2533,15 +2665,17 @@
       "https://www.sigma-global.com/en/lenses/a024_15_14/",
       "https://www.the-digital-picture.com/Reviews/Sigma-15mm-F1-4-DG-DN-Diagonal-Fisheye-Art-Lens.aspx"
     ],
-    "notes": "The world's first 180-degree diagonal fisheye lens for full-frame mirrorless with an f/1.4 maximum aperture.",
+    "notes": {
+      "en": "The world's first 180-degree diagonal fisheye lens for full-frame mirrorless with an f/1.4 maximum aperture.",
+      "zh": "全球首款光圈达 f/1.4 的全画幅 180 度对角鱼眼镜头。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2015mm%20F1.4%20DG%20DN%20Diagonal%20Fisheye%20Art"
       }
-    ],
-    "notesZh": "全球首款光圈达 f/1.4 的全画幅 180 度对角鱼眼镜头。"
+    ]
   },
   {
     "id": "sigma-16mm-f1-4-dc-dn-contemporary",
@@ -2571,15 +2705,17 @@
       "https://www.sigma-global.com/en/lenses/c017_16_14/",
       "https://www.dpreview.com/news/6329020538/hands-on-with-new-sigma-16mm-f1-4-dc-dn-contemporary"
     ],
-    "notes": "Roughly a 24mm-equivalent field of view on APS-C, making it a popular fast wide-angle prime for Sigma fp/fp L crop-mode and other L-Mount APS-C bodies.",
+    "notes": {
+      "en": "Roughly a 24mm-equivalent field of view on APS-C, making it a popular fast wide-angle prime for Sigma fp/fp L crop-mode and other L-Mount APS-C bodies.",
+      "zh": "在 APS-C 画幅上等效约 24mm 视角，是适马 fp/fp L 裁切模式及其他 L 卡口 APS-C 机身上颇受欢迎的大光圈广角定焦头。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2016mm%20F1.4%20DC%20DN%20Contemporary%20L-Mount"
       }
-    ],
-    "notesZh": "在 APS-C 画幅上等效约 24mm 视角，是适马 fp/fp L 裁切模式及其他 L 卡口 APS-C 机身上颇受欢迎的大光圈广角定焦头。"
+    ]
   },
   {
     "id": "sigma-17mm-f4-dg-dn-contemporary",
@@ -2609,15 +2745,17 @@
       "https://www.sigma-global.com/en/lenses/c023_17_4/",
       "https://dustinabbott.net/2023/05/sigma-17mm-f4-dg-dn-iseries-review/"
     ],
-    "notes": "Part of Sigma's compact all-metal I-series, it has an unusually close 12cm minimum focus distance for a 17mm lens.",
+    "notes": {
+      "en": "Part of Sigma's compact all-metal I-series, it has an unusually close 12cm minimum focus distance for a 17mm lens.",
+      "zh": "适马紧凑型全金属 I 系列成员，作为 17mm 定焦头，其 12 厘米的最近对焦距离十分出色。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2017mm%20F4%20DG%20DN%20Contemporary"
       }
-    ],
-    "notesZh": "适马紧凑型全金属 I 系列成员，作为 17mm 定焦头，其 12 厘米的最近对焦距离十分出色。"
+    ]
   },
   {
     "id": "sigma-20mm-f1-4-dg-dn-art",
@@ -2647,15 +2785,17 @@
       "https://www.sigma-global.com/en/lenses/a022_20_14/",
       "https://dustinabbott.net/2022/08/sigma-20mm-f1-4-dn-art-review/"
     ],
-    "notes": "Features a rear filter holder, manual focus lock switch, and lens heater retainer aimed at astrophotographers.",
+    "notes": {
+      "en": "Features a rear filter holder, manual focus lock switch, and lens heater retainer aimed at astrophotographers.",
+      "zh": "配备后置滤镜插槽、手动对焦锁定开关和镜头加热器固定环，专为星空摄影设计。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2020mm%20F1.4%20DG%20DN%20Art"
       }
-    ],
-    "notesZh": "配备后置滤镜插槽、手动对焦锁定开关和镜头加热器固定环，专为星空摄影设计。"
+    ]
   },
   {
     "id": "sigma-20mm-f2-dg-dn-contemporary",
@@ -2685,15 +2825,17 @@
       "https://www.sigma-global.com/en/lenses/c022_20_2/",
       "https://www.dpreview.com/news/0718810103/sigma-announces-699-20mm-f2-dg-dn-lens-for-e-mount-l-mount-camera-systems"
     ],
-    "notes": "A compact, budget-friendly companion to the 20mm F1.4 Art, weighing less than half as much.",
+    "notes": {
+      "en": "A compact, budget-friendly companion to the 20mm F1.4 Art, weighing less than half as much.",
+      "zh": "20mm F1.4 Art 的紧凑平价搭档，重量不到其一半。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2020mm%20F2%20DG%20DN%20Contemporary"
       }
-    ],
-    "notesZh": "20mm F1.4 Art 的紧凑平价搭档，重量不到其一半。"
+    ]
   },
   {
     "id": "sigma-23mm-f1-4-dc-dn-contemporary",
@@ -2723,15 +2865,17 @@
       "https://www.sigma-global.com/en/lenses/c023_23_14/",
       "https://press.sigmaphoto.com/product/04/sigma-releases-23mm-f1-4-dc-dn-c/"
     ],
-    "notes": "Roughly a 35mm-equivalent field of view on APS-C, giving a fast standard-ish prime for L-Mount crop-sensor shooting.",
+    "notes": {
+      "en": "Roughly a 35mm-equivalent field of view on APS-C, giving a fast standard-ish prime for L-Mount crop-sensor shooting.",
+      "zh": "在 APS-C 画幅上等效约 35mm 视角，为 L 卡口画幅拍摄提供了一支大光圈的准标头。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2023mm%20F1.4%20DC%20DN%20Contemporary"
       }
-    ],
-    "notesZh": "在 APS-C 画幅上等效约 35mm 视角，为 L 卡口画幅拍摄提供了一支大光圈的准标头。"
+    ]
   },
   {
     "id": "sigma-24mm-f2-dg-dn-contemporary",
@@ -2761,15 +2905,17 @@
       "https://www.sigma-global.com/en/lenses/c021_24_2/",
       "https://www.dpreview.com/news/5961283520/sigma-introduces-24mm-f2-and-90mm-f2-8-dg-dn-contemporary-lenses"
     ],
-    "notes": "Announced alongside the 90mm F2.8 DG DN Contemporary as a matched compact pair.",
+    "notes": {
+      "en": "Announced alongside the 90mm F2.8 DG DN Contemporary as a matched compact pair.",
+      "zh": "与 90mm F2.8 DG DN Contemporary 同期发布，组成一对紧凑搭档。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2024mm%20F2%20DG%20DN%20Contemporary"
       }
-    ],
-    "notesZh": "与 90mm F2.8 DG DN Contemporary 同期发布，组成一对紧凑搭档。"
+    ]
   },
   {
     "id": "sigma-24mm-f3-5-dg-dn-contemporary",
@@ -2800,15 +2946,17 @@
       "https://www.sigma-global.com/en/lenses/c021_24_35/",
       "http://findingrange.com/2021/05/03/sigma-24mm-f3-5-dg-dn-contemporary-lens-review/"
     ],
-    "notes": "Part of the compact I-series line, notable for an unusually high 1:2 maximum magnification for a 24mm lens.",
+    "notes": {
+      "en": "Part of the compact I-series line, notable for an unusually high 1:2 maximum magnification for a 24mm lens.",
+      "zh": "紧凑型 I 系列成员，作为 24mm 定焦头，1:2 的最大放大倍率相当罕见。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2024mm%20F3.5%20DG%20DN%20Contemporary"
       }
-    ],
-    "notesZh": "紧凑型 I 系列成员，作为 24mm 定焦头，1:2 的最大放大倍率相当罕见。"
+    ]
   },
   {
     "id": "sigma-30mm-f1-4-dc-dn-contemporary",
@@ -2838,15 +2986,17 @@
       "https://www.sigma-global.com/en/lenses/c016_30_14/",
       "http://findingrange.com/2020/12/13/sigma-30mm-f1-4-dc-dn-contemporary-lens-first-impressions-l-mount/"
     ],
-    "notes": "Originally launched in 2016 for other mounts; the native L-Mount version arrived in mid-2020 with dust and splash resistance added.",
+    "notes": {
+      "en": "Originally launched in 2016 for other mounts; the native L-Mount version arrived in mid-2020 with dust and splash resistance added.",
+      "zh": "最初于 2016 年为其他卡口推出，原生 L 卡口版本于 2020 年中上市，并加入了防尘防溅结构。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2030mm%20F1.4%20DC%20DN%20Contemporary%20L-Mount"
       }
-    ],
-    "notesZh": "最初于 2016 年为其他卡口推出，原生 L 卡口版本于 2020 年中上市，并加入了防尘防溅结构。"
+    ]
   },
   {
     "id": "sigma-35mm-f1-2-dg-dn-art",
@@ -2876,15 +3026,17 @@
       "https://www.sigma-global.com/en/lenses/a019_35_12/",
       "https://www.dpreview.com/news/8715104889/sigma-35mm-f1-2-dg-dn-art-coming-to-full-frame-sony-and-l-mount-bodies"
     ],
-    "notes": "The original first-generation model, now discontinued and succeeded by the smaller, lighter 35mm F1.2 DG II Art.",
+    "notes": {
+      "en": "The original first-generation model, now discontinued and succeeded by the smaller, lighter 35mm F1.2 DG II Art.",
+      "zh": "初代设计，现已停产，由更小更轻的 35mm F1.2 DG II Art 接替。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2035mm%20F1.2%20DG%20DN%20Art"
       }
-    ],
-    "notesZh": "初代设计，现已停产，由更小更轻的 35mm F1.2 DG II Art 接替。"
+    ]
   },
   {
     "id": "sigma-35mm-f1-2-dg-ii-art",
@@ -2914,15 +3066,17 @@
       "https://www.sigma-global.com/en/lenses/a025_35_12/",
       "https://dustinabbott.net/2025/09/sigma-35mm-f1-2-dg-ii-art-review/"
     ],
-    "notes": "Second-generation redesign that is about 30 percent lighter than the original, with a smaller 72mm filter thread and dual linear-motor autofocus.",
+    "notes": {
+      "en": "Second-generation redesign that is about 30 percent lighter than the original, with a smaller 72mm filter thread and dual linear-motor autofocus.",
+      "zh": "第二代重新设计版本，比初代轻约 30%，滤镜口径缩小至 72mm，配备双直线马达自动对焦。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2035mm%20F1.2%20DG%20II%20Art"
       }
-    ],
-    "notesZh": "第二代重新设计版本，比初代轻约 30%，滤镜口径缩小至 72mm，配备双直线马达自动对焦。"
+    ]
   },
   {
     "id": "sigma-35mm-f2-dg-dn-contemporary",
@@ -2952,15 +3106,17 @@
       "https://www.sigma-global.com/en/lenses/c020_35_2/",
       "https://www.sigmaphoto.com/35mm-f2-dg-dn-c"
     ],
-    "notes": "Part of the original three-lens I-series launch alongside the 24mm F3.5 and 65mm F2.",
+    "notes": {
+      "en": "Part of the original three-lens I-series launch alongside the 24mm F3.5 and 65mm F2.",
+      "zh": "与 24mm F3.5、65mm F2 同属初代三支一组的 I 系列首发阵容。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2035mm%20F2%20DG%20DN%20Contemporary"
       }
-    ],
-    "notesZh": "与 24mm F3.5、65mm F2 同属初代三支一组的 I 系列首发阵容。"
+    ]
   },
   {
     "id": "sigma-40mm-f1-4-dg-hsm-art",
@@ -2990,15 +3146,17 @@
       "https://www.sigma-global.com/en/lenses/a018_40_14/",
       "https://www.dpreview.com/news/6207745612/sigma-japan-confirms-release-date-of-its-l-mount-40mm-f1-4-and-105mm-f1-4-lenses"
     ],
-    "notes": "Announced in 2018 for DSLR mounts and Sony E; a native L-Mount SKU began shipping in December 2019 and remains a DG HSM design, not DG DN.",
+    "notes": {
+      "en": "Announced in 2018 for DSLR mounts and Sony E; a native L-Mount SKU began shipping in December 2019 and remains a DG HSM design, not DG DN.",
+      "zh": "2018 年为单反卡口和索尼 E 卡口发布；原生 L 卡口版本于 2019 年 12 月上市，仍为 DG HSM 设计而非 DG DN。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2040mm%20F1.4%20DG%20HSM%20Art%20L-Mount"
       }
-    ],
-    "notesZh": "2018 年为单反卡口和索尼 E 卡口发布；原生 L 卡口版本于 2019 年 12 月上市，仍为 DG HSM 设计而非 DG DN。"
+    ]
   },
   {
     "id": "sigma-45mm-f2-8-dg-dn-contemporary",
@@ -3028,15 +3186,17 @@
       "https://www.sigma-global.com/en/lenses/c019_45_28/",
       "https://www.bhphotovideo.com/c/product/1881827-REG/sigma_36s969_45mm_f2_8_dg_silver.html"
     ],
-    "notes": "An ultra-compact all-metal pancake-style prime, also sold in a silver colorway.",
+    "notes": {
+      "en": "An ultra-compact all-metal pancake-style prime, also sold in a silver colorway.",
+      "zh": "超紧凑全金属饼干头造型定焦头，也有银色款可选。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2045mm%20F2.8%20DG%20DN%20Contemporary"
       }
-    ],
-    "notesZh": "超紧凑全金属饼干头造型定焦头，也有银色款可选。"
+    ]
   },
   {
     "id": "sigma-50mm-f1-4-dg-dn-art",
@@ -3066,15 +3226,17 @@
       "https://www.sigma-global.com/en/lenses/a023_50_14/",
       "https://www.dpreview.com/news/2069061222/sigma-announces-50mm-f1-4-dg-dn-art-lens-for-e-and-l-mounts"
     ],
-    "notes": "A ground-up mirrorless-native redesign of Sigma's classic 50mm F1.4 Art, considerably smaller and lighter than the original DSLR-era version.",
+    "notes": {
+      "en": "A ground-up mirrorless-native redesign of Sigma's classic 50mm F1.4 Art, considerably smaller and lighter than the original DSLR-era version.",
+      "zh": "对适马经典 50mm F1.4 Art 定焦头进行的无反原生彻底重新设计，比单反时代版本明显更小更轻。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2050mm%20F1.4%20DG%20DN%20Art"
       }
-    ],
-    "notesZh": "对适马经典 50mm F1.4 Art 定焦头进行的无反原生彻底重新设计，比单反时代版本明显更小更轻。"
+    ]
   },
   {
     "id": "sigma-50mm-f2-dg-dn-contemporary",
@@ -3104,15 +3266,17 @@
       "https://www.sigma-global.com/en/lenses/c023_50_2/",
       "https://www.bhphotovideo.com/c/product/1757613-REG/sigma_314969_50mm_f_2_dg_dn.html"
     ],
-    "notes": "A budget-friendly compact standard prime completing the F2 DG DN Contemporary trio with the 24mm and 90mm.",
+    "notes": {
+      "en": "A budget-friendly compact standard prime completing the F2 DG DN Contemporary trio with the 24mm and 90mm.",
+      "zh": "平价紧凑标准定焦头，与 24mm、90mm 共同组成 F2 DG DN Contemporary 三件套。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2050mm%20F2%20DG%20DN%20Contemporary"
       }
-    ],
-    "notesZh": "平价紧凑标准定焦头，与 24mm、90mm 共同组成 F2 DG DN Contemporary 三件套。"
+    ]
   },
   {
     "id": "sigma-56mm-f1-4-dc-dn-contemporary",
@@ -3142,15 +3306,17 @@
       "https://www.sigma-global.com/en/lenses/c018_56_14/",
       "https://www.bhphotovideo.com/c/product/1570252-REG/sigma_351969_56mm_f_1_4_dc_dn.html"
     ],
-    "notes": "Roughly an 84mm-equivalent field of view on APS-C, making it a popular fast portrait prime for L-Mount crop bodies.",
+    "notes": {
+      "en": "Roughly an 84mm-equivalent field of view on APS-C, making it a popular fast portrait prime for L-Mount crop bodies.",
+      "zh": "在 APS-C 画幅上等效约 84mm 视角，是 L 卡口画幅机身上颇受欢迎的大光圈人像定焦头。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2056mm%20F1.4%20DC%20DN%20Contemporary%20L-Mount"
       }
-    ],
-    "notesZh": "在 APS-C 画幅上等效约 84mm 视角，是 L 卡口画幅机身上颇受欢迎的大光圈人像定焦头。"
+    ]
   },
   {
     "id": "sigma-70mm-f2-8-dg-macro-art",
@@ -3180,15 +3346,17 @@
       "https://www.sigma-global.com/en/lenses/a018_70_28/",
       "https://dustinabbott.net/2018/09/sigma-70mm-f-2-8-macro-art-review/"
     ],
-    "notes": "A true 1:1 macro lens; Sigma deliberately omitted optical stabilization to prioritize optical performance, and sealing is limited to a mount gasket rather than full-barrel weather resistance.",
+    "notes": {
+      "en": "A true 1:1 macro lens; Sigma deliberately omitted optical stabilization to prioritize optical performance, and sealing is limited to a mount gasket rather than full-barrel weather resistance.",
+      "zh": "真 1:1 微距定焦头；适马为优先保证光学素质，特意未加入光学防抖，防护也仅限于卡口处密封圈而非整支镜身的防尘防溅结构。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2070mm%20F2.8%20DG%20Macro%20Art"
       }
-    ],
-    "notesZh": "真 1:1 微距定焦头；适马为优先保证光学素质，特意未加入光学防抖，防护也仅限于卡口处密封圈而非整支镜身的防尘防溅结构。"
+    ]
   },
   {
     "id": "sigma-90mm-f2-8-dg-dn-contemporary",
@@ -3218,15 +3386,17 @@
       "https://www.sigma-global.com/en/lenses/c021_90_28/",
       "https://www.sigma-global.com/en/news/2021/09/09/16339/"
     ],
-    "notes": "A compact I-series short telephoto prime; sealing is limited to a mount gasket rather than full-barrel weather resistance.",
+    "notes": {
+      "en": "A compact I-series short telephoto prime; sealing is limited to a mount gasket rather than full-barrel weather resistance.",
+      "zh": "紧凑型 I 系列中长焦定焦头；防护仅限于卡口处密封圈，并非整支镜身的防尘防溅结构。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2090mm%20F2.8%20DG%20DN%20Contemporary"
       }
-    ],
-    "notesZh": "紧凑型 I 系列中长焦定焦头；防护仅限于卡口处密封圈，并非整支镜身的防尘防溅结构。"
+    ]
   },
   {
     "id": "sigma-105mm-f1-4-dg-hsm-art",
@@ -3256,15 +3426,17 @@
       "https://www.sigma-global.com/en/lenses/a018_105_14/",
       "https://www.dpreview.com/news/6207745612/sigma-japan-confirms-release-date-of-its-l-mount-40mm-f1-4-and-105mm-f1-4-lenses"
     ],
-    "notes": "Nicknamed the 'Bokeh Master'; announced in 2018 for DSLR mounts, with a native L-Mount SKU following in December 2019 while retaining the DG HSM (not DG DN) designation.",
+    "notes": {
+      "en": "Nicknamed the 'Bokeh Master'; announced in 2018 for DSLR mounts, with a native L-Mount SKU following in December 2019 while retaining the DG HSM (not DG DN) designation.",
+      "zh": "绰号\"虚化大师\"；2018 年为单反卡口发布，原生 L 卡口版本于 2019 年 12 月跟进，仍保留 DG HSM（而非 DG DN）设计。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%20105mm%20F1.4%20DG%20HSM%20Art%20L-Mount"
       }
-    ],
-    "notesZh": "绰号\"虚化大师\"；2018 年为单反卡口发布，原生 L 卡口版本于 2019 年 12 月跟进，仍保留 DG HSM（而非 DG DN）设计。"
+    ]
   },
   {
     "id": "sigma-135mm-f1-4-dg-art",
@@ -3295,15 +3467,17 @@
       "https://www.sigma-global.com/en/lenses/a025_135_14/",
       "https://www.dpreview.com/news/9754998333/sigma-135mm-f1p4-lens-announcement"
     ],
-    "notes": "The world's first autofocus 135mm F1.4 lens; Sigma's official global name omits the usual 'DN' suffix despite being mirrorless-native only.",
+    "notes": {
+      "en": "The world's first autofocus 135mm F1.4 lens; Sigma's official global name omits the usual 'DN' suffix despite being mirrorless-native only.",
+      "zh": "全球首款自动对焦 135mm F1.4 镜头；适马官方型号名省略了常见的\"DN\"后缀，尽管它是纯无反原生设计。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%20135mm%20F1.4%20DG%20Art"
       }
-    ],
-    "notesZh": "全球首款自动对焦 135mm F1.4 镜头；适马官方型号名省略了常见的\"DN\"后缀，尽管它是纯无反原生设计。"
+    ]
   },
   {
     "id": "sigma-200mm-f2-dg-os-sports",
@@ -3334,15 +3508,17 @@
       "https://www.sigma-global.com/en/lenses/s025_200_2/",
       "https://www.dpreview.com/news/9815481333/sigma-200mm-f2-sports-fast-telephoto-prime"
     ],
-    "notes": "The world's first F2 200mm prime for full-frame mirrorless, a completely new design offering up to 6.5 stops of stabilization.",
+    "notes": {
+      "en": "The world's first F2 200mm prime for full-frame mirrorless, a completely new design offering up to 6.5 stops of stabilization.",
+      "zh": "全球首款全画幅无反 F2 光圈 200mm 定焦头，全新设计，最高可提供 6.5 档防抖效果。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%20200mm%20F2%20DG%20OS%20Sports"
       }
-    ],
-    "notesZh": "全球首款全画幅无反 F2 光圈 200mm 定焦头，全新设计，最高可提供 6.5 档防抖效果。"
+    ]
   },
   {
     "id": "sigma-500mm-f5-6-dg-dn-os-sports",
@@ -3372,15 +3548,17 @@
       "https://www.sigma-global.com/en/lenses/s024_500_56/",
       "https://www.dpreview.com/news/5211235643/sigma-500mm-f5-6-dg-dn-os-super-telephoto-e-l-mount"
     ],
-    "notes": "A remarkably lightweight super-telephoto prime for its class at 1,370g, offering up to 5.0 stops of stabilization.",
+    "notes": {
+      "en": "A remarkably lightweight super-telephoto prime for its class at 1,370g, offering up to 5.0 stops of stabilization.",
+      "zh": "同规格中格外轻便的超长焦定焦头，仅重 1370 克，最高可提供 5.0 档防抖效果。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%20500mm%20F5.6%20DG%20DN%20OS%20Sports"
       }
-    ],
-    "notesZh": "同规格中格外轻便的超长焦定焦头，仅重 1370 克，最高可提供 5.0 档防抖效果。"
+    ]
   },
   {
     "id": "meike-24mm-f1-4-mix",
@@ -3410,15 +3588,17 @@
       "https://meikeglobal.com/products/2414l",
       "https://phillipreeve.net/blog/review-meike-24mm-f-1-4-mix/"
     ],
-    "notes": "Meike's fastest wide-angle AF prime, announced August 2025; the L-mount version is slightly shorter and lighter (550g) than the Sony E copy.",
+    "notes": {
+      "en": "Meike's fastest wide-angle AF prime, announced August 2025; the L-mount version is slightly shorter and lighter (550g) than the Sony E copy.",
+      "zh": "美科目前最快的广角自动对焦定焦头，2025 年 8 月发布；L 卡口版本比索尼 E 卡口版本略短且更轻（550 克）。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Meike%2024mm%20f1.4%20MIX%20L%20mount"
       }
-    ],
-    "notesZh": "美科目前最快的广角自动对焦定焦头，2025 年 8 月发布；L 卡口版本比索尼 E 卡口版本略短且更轻（550 克）。"
+    ]
   },
   {
     "id": "meike-35mm-f2-stm",
@@ -3448,15 +3628,17 @@
       "https://meikeglobal.com/products/3520l",
       "https://www.ephotozine.com/article/meike-unveils-35mm-f2-0-autofocus-portrait-lens-for-sony-e--nikon-z--and-l-mount-cameras-36979"
     ],
-    "notes": "Entry-level AF wide prime launched September 2024 for Sony E, Nikon Z and L mount; minimum aperture and magnification are estimated since Meike does not publish them.",
+    "notes": {
+      "en": "Entry-level AF wide prime launched September 2024 for Sony E, Nikon Z and L mount; minimum aperture and magnification are estimated since Meike does not publish them.",
+      "zh": "入门级自动对焦广角定焦头，2024 年 9 月发布，提供索尼 E、尼康 Z 和 L 卡口版本；由于美科未公布最小光圈和放大倍率数据，此处为估算值。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Meike%2035mm%20f2.0%20STM%20L%20mount"
       }
-    ],
-    "notesZh": "入门级自动对焦广角定焦头，2024 年 9 月发布，提供索尼 E、尼康 Z 和 L 卡口版本；由于美科未公布最小光圈和放大倍率数据，此处为估算值。"
+    ]
   },
   {
     "id": "meike-35mm-f1-8-pro-stm",
@@ -3486,15 +3668,17 @@
       "https://meikeglobal.com/products/3818prol",
       "https://fstoppers.com/reviews/reviews-meike-35mm-f18-pro-af-amazing-performance-price-717725"
     ],
-    "notes": "Pro-tier redesign of Meike's 35mm STM lens with a metal body and click-stop aperture ring, released July 2025 for E/Z/L mounts.",
+    "notes": {
+      "en": "Pro-tier redesign of Meike's 35mm STM lens with a metal body and click-stop aperture ring, released July 2025 for E/Z/L mounts.",
+      "zh": "美科 35mm STM 定焦头的 Pro 升级版，金属机身配合有级光圈环，2025 年 7 月发布，提供 E/Z/L 卡口版本。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Meike%2035mm%20f1.8%20Pro%20STM%20L%20mount"
       }
-    ],
-    "notesZh": "美科 35mm STM 定焦头的 Pro 升级版，金属机身配合有级光圈环，2025 年 7 月发布，提供 E/Z/L 卡口版本。"
+    ]
   },
   {
     "id": "meike-50mm-f1-8-stm",
@@ -3524,15 +3708,17 @@
       "https://meikeglobal.com/products/50mm-f1-8-auto-focus-lens-for-portrait-photography",
       "https://petapixel.com/2024/07/11/meike-brings-its-very-affordable-170-50mm-f-1-8-af-prime-lens-to-l-mount/"
     ],
-    "notes": "Budget standard AF prime added to L-mount in July 2024.",
+    "notes": {
+      "en": "Budget standard AF prime added to L-mount in July 2024.",
+      "zh": "平价标准自动对焦定焦头，2024 年 7 月加入 L 卡口阵容。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Meike%2050mm%20f1.8%20STM%20L%20mount"
       }
-    ],
-    "notesZh": "平价标准自动对焦定焦头，2024 年 7 月加入 L 卡口阵容。"
+    ]
   },
   {
     "id": "meike-55mm-f1-8-pro-stm",
@@ -3563,15 +3749,17 @@
       "https://meikeglobal.com/products/5518l",
       "https://www.ephotozine.com/article/meike-unveils-pro-series-55mm-f1-8-full-frame-autofocus-portrait-lens-37017"
     ],
-    "notes": "Pro-tier 55mm AF prime announced October 2024 for E/Z/L mounts, using a stepping motor with an auxiliary focus drive system.",
+    "notes": {
+      "en": "Pro-tier 55mm AF prime announced October 2024 for E/Z/L mounts, using a stepping motor with an auxiliary focus drive system.",
+      "zh": "Pro 系列 55mm 自动对焦定焦头，2024 年 10 月发布，提供 E/Z/L 卡口版本，采用步进马达配合辅助对焦驱动系统。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Meike%2055mm%20f1.8%20Pro%20STM%20L%20mount"
       }
-    ],
-    "notesZh": "Pro 系列 55mm 自动对焦定焦头，2024 年 10 月发布，提供 E/Z/L 卡口版本，采用步进马达配合辅助对焦驱动系统。"
+    ]
   },
   {
     "id": "meike-85mm-f1-4-stm",
@@ -3601,15 +3789,17 @@
       "https://meikeglobal.com/products/meike-85mm-f1-4-auto-focus-lens",
       "https://www.newsshooter.com/2024/07/20/meike-85mm-f1-4-full-frame-auto-focus-lens-in-l-mount/"
     ],
-    "notes": "Meike's first budget 85mm f/1.4 AF prime, with the L-mount SKU confirmed shipping in July 2024.",
+    "notes": {
+      "en": "Meike's first budget 85mm f/1.4 AF prime, with the L-mount SKU confirmed shipping in July 2024.",
+      "zh": "美科首款平价 85mm f/1.4 自动对焦定焦头，L 卡口版本已确认于 2024 年 7 月开售。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Meike%2085mm%20f1.4%20STM%20L%20mount"
       }
-    ],
-    "notesZh": "美科首款平价 85mm f/1.4 自动对焦定焦头，L 卡口版本已确认于 2024 年 7 月开售。"
+    ]
   },
   {
     "id": "meike-85mm-f1-4-stm-mix-ii",
@@ -3639,15 +3829,17 @@
       "https://meikeglobal.com/products/8514iil",
       "https://opticallimits.com/news/meike-af-85mm-f-1-4-ii-mix-series-announced/"
     ],
-    "notes": "Second-generation 85mm f/1.4 'MIX' lens with a redesigned optical formula, officially released for E/Z/L mounts in May 2026.",
+    "notes": {
+      "en": "Second-generation 85mm f/1.4 'MIX' lens with a redesigned optical formula, officially released for E/Z/L mounts in May 2026.",
+      "zh": "第二代 85mm f/1.4 \"MIX\" 定焦头，重新设计光学结构，2026 年 5 月正式发布，提供 E/Z/L 卡口版本。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Meike%2085mm%20f1.4%20II%20MIX%20L%20mount"
       }
-    ],
-    "notesZh": "第二代 85mm f/1.4 \"MIX\" 定焦头，重新设计光学结构，2026 年 5 月正式发布，提供 E/Z/L 卡口版本。"
+    ]
   },
   {
     "id": "meike-85mm-f1-8-stm",
@@ -3677,15 +3869,17 @@
       "https://meikeglobal.com/products/85mm-f1-8l",
       "https://dustinabbott.net/2022/08/meike-85mm-f1-8-stm-review/"
     ],
-    "notes": "Meike's original 85mm f/1.8 AF portrait prime; also sold under the 'SE' name once the Pro tier launched (treated here as the same optical lens, not a separate SKU).",
+    "notes": {
+      "en": "Meike's original 85mm f/1.8 AF portrait prime; also sold under the 'SE' name once the Pro tier launched (treated here as the same optical lens, not a separate SKU).",
+      "zh": "美科最初的 85mm f/1.8 自动对焦人像定焦头；Pro 系列推出后也曾以\"SE\"命名销售（此处视为同一支光学镜头，不作为独立型号收录）。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Meike%2085mm%20f1.8%20STM%20L%20mount"
       }
-    ],
-    "notesZh": "美科最初的 85mm f/1.8 自动对焦人像定焦头；Pro 系列推出后也曾以\"SE\"命名销售（此处视为同一支光学镜头，不作为独立型号收录）。"
+    ]
   },
   {
     "id": "meike-85mm-f1-8-pro-stm",
@@ -3715,15 +3909,17 @@
       "https://meikeglobal.com/products/8518prol",
       "https://www.dpreview.com/news/3205800338/meike-85mm-f1p8-pro-sony-nikon-l-mount-autofocus"
     ],
-    "notes": "Pro-tier 85mm f/1.8 AF prime with a redesigned optical formula and click-stop aperture ring, announced November 2024 for E/Z/L mounts.",
+    "notes": {
+      "en": "Pro-tier 85mm f/1.8 AF prime with a redesigned optical formula and click-stop aperture ring, announced November 2024 for E/Z/L mounts.",
+      "zh": "Pro 系列 85mm f/1.8 自动对焦定焦头，重新设计光学结构并配备有级光圈环，2024 年 11 月发布，提供 E/Z/L 卡口版本。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Meike%2085mm%20f1.8%20Pro%20STM%20L%20mount"
       }
-    ],
-    "notesZh": "Pro 系列 85mm f/1.8 自动对焦定焦头，重新设计光学结构并配备有级光圈环，2024 年 11 月发布，提供 E/Z/L 卡口版本。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-14-28mm-f4-5-6-macro",
@@ -3753,15 +3949,17 @@
       "https://shop.panasonic.com/products/s-series-14-28mm-f4-5-6-l-mount-lens",
       "https://sansmirror.com/lenses/lens-database/lenses-from-camera-makers/panasonic-l-mount-lenses/lumix-s-14-28mm-f4-56-macro.html"
     ],
-    "notes": "Unusually for an ultra-wide zoom, it has a conventional 77mm front filter thread and 0.5x macro magnification at the tele end.",
+    "notes": {
+      "en": "Unusually for an ultra-wide zoom, it has a conventional 77mm front filter thread and 0.5x macro magnification at the tele end.",
+      "zh": "作为一支超广角变焦头较为少见地配备了常规 77mm 前置滤镜口径，长焦端可实现 0.5 倍微距放大。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+14-28mm+F4-5.6+Macro"
       }
-    ],
-    "notesZh": "作为一支超广角变焦头较为少见地配备了常规 77mm 前置滤镜口径，长焦端可实现 0.5 倍微距放大。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-pro-16-35mm-f4",
@@ -3791,15 +3989,17 @@
       "https://shop.panasonic.com/products/s-series-pro-16-35mm-f4-l-mount-lens",
       "https://www.dpreview.com/news/0761901751/panasonic-lumix-s-pro-16-35mm-f4"
     ],
-    "notes": "A constant-f/4 PRO-series wide-angle zoom launched alongside the original LUMIX S1/S1R system.",
+    "notes": {
+      "en": "A constant-f/4 PRO-series wide-angle zoom launched alongside the original LUMIX S1/S1R system.",
+      "zh": "恒定 f/4 光圈的 PRO 系列广角变焦头，随初代 LUMIX S1/S1R 系统一同发布。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+PRO+16-35mm+F4"
       }
-    ],
-    "notesZh": "恒定 f/4 光圈的 PRO 系列广角变焦头，随初代 LUMIX S1/S1R 系统一同发布。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-18-40mm-f4-5-6-3",
@@ -3830,15 +4030,17 @@
       "https://na.panasonic.com/news/panasonic-introduces-the-worlds-smallest-and-lightest-zoom-lens-lumix-s-18-40mm-f4.5-6.3-s-r1840",
       "https://www.neocamera.com/lens/panasonic/lumix_s_18-40mm_f4.5-6.3"
     ],
-    "notes": "Marketed by Panasonic as the world's smallest and lightest full-frame L-Mount zoom at launch, designed as a kit lens for the compact LUMIX S9.",
+    "notes": {
+      "en": "Marketed by Panasonic as the world's smallest and lightest full-frame L-Mount zoom at launch, designed as a kit lens for the compact LUMIX S9.",
+      "zh": "松下宣传为发布时全球最小最轻的全画幅 L 卡口变焦头，是专为紧凑机身 LUMIX S9 设计的套机镜头。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+18-40mm+F4.5-6.3"
       }
-    ],
-    "notesZh": "松下宣传为发布时全球最小最轻的全画幅 L 卡口变焦头，是专为紧凑机身 LUMIX S9 设计的套机镜头。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-24-60mm-f2-8",
@@ -3868,15 +4070,17 @@
       "https://shop.panasonic.com/products/s-series-24-60mm-f2-8-l-mount-lens-s-e2460",
       "https://www.cined.com/panasonic-lumix-s-24-60mm-f-2-8-standard-zoom-lens-for-l-mount-released-compact-and-lightweight/"
     ],
-    "notes": "A lighter, more compact constant-f/2.8 standard zoom released in 2025 alongside the LUMIX S1II/S1IIE, distinct from the earlier LUMIX S PRO 24-70mm F2.8.",
+    "notes": {
+      "en": "A lighter, more compact constant-f/2.8 standard zoom released in 2025 alongside the LUMIX S1II/S1IIE, distinct from the earlier LUMIX S PRO 24-70mm F2.8.",
+      "zh": "2025 年随 LUMIX S1II/S1IIE 一同发布的更轻巧紧凑的恒定 f/2.8 标准变焦头，区别于早期的 LUMIX S PRO 24-70mm F2.8。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+24-60mm+F2.8"
       }
-    ],
-    "notesZh": "2025 年随 LUMIX S1II/S1IIE 一同发布的更轻巧紧凑的恒定 f/2.8 标准变焦头，区别于早期的 LUMIX S PRO 24-70mm F2.8。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-pro-24-70mm-f2-8",
@@ -3906,15 +4110,17 @@
       "https://shop.panasonic.com/products/s-series-pro-24-70mm-f2-8-l-mount-lens",
       "https://www.imaging-resource.com/lenses/panasonic-24-70mm-f-2-8-lumix-s-pro/specifications/"
     ],
-    "notes": "The original constant-f/2.8 PRO standard zoom launched with the LUMIX S1/S1R system in 2019.",
+    "notes": {
+      "en": "The original constant-f/2.8 PRO standard zoom launched with the LUMIX S1/S1R system in 2019.",
+      "zh": "初代恒定 f/2.8 PRO 标准变焦头，2019 年随 LUMIX S1/S1R 系统一同发布。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+PRO+24-70mm+F2.8"
       }
-    ],
-    "notesZh": "初代恒定 f/2.8 PRO 标准变焦头，2019 年随 LUMIX S1/S1R 系统一同发布。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-28-200mm-f4-7-1-macro-ois",
@@ -3945,15 +4151,17 @@
       "https://shop.panasonic.com/products/s-series-28-200mm-l-mount-lens",
       "https://amateurphotographer.com/review/panasonic-lumix-s-28-200mm-f4-7-1-macro-ois-review/"
     ],
-    "notes": "An all-in-one 7.1x superzoom with 0.5x (1:2) macro magnification.",
+    "notes": {
+      "en": "An all-in-one 7.1x superzoom with 0.5x (1:2) macro magnification.",
+      "zh": "一镜走天下的 7.1 倍超级变焦头，具备 0.5 倍（1:2）微距放大能力。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+28-200mm+F4-7.1+Macro+O.I.S."
       }
-    ],
-    "notesZh": "一镜走天下的 7.1 倍超级变焦头，具备 0.5 倍（1:2）微距放大能力。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-pro-70-200mm-f4-ois",
@@ -3983,15 +4191,17 @@
       "https://shop.panasonic.com/products/s-series-pro-70-200mm-f4-l-mount-lens",
       "https://www.imaging-resource.com/lenses/panasonic-70-200mm-f-4-ois-lumix-s-pro/"
     ],
-    "notes": "The lighter, more compact companion to the LUMIX S PRO 70-200mm F2.8, launched with the original S1/S1R system in 2019.",
+    "notes": {
+      "en": "The lighter, more compact companion to the LUMIX S PRO 70-200mm F2.8, launched with the original S1/S1R system in 2019.",
+      "zh": "LUMIX S PRO 70-200mm F2.8 的轻量紧凑版搭档，2019 年随初代 S1/S1R 系统一同发布。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+PRO+70-200mm+F4+O.I.S."
       }
-    ],
-    "notesZh": "LUMIX S PRO 70-200mm F2.8 的轻量紧凑版搭档，2019 年随初代 S1/S1R 系统一同发布。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-70-300mm-f4-5-5-6-macro-ois",
@@ -4022,15 +4232,17 @@
       "https://shop.panasonic.com/products/s-series-70-300mm-f4-5-5-6-l-mount-lens",
       "https://www.imaging-resource.com/lenses/panasonic/70-300mm-f4.5-5.6-macro-ois-lumix-s/review/"
     ],
-    "notes": "Reaches 0.5x (1:2) macro magnification at 300mm, making it a compact telephoto-macro hybrid with in-lens O.I.S.",
+    "notes": {
+      "en": "Reaches 0.5x (1:2) macro magnification at 300mm, making it a compact telephoto-macro hybrid with in-lens O.I.S.",
+      "zh": "300mm 端可实现 0.5 倍（1:2）微距放大，是一支紧凑的长焦微距混合镜头，内置光学防抖。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+70-300mm+F4.5-5.6+Macro+O.I.S."
       }
-    ],
-    "notesZh": "300mm 端可实现 0.5 倍（1:2）微距放大，是一支紧凑的长焦微距混合镜头，内置光学防抖。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-100-500mm-f5-7-1-ois",
@@ -4060,15 +4272,17 @@
       "https://shop.panasonic.com/products/lumix-s-series-100-500mm-f5-f7-1-ultra-telephoto-zoom-l-mount-lens",
       "https://www.dpreview.com/news/6666173154/panasonic-lumix-100-500mm-f5-7p1-ois-announcement"
     ],
-    "notes": "Panasonic's first ultra-telephoto zoom for the LUMIX S system, announced in September 2025 with a removable tripod collar.",
+    "notes": {
+      "en": "Panasonic's first ultra-telephoto zoom for the LUMIX S system, announced in September 2025 with a removable tripod collar.",
+      "zh": "松下为 LUMIX S 系统推出的首款超长焦变焦头，2025 年 9 月发布，配备可拆卸脚架环。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+100-500mm+F5-7.1+O.I.S."
       }
-    ],
-    "notesZh": "松下为 LUMIX S 系统推出的首款超长焦变焦头，2025 年 9 月发布，配备可拆卸脚架环。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-18mm-f1-8",
@@ -4098,15 +4312,17 @@
       "https://shop.panasonic.com/products/s-series-18mm-f1-8-l-mount-lens",
       "https://www.imaging-resource.com/lenses/panasonic-18mm-f-1-8-lumix-s/specifications/"
     ],
-    "notes": "The widest lens in Panasonic's compact, matched-size S 1.8 prime series aimed at hybrid photo/video shooters.",
+    "notes": {
+      "en": "The widest lens in Panasonic's compact, matched-size S 1.8 prime series aimed at hybrid photo/video shooters.",
+      "zh": "松下紧凑同规格 S 1.8 定焦系列中最广的一支，面向兼顾照片与视频拍摄的用户。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+18mm+F1.8"
       }
-    ],
-    "notesZh": "松下紧凑同规格 S 1.8 定焦系列中最广的一支，面向兼顾照片与视频拍摄的用户。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-24mm-f1-8",
@@ -4136,15 +4352,17 @@
       "https://shop.panasonic.com/products/s-series-24mm-f1-8-l-mount-lens",
       "https://www.photographyblog.com/reviews/panasonic_lumix_s_24mm_f1_8_review"
     ],
-    "notes": "Part of Panasonic's matched-size S 1.8 prime lineup, sharing external dimensions and controls with its siblings for gimbal use.",
+    "notes": {
+      "en": "Part of Panasonic's matched-size S 1.8 prime lineup, sharing external dimensions and controls with its siblings for gimbal use.",
+      "zh": "松下同规格 S 1.8 定焦系列成员之一，与同系列其他镜头共享外形尺寸和操控布局，便于稳定器使用。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+24mm+F1.8"
       }
-    ],
-    "notesZh": "松下同规格 S 1.8 定焦系列成员之一，与同系列其他镜头共享外形尺寸和操控布局，便于稳定器使用。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-35mm-f1-8",
@@ -4174,15 +4392,17 @@
       "https://shop.panasonic.com/products/s-series-35mm-f1-8-l-mount",
       "https://www.dpreview.com/news/9688000298/panasonic-announces-lumix-s-35mm-f1-8-standard-prime"
     ],
-    "notes": "A compact standard-wide prime in Panasonic's S 1.8 series, sharing a common 67mm filter thread and control layout with its siblings.",
+    "notes": {
+      "en": "A compact standard-wide prime in Panasonic's S 1.8 series, sharing a common 67mm filter thread and control layout with its siblings.",
+      "zh": "松下 S 1.8 系列中紧凑的标准偏广角定焦头，与系列其他镜头共用 67mm 滤镜口径和操控布局。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+35mm+F1.8"
       }
-    ],
-    "notesZh": "松下 S 1.8 系列中紧凑的标准偏广角定焦头，与系列其他镜头共用 67mm 滤镜口径和操控布局。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-40mm-f2",
@@ -4212,15 +4432,17 @@
       "https://shop.panasonic.com/products/lumix-s-series-40mm-f2-l-mount-camera-lens",
       "https://www.digitalcameraworld.com/cameras/lenses/panasonic-lumix-s-40mm-f-2-review"
     ],
-    "notes": "The newest and smallest lens in the S 1.8/f2 prime series, a pancake-style design with a fluorine-coated front element.",
+    "notes": {
+      "en": "The newest and smallest lens in the S 1.8/f2 prime series, a pancake-style design with a fluorine-coated front element.",
+      "zh": "S 1.8/f2 定焦系列中最新、最小的一支，饼干头造型，前镜片带氟涂层。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+40mm+F2"
       }
-    ],
-    "notesZh": "S 1.8/f2 定焦系列中最新、最小的一支，饼干头造型，前镜片带氟涂层。"
+    ]
   },
   {
     "id": "panasonic-lumix-s-50mm-f1-8",
@@ -4251,14 +4473,16 @@
       "https://shop.panasonic.com/products/s-series-50mm-f1-8-l-mount-lens",
       "https://www.imaging-resource.com/news/2021/06/01/panasonic-unveils-compact-affordable-lumix-50mm-f-1.8-s-full-frame-lens"
     ],
-    "notes": "A compact, affordable standard prime that completes Panasonic's matched-size S 1.8 lens series.",
+    "notes": {
+      "en": "A compact, affordable standard prime that completes Panasonic's matched-size S 1.8 lens series.",
+      "zh": "紧凑平价的标准定焦头，补全了松下同规格 S 1.8 镜头系列。"
+    },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+50mm+F1.8"
       }
-    ],
-    "notesZh": "紧凑平价的标准定焦头，补全了松下同规格 S 1.8 镜头系列。"
+    ]
   }
 ]

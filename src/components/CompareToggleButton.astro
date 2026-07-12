@@ -1,12 +1,18 @@
 ---
 import type { Lens } from '../lib/types';
+import { t, type Lang } from '../lib/i18n';
 
 interface Props {
   lens: Lens;
+  lang: Lang;
   class?: string;
 }
 
-const { lens, class: className } = Astro.props;
+const { lens, lang, class: className } = Astro.props;
+// compare.js re-labels this button as the selection changes; this is the
+// starting (not-yet-selected) label, rendered in the page's language so it
+// is correct even before — or without — any JavaScript.
+const addLabel = t(lang, 'compare.add');
 ---
 <button
   type="button"
@@ -14,8 +20,8 @@ const { lens, class: className } = Astro.props;
   data-compare-toggle
   data-lens-id={lens.id}
   aria-pressed="false"
-  aria-label="Add to compare"
-  title="Add to compare"
+  aria-label={addLabel}
+  title={addLabel}
 >
   <svg class="compare-toggle__icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
     <path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />

@@ -122,6 +122,22 @@ a {
   color: var(--color-text);
 }
 
+/* ---------- language switcher ---------- */
+
+/* One link per other language (see Header.astro) — a real navigation to that
+   language's copy of the current page, not a client-side toggle. Styled as
+   the button it replaced; the explicit color is needed because the
+   `.site-header__nav a` rule above is more specific than `.btn` and would
+   otherwise mute it. */
+.lang-switch {
+  display: inline-flex;
+  gap: 0.4rem;
+}
+
+.site-header__nav .lang-switch a.btn {
+  color: var(--color-text);
+}
+
 .site-footer {
   border-top: 1px solid var(--color-border);
   margin-top: 3rem;

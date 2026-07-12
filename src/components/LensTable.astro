@@ -1,77 +1,71 @@
 ---
 import type { Lens } from '../lib/types';
-import { focalLengthLabel, apertureLabel, weightLabel, weightBucketId } from '../lib/lenses';
-import { dict } from '../lib/i18n-dict.js';
+import {
+  focalLengthLabel,
+  apertureLabel,
+  weightLabel,
+  weightBucketId,
+  lensSearchText,
+} from '../lib/lenses';
+import { t, brandName, localeHref, type Lang } from '../lib/i18n';
 import CompareToggleButton from './CompareToggleButton.astro';
 
 interface Props {
   lenses: Lens[];
+  lang: Lang;
 }
 
-const { lenses } = Astro.props;
-const base = import.meta.env.BASE_URL;
-
-function brandZhName(brand: string): string {
-  return (dict.zh as Record<string, string>)[`brand.${brand}`] ?? brand;
-}
+const { lenses, lang } = Astro.props;
 ---
 <div class="lens-table-wrap" id="lens-table-wrap">
   <table class="lens-table">
     <thead>
       <tr>
-        <th data-i18n="table.brand">Brand</th>
-        <th data-i18n="table.model">Model</th>
-        <th data-i18n="table.alliance">Alliance</th>
-        <th data-i18n="table.format">Format</th>
-        <th data-i18n="table.type">Type</th>
-        <th data-i18n="table.focus">Focus</th>
-        <th data-i18n="table.focalLength">Focal length</th>
-        <th data-i18n="table.maxAperture">Max aperture</th>
-        <th data-i18n="table.weight">Weight</th>
-        <th data-i18n="table.year">Year</th>
-        <th data-i18n="table.compare">Compare</th>
+        <th>{t(lang, 'table.brand')}</th>
+        <th>{t(lang, 'table.model')}</th>
+        <th>{t(lang, 'table.alliance')}</th>
+        <th>{t(lang, 'table.format')}</th>
+        <th>{t(lang, 'table.type')}</th>
+        <th>{t(lang, 'table.focus')}</th>
+        <th>{t(lang, 'table.focalLength')}</th>
+        <th>{t(lang, 'table.maxAperture')}</th>
+        <th>{t(lang, 'table.weight')}</th>
+        <th>{t(lang, 'table.year')}</th>
+        <th>{t(lang, 'table.compare')}</th>
       </tr>
     </thead>
     <tbody>
-      {lenses.map((lens) => {
-        const brandKey = `brand.${lens.brand}`;
-        const searchText = `${lens.brand} ${brandZhName(lens.brand)} ${lens.model} ${focalLengthLabel(lens)}`.toLowerCase();
-        const formatKey = lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc';
-        const lensTypeKey = lens.lensType === 'Prime' ? 'filterBar.prime' : 'filterBar.zoom';
-        return (
-          <tr
-            data-lens-row
-            data-brand={lens.brand}
-            data-format={lens.format}
-            data-focus-type={lens.focusType}
-            data-lens-type={lens.lensType}
-            data-alliance={String(lens.allianceMember)}
-            data-weight-bucket={weightBucketId(lens.weightGram)}
-            data-weight={lens.weightGram}
-            data-focal-min={lens.focalLengthMin}
-            data-focal-max={lens.focalLengthMax}
-            data-max-aperture={lens.maxAperture}
-            data-release-year={lens.releaseYear}
-            data-search={searchText}
-          >
-            <td data-i18n={brandKey}>{lens.brand}</td>
-            <td><a href={`${base}lenses/${lens.id}`}>{lens.model}</a></td>
-            <td data-i18n={lens.allianceMember ? 'table.member' : 'table.thirdParty'}>
-              {lens.allianceMember ? 'Member' : 'Third-party'}
-            </td>
-            <td data-i18n={formatKey}>{lens.format}</td>
-            <td data-i18n={lensTypeKey}>{lens.lensType}</td>
-            <td>{lens.focusType}</td>
-            <td>{focalLengthLabel(lens)}</td>
-            <td>{apertureLabel(lens)}</td>
-            <td>{weightLabel(lens)}</td>
-            <td>{lens.releaseYear}</td>
-            <td class="lens-table__compare-cell">
-              <CompareToggleButton lens={lens} />
-            </td>
-          </tr>
-        );
-      })}
+      {lenses.map((lens) => (
+        <tr
+          data-lens-row
+          data-brand={lens.brand}
+          data-format={lens.format}
+          data-focus-type={lens.focusType}
+          data-lens-type={lens.lensType}
+          data-alliance={String(lens.allianceMember)}
+          data-weight-bucket={weightBucketId(lens.weightGram)}
+          data-weight={lens.weightGram}
+          data-focal-min={lens.focalLengthMin}
+          data-focal-max={lens.focalLengthMax}
+          data-max-aperture={lens.maxAperture}
+          data-release-year={lens.releaseYear}
+          data-search={lensSearchText(lens)}
+        >
+          <td>{brandName(lang, lens.brand)}</td>
+          <td><a href={localeHref(lang, `lenses/${lens.id}`)}>{lens.model}</a></td>
+          <td>{t(lang, lens.allianceMember ? 'table.member' : 'table.thirdParty')}</td>
+          <td>{t(lang, lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc')}</td>
+          <td>{t(lang, lens.lensType === 'Prime' ? 'filterBar.prime' : 'filterBar.zoom')}</td>
+          <td>{lens.focusType}</td>
+          <td>{focalLengthLabel(lens)}</td>
+          <td>{apertureLabel(lens)}</td>
+          <td>{weightLabel(lens)}</td>
+          <td>{lens.releaseYear}</td>
+          <td class="lens-table__compare-cell">
+            <CompareToggleButton lens={lens} lang={lang} />
+          </td>
+        </tr>
+      ))}
     </tbody>
   </table>
 </div>

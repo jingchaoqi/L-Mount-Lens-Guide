@@ -34,8 +34,10 @@ required.
      "releaseYear": 2024,
      "officialUrl": "https://example.com/lens-page",
      "sourceUrls": ["https://example.com/lens-page"],
-     "notes": "",
-     "notesZh": "",
+     "notes": {
+       "en": "",
+       "zh": ""
+     },
      "affiliateUrls": [],
      "retailerSearchUrls": []
    }
@@ -46,8 +48,11 @@ required.
    `brand-model-key-specs`, e.g. `sigma-35mm-f1-4-dg-dn-art`.
 
 4. **`allianceMember`** — set to `true` only if the brand is a publicly
-   listed member of the L-Mount Alliance (as of writing: Leica, Panasonic,
-   Sigma). For every other brand, set it to `false`. This flag drives a
+   listed member of the L-Mount Alliance. Check the current roster at
+   [l-mount.com](https://l-mount.com/) rather than trusting this file — the
+   membership list grows. (Brands currently marked `true` in the data:
+   Leica, Panasonic, Samyang, Sigma, Sirui, Viltrox.) For every other brand,
+   set it to `false`. This flag drives a
    visible "Alliance member" vs. "Third-party" badge on the site — please
    get it right, since misrepresenting a third-party product as an Alliance
    product is exactly what this project exists to avoid. If a brand's
@@ -63,9 +68,13 @@ required.
    over third-party retailers or blogs. `officialUrl` should also generally
    be a manufacturer link.
 
-7. **`notesZh`** (optional) — a Chinese translation of `notes`, shown instead
-   of the English text when the site is switched to Chinese. If omitted, the
-   English `notes` text is shown regardless of language.
+7. **`notes`** — an object of short, factual free text keyed by locale code,
+   e.g. `{ "en": "...", "zh": "..." }`. The English key (`"en"`) is
+   **required**; every other locale is optional and falls back to the English
+   text when the site is viewed in that language. The set of valid locale keys
+   comes from `src/lib/locales.js` — a key that isn't listed there (a typo like
+   `"zn"`, say) is a validation error, so adding a translation for a new
+   language means adding that language to `locales.js` first.
 
 8. **`affiliateUrls`** / **`retailerSearchUrls`** — leave `affiliateUrls`
    empty (`[]`) unless you are the maintainer setting up a disclosed
@@ -94,6 +103,8 @@ This checks:
   allowed set
 - `officialUrl`, `sourceUrls`, `affiliateUrls[].url`, and
   `retailerSearchUrls[].url` are well-formed `http(s)` URLs
+- `notes` has a non-empty `"en"` entry, and every other key in it is a locale
+  code listed in `src/lib/locales.js`
 - `focalLengthMin` ≤ `focalLengthMax` and `maxAperture` ≤ `minAperture`
   (as f-numbers)
 

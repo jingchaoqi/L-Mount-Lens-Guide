@@ -1,5 +1,6 @@
 import rawLenses from '../data/lenses.json';
 import type { Lens } from './types';
+import { t, brandName, localized, LOCALE_CODES, type Lang } from './i18n';
 
 export const lenses = rawLenses as unknown as Lens[];
 
@@ -73,11 +74,42 @@ export function getFocalRange(): { min: number; max: number } {
  */
 export const COMMON_FOCAL_LENGTHS = [14, 20, 24, 35, 50, 85, 105, 135, 200, 300, 400, 600];
 
-/** Builds the SEO title/description for a lens detail page. */
-export function lensSeo(lens: Lens): { title: string; description: string } {
-  const title = `${lens.brand} ${lens.model} — L-Mount Lens Guide`;
-  const description = `${lens.brand} ${lens.model}: ${focalLengthLabel(lens)} ${apertureLabel(lens)}, `
-    + `${lens.format}, ${lens.focusType === 'AF' ? 'autofocus' : 'manual focus'}, `
-    + `${weightLabel(lens)}. ${lens.allianceMember ? 'L-Mount Alliance member.' : 'Third-party L-Mount lens (not an Alliance member).'}`;
-  return { title, description };
+/** Builds the SEO title/description for a lens detail page, in `lang`. */
+export function lensSeo(lens: Lens, lang: Lang): { title: string; description: string } {
+  const brand = brandName(lang, lens.brand);
+  return {
+    title: t(lang, 'seo.lensTitle', { brand, model: lens.model }),
+    description: t(lang, 'seo.lensDescription', {
+      brand,
+      model: lens.model,
+      focal: focalLengthLabel(lens),
+      aperture: apertureLabel(lens),
+      format: t(lang, lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc'),
+      focus: t(lang, lens.focusType === 'AF' ? 'detail.af' : 'detail.mf'),
+      weight: weightLabel(lens),
+      alliance: t(lang, lens.allianceMember ? 'seo.lensAlliance' : 'seo.lensThirdParty'),
+    }),
+  };
+}
+
+/** The lens's notes in `lang`, falling back to the default locale. */
+export function lensNotes(lens: Lens, lang: Lang): string {
+  return localized(lens.notes, lang);
+}
+
+/**
+ * The haystack `filter.js` matches the search box against, built once here
+ * so the card view and the table view cannot drift apart on what is
+ * searchable (they render separately but must filter identically).
+ *
+ * Brand names for *every* locale are included, not just the current one, so
+ * searching "Sigma" still works on the Chinese pages and "适马" still works
+ * on the English ones — the visitor's keyboard and the page's language are
+ * not the same thing.
+ */
+export function lensSearchText(lens: Lens): string {
+  const brandAliases = LOCALE_CODES.map((code) => brandName(code, lens.brand));
+  return [...new Set([...brandAliases, lens.model, focalLengthLabel(lens)])]
+    .join(' ')
+    .toLowerCase();
 }

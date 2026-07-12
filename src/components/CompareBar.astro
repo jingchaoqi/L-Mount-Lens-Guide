@@ -1,17 +1,23 @@
 ---
-const base = import.meta.env.BASE_URL;
+import { t, localeHref, type Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const clearAllLabel = t(lang, 'compare.clearAll');
 ---
 <div class="compare-widget" id="compare-widget" hidden>
   <div class="compare-panel" id="compare-panel" hidden>
     <div class="compare-panel__header">
-      <span class="compare-panel__title" data-i18n="compare.panelTitle">Comparing</span>
+      <span class="compare-panel__title">{t(lang, 'compare.panelTitle')}</span>
       <button
         type="button"
         class="compare-panel__clear"
         id="compare-clear-all"
-        aria-label="Clear all"
-        data-i18n-aria-label="compare.clearAll"
-        title="Clear all"
+        aria-label={clearAllLabel}
+        title={clearAllLabel}
       >
         <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false">
           <path
@@ -32,7 +38,7 @@ const base = import.meta.env.BASE_URL;
     type="button"
     id="compare-bar"
     class="compare-bar"
-    data-href={`${base}compare`}
+    data-href={localeHref(lang, 'compare')}
     aria-controls="compare-panel"
     aria-expanded="false"
   >
@@ -46,8 +52,8 @@ const base = import.meta.env.BASE_URL;
       />
     </svg>
     <span class="compare-bar__label-stack">
-      <span class="compare-bar__label is-current" data-compare-count-text>Compare lenses (0)</span>
-      <span class="compare-bar__label" data-compare-armed-text>Start comparing</span>
+      <span class="compare-bar__label is-current" data-compare-count-text>{t(lang, 'compare.floatingButton', { count: 0 })}</span>
+      <span class="compare-bar__label" data-compare-armed-text>{t(lang, 'compare.startComparing')}</span>
     </span>
   </button>
 </div>

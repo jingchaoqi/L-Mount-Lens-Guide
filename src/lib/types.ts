@@ -10,6 +10,12 @@ export type LensCategory =
   | 'Macro'
   | 'Cine';
 
+/**
+ * Free text keyed by locale code (see src/lib/locales.js). The default
+ * locale ('en') is required; other locales are optional and fall back to it.
+ */
+export type LocalizedText = { en: string } & Partial<Record<string, string>>;
+
 export interface RetailerSearchUrl {
   /** Display label, e.g. "B&H", "Amazon" */
   label: string;
@@ -52,9 +58,8 @@ export interface Lens {
   officialUrl: string;
   /** Citations for the specs above. At least one required. */
   sourceUrls: string[];
-  notes: string;
-  /** Chinese translation of `notes`. Optional — falls back to `notes` if omitted. */
-  notesZh?: string;
+  /** Short factual summary, keyed by locale. `en` required; others optional. */
+  notes: LocalizedText;
   /** Reserved for future commercial links. Empty for now. */
   affiliateUrls: RetailerSearchUrl[];
   /** Non-monetized "search this lens at a retailer" links. */

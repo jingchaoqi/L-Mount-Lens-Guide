@@ -9,7 +9,11 @@
 // Runs on every page (wired in Layout.astro) so the widget and the
 // selection stay consistent no matter where the visitor is.
 
-import { dict } from '../lib/i18n-dict.js';
+// Imported directly rather than read off a global: this script writes its own
+// button labels, and reaching for `window.__i18n` meant that if it happened to
+// run first it would silently label a Chinese page in English (or worse, with
+// raw dictionary keys).
+import { t as translate, brandName as translateBrand } from '../lib/i18n-runtime.js';
 
 const STORAGE_KEY = 'lmount-compare';
 
@@ -100,15 +104,6 @@ window.__compare = {
   toggle,
   clear,
 };
-
-function translate(key, vars) {
-  return window.__i18n ? window.__i18n.t(key, vars) : key;
-}
-
-function translateBrand(brand) {
-  const lang = window.__i18n ? window.__i18n.lang : 'en';
-  return (dict[lang] && dict[lang][`brand.${brand}`]) || dict.en[`brand.${brand}`] || brand;
-}
 
 function updateToggleButtons() {
   document.querySelectorAll('[data-compare-toggle]').forEach((btn) => {
@@ -366,8 +361,6 @@ window.addEventListener('scroll', (event) => {
   if (Date.now() - panelOpenedAt < 150) return;
   setPanelOpen(false);
 }, { capture: true, passive: true });
-
-document.addEventListener('i18n:change', render);
 
 function init() {
   // Hovering the bar behaves like clicking it while idle — opens the

@@ -1,5 +1,16 @@
 ---
 import { getBrandsGrouped, getFocalRange, COMMON_FOCAL_LENGTHS, WEIGHT_BUCKETS } from '../lib/lenses';
+import { t, brandName, type Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+  /** Total lens count, for the initial "Showing N of N" line — rendered
+   *  server-side so it is correct in this page's language before filter.js
+   *  ever runs. */
+  total: number;
+}
+
+const { lang, total } = Astro.props;
 
 const { alliance: allianceBrands, thirdParty: thirdPartyBrands } = getBrandsGrouped();
 const focalRange = getFocalRange();
@@ -20,71 +31,70 @@ const focalTicks = COMMON_FOCAL_LENGTHS.filter((v) => v >= focalRange.min && v <
     type="search"
     id="search-input"
     class="filter-bar__search"
-    placeholder="Search brand, model, or focal length (e.g. &quot;Sigma 35mm&quot;)"
-    data-i18n-placeholder="filterBar.searchPlaceholder"
-    aria-label="Search lenses"
+    placeholder={t(lang, 'filterBar.searchPlaceholder')}
+    aria-label={t(lang, 'filterBar.searchAriaLabel')}
   />
 
   <div class="filter-bar__grid">
     <div class="filter-group">
-      <label for="filter-brand" data-i18n="filterBar.brand">Brand</label>
+      <label for="filter-brand">{t(lang, 'filterBar.brand')}</label>
       <select id="filter-brand" data-filter="brand">
-        <option value="all" data-i18n="filterBar.allBrands">All brands</option>
-        <optgroup label="L-Mount Alliance members" data-i18n-label="filterBar.allianceBrandsGroup">
-          {allianceBrands.map((brand) => <option value={brand} data-i18n={`brand.${brand}`}>{brand}</option>)}
+        <option value="all">{t(lang, 'filterBar.allBrands')}</option>
+        <optgroup label={t(lang, 'filterBar.allianceBrandsGroup')}>
+          {allianceBrands.map((brand) => <option value={brand}>{brandName(lang, brand)}</option>)}
         </optgroup>
-        <optgroup label="Third-party (non-Alliance)" data-i18n-label="filterBar.thirdPartyBrandsGroup">
-          {thirdPartyBrands.map((brand) => <option value={brand} data-i18n={`brand.${brand}`}>{brand}</option>)}
+        <optgroup label={t(lang, 'filterBar.thirdPartyBrandsGroup')}>
+          {thirdPartyBrands.map((brand) => <option value={brand}>{brandName(lang, brand)}</option>)}
         </optgroup>
       </select>
     </div>
 
     <div class="filter-group">
-      <label for="filter-format" data-i18n="filterBar.format">Format</label>
+      <label for="filter-format">{t(lang, 'filterBar.format')}</label>
       <select id="filter-format" data-filter="format">
-        <option value="all" data-i18n="filterBar.allFormats">All formats</option>
-        <option value="Full Frame" data-i18n="filterBar.fullFrame">Full Frame</option>
-        <option value="APS-C" data-i18n="filterBar.apsc">APS-C</option>
+        <option value="all">{t(lang, 'filterBar.allFormats')}</option>
+        <option value="Full Frame">{t(lang, 'filterBar.fullFrame')}</option>
+        <option value="APS-C">{t(lang, 'filterBar.apsc')}</option>
       </select>
     </div>
 
     <div class="filter-group">
-      <label for="filter-focus" data-i18n="filterBar.focus">AF / MF</label>
+      <label for="filter-focus">{t(lang, 'filterBar.focus')}</label>
       <select id="filter-focus" data-filter="focusType">
-        <option value="all" data-i18n="filterBar.allFocus">AF &amp; MF</option>
-        <option value="AF" data-i18n="filterBar.af">Autofocus</option>
-        <option value="MF" data-i18n="filterBar.mf">Manual focus</option>
+        <option value="all">{t(lang, 'filterBar.allFocus')}</option>
+        <option value="AF">{t(lang, 'filterBar.af')}</option>
+        <option value="MF">{t(lang, 'filterBar.mf')}</option>
       </select>
     </div>
 
     <div class="filter-group">
-      <label for="filter-lenstype" data-i18n="filterBar.lensType">Prime / Zoom</label>
+      <label for="filter-lenstype">{t(lang, 'filterBar.lensType')}</label>
       <select id="filter-lenstype" data-filter="lensType">
-        <option value="all" data-i18n="filterBar.allLensTypes">Prime &amp; Zoom</option>
-        <option value="Prime" data-i18n="filterBar.prime">Prime</option>
-        <option value="Zoom" data-i18n="filterBar.zoom">Zoom</option>
+        <option value="all">{t(lang, 'filterBar.allLensTypes')}</option>
+        <option value="Prime">{t(lang, 'filterBar.prime')}</option>
+        <option value="Zoom">{t(lang, 'filterBar.zoom')}</option>
       </select>
     </div>
 
     <div class="filter-group">
-      <label for="filter-alliance" data-i18n="filterBar.alliance">Alliance status</label>
+      <label for="filter-alliance">{t(lang, 'filterBar.alliance')}</label>
       <select id="filter-alliance" data-filter="alliance">
-        <option value="all" data-i18n="filterBar.allLenses">All lenses</option>
-        <option value="true" data-i18n="filterBar.allianceMember">L-Mount Alliance member</option>
-        <option value="false" data-i18n="filterBar.thirdParty">Third-party (non-Alliance)</option>
+        <option value="all">{t(lang, 'filterBar.allLenses')}</option>
+        <option value="true">{t(lang, 'filterBar.allianceMember')}</option>
+        <option value="false">{t(lang, 'filterBar.thirdParty')}</option>
       </select>
     </div>
 
     <div class="filter-group">
-      <label for="filter-weight" data-i18n="filterBar.weight">Weight</label>
+      <label for="filter-weight">{t(lang, 'filterBar.weight')}</label>
       <select id="filter-weight" data-filter="weight">
-        <option value="all" data-i18n="filterBar.anyWeight">Any weight</option>
+        <option value="all">{t(lang, 'filterBar.anyWeight')}</option>
         {WEIGHT_BUCKETS.map((bucket) => <option value={bucket.id}>{bucket.label}</option>)}
       </select>
     </div>
 
     <div class="filter-group filter-group--wide">
-      <label id="focal-range-label" data-i18n="filterBar.focalLength">Focal length</label>
+      <label id="focal-range-label">{t(lang, 'filterBar.focalLength')}</label>
       <div
         class="range-slider"
         id="focal-range"
@@ -103,8 +113,7 @@ const focalTicks = COMMON_FOCAL_LENGTHS.filter((v) => v >= focalRange.min && v <
           max="1000"
           value="0"
           step="1"
-          data-i18n-aria-label="filterBar.focalMinLabel"
-          aria-label="Minimum focal length"
+          aria-label={t(lang, 'filterBar.focalMinLabel')}
         />
         <input
           type="range"
@@ -113,8 +122,7 @@ const focalTicks = COMMON_FOCAL_LENGTHS.filter((v) => v >= focalRange.min && v <
           max="1000"
           value="1000"
           step="1"
-          data-i18n-aria-label="filterBar.focalMaxLabel"
-          aria-label="Maximum focal length"
+          aria-label={t(lang, 'filterBar.focalMaxLabel')}
         />
       </div>
       <div class="range-slider__ticks" id="focal-range-ticks">
@@ -132,33 +140,33 @@ const focalTicks = COMMON_FOCAL_LENGTHS.filter((v) => v >= focalRange.min && v <
         ))}
       </div>
       <div class="range-slider__value" id="focal-range-value">{focalRange.min}mm – {focalRange.max}mm</div>
-      <p class="filter-hint" data-i18n="filterBar.focalRangeHint">
-        Lenses whose focal range overlaps your selection are shown, so zoom lenses are included.
-      </p>
+      <p class="filter-hint">{t(lang, 'filterBar.focalRangeHint')}</p>
     </div>
 
   </div>
 
   <div class="filter-bar__footer">
-    <span class="filter-count" id="filter-count" aria-live="polite">Showing all lenses</span>
+    <span class="filter-count" id="filter-count" aria-live="polite">
+      {t(lang, 'filterBar.showingCount', { count: total, total })}
+    </span>
     <div style="display:flex; gap:0.75rem; align-items:center; flex-wrap:wrap;">
       <div class="sort-bar">
-        <label for="sort-select" data-i18n="filterBar.sortBy">Sort by</label>
+        <label for="sort-select">{t(lang, 'filterBar.sortBy')}</label>
         <select id="sort-select">
-          <option value="focal-asc" data-i18n="filterBar.sort.focalAsc">Focal length (short to long)</option>
-          <option value="focal-desc" data-i18n="filterBar.sort.focalDesc">Focal length (long to short)</option>
-          <option value="aperture-asc" data-i18n="filterBar.sort.apertureAsc">Max aperture (fastest first)</option>
-          <option value="weight-asc" data-i18n="filterBar.sort.weightAsc">Weight (lightest first)</option>
-          <option value="weight-desc" data-i18n="filterBar.sort.weightDesc">Weight (heaviest first)</option>
-          <option value="year-desc" data-i18n="filterBar.sort.yearDesc">Release year (newest first)</option>
-          <option value="year-asc" data-i18n="filterBar.sort.yearAsc">Release year (oldest first)</option>
+          <option value="focal-asc">{t(lang, 'filterBar.sort.focalAsc')}</option>
+          <option value="focal-desc">{t(lang, 'filterBar.sort.focalDesc')}</option>
+          <option value="aperture-asc">{t(lang, 'filterBar.sort.apertureAsc')}</option>
+          <option value="weight-asc">{t(lang, 'filterBar.sort.weightAsc')}</option>
+          <option value="weight-desc">{t(lang, 'filterBar.sort.weightDesc')}</option>
+          <option value="year-desc">{t(lang, 'filterBar.sort.yearDesc')}</option>
+          <option value="year-asc">{t(lang, 'filterBar.sort.yearAsc')}</option>
         </select>
       </div>
       <div class="view-toggle" id="view-toggle">
-        <button type="button" class="btn is-active" data-view="cards" data-i18n="filterBar.cards">Cards</button>
-        <button type="button" class="btn" data-view="table" data-i18n="filterBar.table">Table</button>
+        <button type="button" class="btn is-active" data-view="cards">{t(lang, 'filterBar.cards')}</button>
+        <button type="button" class="btn" data-view="table">{t(lang, 'filterBar.table')}</button>
       </div>
-      <button type="button" class="btn" id="clear-filters" data-i18n="filterBar.clear">Clear filters</button>
+      <button type="button" class="btn" id="clear-filters">{t(lang, 'filterBar.clear')}</button>
     </div>
   </div>
 </div>

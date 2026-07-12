@@ -1,18 +1,43 @@
 ---
 import { SITE_CONFIG } from '../lib/site';
-const base = import.meta.env.BASE_URL;
+import { t, localeHref, localeAlternates, type Lang, type PagePath } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+  /** Current page, so the language switcher can point at the same page in
+   *  another language rather than dumping the visitor on the home page. */
+  path: PagePath;
+}
+
+const { lang, path } = Astro.props;
+
+// One link per other language. With two locales this renders exactly one
+// link (what used to be the toggle button); with three it renders two, with
+// no change here. `data-set-locale` tells i18n.js to remember the choice —
+// the link works without JS, it just won't be remembered for next time.
+const otherLanguages = localeAlternates(path).filter((alt) => alt.lang !== lang);
 ---
 <header class="site-header">
   <div class="container site-header__inner">
-    <a class="site-header__brand" href={base}>
+    <a class="site-header__brand" href={localeHref(lang)}>
       L-Mount Lens Guide
-      <small data-i18n="site.tagline">Unofficial &middot; community-maintained</small>
+      <small>{t(lang, 'site.tagline')}</small>
     </a>
     <nav class="site-header__nav">
-      <a href={base} data-i18n="nav.lenses">Lenses</a>
-      <a href={`${base}about`} data-i18n="nav.about">About &amp; Disclaimer</a>
-      <a href={SITE_CONFIG.repoUrl} target="_blank" rel="noopener noreferrer" data-i18n="nav.github">GitHub</a>
-      <button type="button" class="btn" data-lang-toggle aria-label="Switch language / 切换语言">中文</button>
+      <a href={localeHref(lang)}>{t(lang, 'nav.lenses')}</a>
+      <a href={localeHref(lang, 'about')}>{t(lang, 'nav.about')}</a>
+      <a href={SITE_CONFIG.repoUrl} target="_blank" rel="noopener noreferrer">{t(lang, 'nav.github')}</a>
+      <span class="lang-switch" role="group" aria-label={t(lang, 'lang.switchLabel')}>
+        {otherLanguages.map((alt) => (
+          <a
+            class="btn"
+            href={alt.href}
+            hreflang={alt.htmlLang}
+            lang={alt.htmlLang}
+            data-set-locale={alt.lang}
+          >{alt.label}</a>
+        ))}
+      </span>
     </nav>
   </div>
 </header>
