@@ -41,6 +41,7 @@ const lang = langFromParam(Astro.params.locale);
       <span>{t(lang, 'about.dataAccuracy1')}</span>
       (<a href={SITE_CONFIG.repoUrl}>{t(lang, 'about.repoLink')}</a>)
     </p>
+    <p>{t(lang, 'about.dataAccuracy2')}</p>
 
     {/* Temporarily hidden per request — re-enable by uncommenting.
     <h2>{t(lang, 'about.h.commercialLinks')}</h2>

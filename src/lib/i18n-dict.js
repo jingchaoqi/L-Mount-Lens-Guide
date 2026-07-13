@@ -203,6 +203,12 @@ export const dict = {
       + 'or discontinued. Every lens entry lists its source links — always verify specifications against '
       + 'the manufacturer’s current published data before making a purchasing decision. If you spot an '
       + 'error, please open an issue or pull request.',
+    'about.dataAccuracy2': 'Data collection is affected by a range of factors — for example, a manufacturer’s '
+      + 'page may only publish a given specification (such as weight) for a different mount version of the '
+      + 'same lens, and that figure can end up recorded here in error. As a result, some entries may be '
+      + 'inaccurate or outright wrong. This project accepts no direct or indirect liability for any '
+      + 'inaccuracies, omissions, or errors in the data. Some specifications are genuinely difficult to find '
+      + 'published anywhere online — where that is the case, defer to the actual product rather than to this site.',
     'about.h.commercialLinks': 'Commercial links',
     'about.commercialLinks1': 'This site currently contains only plain, non-monetized "search this retailer" '
       + 'links — no affiliate program is active today. The data model reserves fields (<code>affiliateUrls</code>, '
@@ -415,6 +421,10 @@ export const dict = {
     'about.dataAccuracy1': '镜头规格数据整理自公开的厂商资料和社区参考信息，可能包含错误、遗漏，或随着产品'
       + '更新、停产而过时。每条镜头数据都附有来源链接 —— 做出购买决定前，请务必以厂商当前公布的数据为准进行'
       + '核实。如发现错误，欢迎提交 Issue 或 Pull Request。',
+    'about.dataAccuracy2': '数据收集过程受多种因素影响 —— 例如厂商页面有时只公布了同一支镜头其他卡口版本的'
+      + '某项参数（如重量），这类数值可能被误记录到本站。因此部分条目可能存在不准确甚至错误的情况。本项目对'
+      + '数据中的错漏不承担任何直接或间接责任。部分参数确实难以在互联网上查证，遇到此类情况请以实际产品为准，'
+      + '而非本站数据。',
     'about.h.commercialLinks': '商业链接说明',
     'about.commercialLinks1': '本站目前仅包含普通的、未变现的"在该零售商处搜索"链接 —— 目前没有启用任何'
       + '联盟营销（affiliate）计划。数据模型中预留了字段（<code>affiliateUrls</code>、'
