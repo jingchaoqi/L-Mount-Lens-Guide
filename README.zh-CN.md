@@ -2,6 +2,9 @@
 
 [English](README.md) | 中文
 
+[![GitHub Repo stars](https://img.shields.io/github/stars/jingchaoqi/L-Mount-Lens-Guide?style=flat)](https://github.com/jingchaoqi/L-Mount-Lens-Guide/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/jingchaoqi/L-Mount-Lens-Guide?style=flat)](https://github.com/jingchaoqi/L-Mount-Lens-Guide/commits/main)
+
 <div align="center">
 
 ### ✨ 👉 **[点击这里在线体验 — jingchaoqi.github.io/L-Mount-Lens-Guide](https://jingchaoqi.github.io/L-Mount-Lens-Guide/)** 👈 ✨
