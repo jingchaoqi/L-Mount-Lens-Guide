@@ -957,7 +957,7 @@
   {
     "id": "ttartisan-50mm-f1-4",
     "brand": "TTArtisan",
-    "model": "50mm F1.4",
+    "model": "50mm F1.4 ASPH",
     "mount": "L-Mount",
     "allianceMember": false,
     "format": "Full Frame",
@@ -967,23 +967,25 @@
     "focalLengthMax": 50,
     "maxAperture": 1.4,
     "minAperture": 16,
-    "weightGram": 480,
+    "weightGram": 440,
     "filterThreadMm": 49,
     "minFocusDistanceM": 0.5,
-    "maxMagnification": 0.1,
+    "maxMagnification": 0.13,
     "stabilization": false,
     "weatherSealed": false,
     "category": [
       "Standard"
     ],
-    "releaseYear": 2020,
-    "officialUrl": "https://en.ttartisan.com/",
+    "releaseYear": 2021,
+    "officialUrl": "https://www.ttartisan.com/?full-frame-lenses/55.html",
     "sourceUrls": [
-      "https://en.ttartisan.com/"
+      "https://www.ttartisan.com/?full-frame-lenses/55.html",
+      "https://petapixel.com/2021/08/06/ttartisan-launches-50mm-f-1-4-for-multiple-full-frame-mirrorless-systems/",
+      "https://phillipreeve.net/blog/review-ttartisan-50mm-1-4-e/"
     ],
     "notes": {
-      "en": "All-manual budget prime with all-metal construction; cross-mount, including L-mount.",
-      "zh": "全手动对焦的平价定焦头，全金属机身，支持多种卡口，包括 L 卡口。"
+      "en": "All-manual budget prime with all-metal construction, offered in E/Z/RF/L. Distinct from the TTArtisan M 50mm F1.4, a separate Leica M rangefinder lens with a 0.7m close-focus limit. Weight varies by mount (429-457g); the figure shown is for L-mount. Maximum magnification is not published by the manufacturer and is a reviewer measurement.",
+      "zh": "全金属结构的全手动平价定焦，提供 E/Z/RF/L 四种卡口。注意与 TTArtisan M 50mm F1.4 区分——后者是徕卡 M 旁轴镜头，最近对焦为 0.7m。重量随卡口不同（429–457g），此处为 L 卡口版数值。厂商未公布最大放大倍率，此处为评测实测值。"
     },
     "affiliateUrls": [],
     "retailerSearchUrls": [
@@ -1006,23 +1008,25 @@
     "focalLengthMax": 21,
     "maxAperture": 1.5,
     "minAperture": 16,
-    "weightGram": 460,
-    "filterThreadMm": 67,
-    "minFocusDistanceM": 0.25,
-    "maxMagnification": 0.1,
+    "weightGram": 440,
+    "filterThreadMm": 72,
+    "minFocusDistanceM": 0.5,
+    "maxMagnification": 0.06,
     "stabilization": false,
     "weatherSealed": false,
     "category": [
       "Wide Angle"
     ],
-    "releaseYear": 2022,
-    "officialUrl": "https://en.ttartisan.com/",
+    "releaseYear": 2021,
+    "officialUrl": "https://www.ttartisan.com/?full-frame-lenses/51.html",
     "sourceUrls": [
-      "https://en.ttartisan.com/"
+      "https://www.ttartisan.com/?full-frame-lenses/51.html",
+      "https://www.cined.com/ttartisan-21mm-f-1-5-asph-for-mirrorless-cameras-announced/",
+      "https://dustinabbott.net/2021/05/ttartisan-21mm-f1-5-asph-review/"
     ],
     "notes": {
-      "en": "Fast manual-focus wide-angle prime aimed at astro and landscape shooters.",
-      "zh": "大光圈手动对焦广角定焦头，主打星空与风光摄影。"
+      "en": "Fast manual-focus wide-angle prime aimed at astro and landscape shooters. The L-mount version was sold from 2021 but has since been discontinued by TTArtisan; E/Z/RF versions remain. Filters mount at 72mm via the supplied holder. Maximum magnification is not published by the manufacturer and is an estimate.",
+      "zh": "面向星空与风光的大光圈手动广角定焦。L 卡口版本自 2021 年发售，现已被 TTArtisan 停产，E/Z/RF 版本仍在售。通过随附的滤镜支架使用 72mm 滤镜。厂商未公布最大放大倍率，此处为估算值。"
     },
     "affiliateUrls": [],
     "retailerSearchUrls": [
@@ -1033,48 +1037,51 @@
     ]
   },
   {
-    "id": "7artisans-35mm-f1-4",
+    "id": "7artisans-35mm-f1-4-iii",
     "brand": "7Artisans",
-    "model": "35mm F1.4",
+    "model": "35mm F1.4 Mark III",
     "mount": "L-Mount",
     "allianceMember": false,
-    "format": "APS-C",
+    "format": "Full Frame",
     "lensType": "Prime",
     "focusType": "MF",
     "focalLengthMin": 35,
     "focalLengthMax": 35,
     "maxAperture": 1.4,
     "minAperture": 16,
-    "weightGram": 320,
-    "filterThreadMm": 49,
+    "weightGram": 274,
+    "filterThreadMm": 52,
     "minFocusDistanceM": 0.3,
-    "maxMagnification": 0.1,
+    "maxMagnification": 0.15,
     "stabilization": false,
     "weatherSealed": false,
     "category": [
-      "Standard"
+      "Standard",
+      "Wide Angle"
     ],
-    "releaseYear": 2019,
-    "officialUrl": "https://www.7artisans-photoelectric.com/",
+    "releaseYear": 2024,
+    "officialUrl": "https://7artisans.store/products/35mm-f-1-4-full-frame-lens-for-e-eos-r-z-l",
     "sourceUrls": [
-      "https://www.7artisans-photoelectric.com/"
+      "https://7artisans.store/products/35mm-f-1-4-full-frame-lens-for-e-eos-r-z-l",
+      "https://petapixel.com/2024/08/21/7artisans-launches-redesigned-full-frame-35mm-f-1-4-prime-lens/",
+      "https://www.zsystemuser.com/z-mount-lenses/third-party-lenses/third-party-manual-focus/7artisans-lenses/35mm-f14-mark-iii-lens.html"
     ],
     "notes": {
-      "en": "Entry-level manual prime, roughly 52.5mm full-frame equivalent on APS-C.",
-      "zh": "入门级手动定焦头，在 APS-C 画幅上等效全画幅约 52.5mm 视角。"
+      "en": "Redesigned full-frame Mark III with an ED element and a 10-blade aperture. Among the 7Artisans 35mm f/1.4 lenses, only this full-frame version is offered in L-mount; the APS-C 35mm f/1.4 is not. Maximum magnification is not published by the manufacturer, so the value shown is an estimate.",
+      "zh": "重新设计的全画幅 Mark III，含一枚 ED 镜片，10 片光圈叶片。在 7Artisans 的 35mm f/1.4 系列中，只有这支全画幅版本提供 L 卡口，APS-C 版本并不提供。厂商未公布最大放大倍率，此处数值为估算。"
     },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
-        "label": "7Artisans Store (AliExpress)",
-        "url": "https://www.aliexpress.com/wholesale?SearchText=7artisans+35mm+F1.4+L-mount"
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=7Artisans%2035mm%20F1.4%20Mark%20III%20L"
       }
     ]
   },
   {
     "id": "7artisans-60mm-f2-8-macro",
     "brand": "7Artisans",
-    "model": "60mm F2.8 Macro",
+    "model": "60mm F2.8 Macro Mark II",
     "mount": "L-Mount",
     "allianceMember": false,
     "format": "APS-C",
@@ -1083,30 +1090,31 @@
     "focalLengthMin": 60,
     "focalLengthMax": 60,
     "maxAperture": 2.8,
-    "minAperture": 32,
-    "weightGram": 400,
+    "minAperture": 16,
+    "weightGram": 339,
     "filterThreadMm": 49,
-    "minFocusDistanceM": 0.17,
+    "minFocusDistanceM": 0.175,
     "maxMagnification": 1,
     "stabilization": false,
     "weatherSealed": false,
     "category": [
       "Macro"
     ],
-    "releaseYear": 2020,
-    "officialUrl": "https://www.7artisans-photoelectric.com/",
+    "releaseYear": 2021,
+    "officialUrl": "https://7artisans.store/products/7artisans-60mm-f2-8-mark-ii-macro-lens-for-sony-e-fuji-fx-canon-eos-m-olympus-m43-nikon-z-mirrorless-cameras",
     "sourceUrls": [
-      "https://www.7artisans-photoelectric.com/"
+      "https://7artisans.store/products/7artisans-60mm-f2-8-mark-ii-macro-lens-for-sony-e-fuji-fx-canon-eos-m-olympus-m43-nikon-z-mirrorless-cameras",
+      "https://petapixel.com/2022/03/27/7artisans-60mm-f-2-8-macro-ii-aps-c-review-a-good-lens-for-its-price/"
     ],
     "notes": {
-      "en": "Budget 1:1 manual-focus macro lens for APS-C bodies.",
-      "zh": "面向 APS-C 机身的平价 1:1 手动对焦微距镜头。"
+      "en": "Budget 1:1 manual-focus macro for APS-C bodies, internally focusing. Only the Mark II is offered in L-mount; the original 60mm f/2.8 was never made for L.",
+      "zh": "面向 APS-C 机身的平价 1:1 手动对焦微距镜头，内对焦设计。仅 Mark II 提供 L 卡口版本，初代 60mm f/2.8 从未推出 L 卡口。"
     },
     "affiliateUrls": [],
     "retailerSearchUrls": [
       {
-        "label": "7Artisans Store (AliExpress)",
-        "url": "https://www.aliexpress.com/wholesale?SearchText=7artisans+60mm+F2.8+Macro+L-mount"
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=7Artisans%2060mm%20F2.8%20Macro%20Mark%20II%20L"
       }
     ]
   },
@@ -1123,23 +1131,24 @@
     "focalLengthMax": 15,
     "maxAperture": 2,
     "minAperture": 22,
-    "weightGram": 560,
+    "weightGram": 500,
     "filterThreadMm": 72,
     "minFocusDistanceM": 0.15,
-    "maxMagnification": 0.2,
+    "maxMagnification": 0.25,
     "stabilization": false,
     "weatherSealed": false,
     "category": [
       "Wide Angle"
     ],
-    "releaseYear": 2021,
-    "officialUrl": "https://www.venuslens.net/",
+    "releaseYear": 2020,
+    "officialUrl": "https://www.venuslens.net/product/laowa-15mm-f2/",
     "sourceUrls": [
-      "https://www.venuslens.net/"
+      "https://www.venuslens.net/product/laowa-15mm-f2/",
+      "https://petapixel.com/2020/07/24/venus-optics-just-released-6-popular-laowa-lenses-for-the-l-mount/"
     ],
     "notes": {
-      "en": "Near-zero optical distortion ultra-wide, popular for architecture and astro.",
-      "zh": "近乎零畸变的超广角镜头，常用于建筑摄影和星空摄影。"
+      "en": "Near-zero optical distortion ultra-wide, popular for architecture and astro. Introduced in 2017 for Sony FE; the L-mount version arrived in July 2020. Manual aperture ring, no electronic contacts.",
+      "zh": "几乎零畸变的超广角镜头，常用于建筑与星空摄影。2017 年首发于索尼 FE，L 卡口版本于 2020 年 7 月推出。手动光圈环，无电子触点。"
     },
     "affiliateUrls": [],
     "retailerSearchUrls": [
@@ -1164,7 +1173,7 @@
     "minAperture": 22,
     "weightGram": 638,
     "filterThreadMm": 67,
-    "minFocusDistanceM": 0.24,
+    "minFocusDistanceM": 0.247,
     "maxMagnification": 2,
     "stabilization": false,
     "weatherSealed": false,
@@ -1173,13 +1182,14 @@
       "Telephoto"
     ],
     "releaseYear": 2019,
-    "officialUrl": "https://www.venuslens.net/",
+    "officialUrl": "https://www.venuslens.net/product/laowa-100mm-f-2-8-2x-macro-apo/",
     "sourceUrls": [
-      "https://www.venuslens.net/"
+      "https://www.venuslens.net/product/laowa-100mm-f-2-8-2x-macro-apo/",
+      "https://petapixel.com/2020/07/24/venus-optics-just-released-6-popular-laowa-lenses-for-the-l-mount/"
     ],
     "notes": {
-      "en": "Reaches 2:1 magnification, double a standard 1:1 macro lens.",
-      "zh": "可实现 2:1 放大倍率，是标准 1:1 微距镜头的两倍。"
+      "en": "Reaches 2:1 magnification, double a standard 1:1 macro lens. Only the Canon EF version has electronic aperture control; the L-mount version is fully manual, with aperture set on the lens ring. Venus Optics does not publish an L-mount weight — the figure shown is from retailer listings.",
+      "zh": "可达 2:1 放大倍率，是常规 1:1 微距镜头的两倍。只有佳能 EF 版本具备电子光圈控制，L 卡口版本为全手动，光圈由镜身光圈环设定。厂商未公布 L 卡口版重量，此处数值取自零售商标注。"
     },
     "affiliateUrls": [],
     "retailerSearchUrls": [
