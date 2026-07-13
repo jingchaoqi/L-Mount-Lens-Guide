@@ -51,8 +51,8 @@
     "focalLengthMin": 50,
     "focalLengthMax": 50,
     "maxAperture": 1.4,
-    "minAperture": 16,
-    "weightGram": 1080,
+    "minAperture": 22,
+    "weightGram": 1065,
     "filterThreadMm": 82,
     "minFocusDistanceM": 0.45,
     "maxMagnification": 0.15,
@@ -62,7 +62,7 @@
       "Standard",
       "Portrait"
     ],
-    "releaseYear": 2018,
+    "releaseYear": 2016,
     "officialUrl": "https://leica-camera.com/en-US/photography/lenses/sl/summilux-sl-50mm-f1-4-asph-black-2016",
     "sourceUrls": [
       "https://leica-camera.com/en-US/photography/lenses/sl/summilux-sl-50mm-f1-4-asph-black-2016"
@@ -92,7 +92,7 @@
     "focalLengthMax": 90,
     "maxAperture": 2,
     "minAperture": 22,
-    "weightGram": 795,
+    "weightGram": 700,
     "filterThreadMm": 67,
     "minFocusDistanceM": 0.5,
     "maxMagnification": 0.19,
@@ -102,7 +102,7 @@
       "Portrait",
       "Telephoto"
     ],
-    "releaseYear": 2020,
+    "releaseYear": 2017,
     "officialUrl": "https://leica-camera.com/en-US/photography/lenses/sl/apo-summicron-sl-90mm-f2-asph-black",
     "sourceUrls": [
       "https://leica-camera.com/en-US/photography/lenses/sl/apo-summicron-sl-90mm-f2-asph-black"
@@ -132,7 +132,7 @@
     "focalLengthMax": 70,
     "maxAperture": 2.8,
     "minAperture": 22,
-    "weightGram": 1140,
+    "weightGram": 856,
     "filterThreadMm": 82,
     "minFocusDistanceM": 0.3,
     "maxMagnification": 0.32,
@@ -172,7 +172,7 @@
     "focalLengthMax": 280,
     "maxAperture": 2.8,
     "minAperture": 22,
-    "weightGram": 1795,
+    "weightGram": 1710,
     "filterThreadMm": 82,
     "minFocusDistanceM": 0.9,
     "maxMagnification": 0.2,
@@ -181,7 +181,7 @@
     "category": [
       "Telephoto"
     ],
-    "releaseYear": 2018,
+    "releaseYear": 2016,
     "officialUrl": "https://leica-camera.com/en-US/photography/lenses/sl/apo-vario-elmarit-sl-90-280mm-f2-8-4-black",
     "sourceUrls": [
       "https://leica-camera.com/en-US/photography/lenses/sl/apo-vario-elmarit-sl-90-280mm-f2-8-4-black"
@@ -490,7 +490,7 @@
     "focalLengthMax": 24,
     "maxAperture": 1.4,
     "minAperture": 16,
-    "weightGram": 665,
+    "weightGram": 520,
     "filterThreadMm": 77,
     "minFocusDistanceM": 0.25,
     "maxMagnification": 0.19,
@@ -569,7 +569,7 @@
     "focalLengthMax": 400,
     "maxAperture": 5,
     "minAperture": 22,
-    "weightGram": 1140,
+    "weightGram": 1135,
     "filterThreadMm": 67,
     "minFocusDistanceM": 1.12,
     "maxMagnification": 0.34,
@@ -727,7 +727,7 @@
     "focalLengthMax": 85,
     "maxAperture": 1.4,
     "minAperture": 16,
-    "weightGram": 540,
+    "weightGram": 550,
     "filterThreadMm": 67,
     "minFocusDistanceM": 0.85,
     "maxMagnification": 0.13,
@@ -767,7 +767,7 @@
     "focalLengthMax": 35,
     "maxAperture": 1.4,
     "minAperture": 16,
-    "weightGram": 503,
+    "weightGram": 495,
     "filterThreadMm": 62,
     "minFocusDistanceM": 0.35,
     "maxMagnification": 0.14,
@@ -849,7 +849,7 @@
     "focalLengthMax": 21,
     "maxAperture": 1.5,
     "minAperture": 16,
-    "weightGram": 440,
+    "weightGram": 412,
     "filterThreadMm": 72,
     "minFocusDistanceM": 0.5,
     "maxMagnification": 0.06,
@@ -988,8 +988,8 @@
       "https://petapixel.com/2020/07/24/venus-optics-just-released-6-popular-laowa-lenses-for-the-l-mount/"
     ],
     "notes": {
-      "en": "Near-zero optical distortion ultra-wide, popular for architecture and astro. Introduced in 2017 for Sony FE; the L-mount version arrived in July 2020. Manual aperture ring, no electronic contacts.",
-      "zh": "几乎零畸变的超广角镜头，常用于建筑与星空摄影。2017 年首发于索尼 FE，L 卡口版本于 2020 年 7 月推出。手动光圈环，无电子触点。"
+      "en": "Near-zero optical distortion ultra-wide, popular for architecture and astro. Introduced in 2017 for Sony FE; the L-mount version arrived in July 2020. Manual aperture ring, no electronic contacts. Minimum aperture could not be confirmed via Venus Optics' official channels, so the f/22 shown here is unverified.",
+      "zh": "几乎零畸变的超广角镜头，常用于建筑与星空摄影。2017 年首发于索尼 FE，L 卡口版本于 2020 年 7 月推出。手动光圈环，无电子触点。最小光圈未能通过老蛙官方渠道核实，此处 f/22 的数值为未证实数据。"
     },
     "affiliateUrls": [],
     "retailerSearchUrls": [
@@ -1023,8 +1023,9 @@
       "Telephoto"
     ],
     "releaseYear": 2019,
-    "officialUrl": "https://www.venuslens.net/product/laowa-100mm-f-2-8-2x-macro-apo/",
+    "officialUrl": "https://www.laowalens.com/camera-lens-31",
     "sourceUrls": [
+      "https://www.laowalens.com/camera-lens-31",
       "https://www.venuslens.net/product/laowa-100mm-f-2-8-2x-macro-apo/",
       "https://petapixel.com/2020/07/24/venus-optics-just-released-6-popular-laowa-lenses-for-the-l-mount/"
     ],
@@ -1537,7 +1538,7 @@
     "focalLengthMin": 16,
     "focalLengthMax": 16,
     "maxAperture": 1.8,
-    "minAperture": 16,
+    "minAperture": 22,
     "weightGram": 550,
     "filterThreadMm": 77,
     "minFocusDistanceM": 0.27,
@@ -1698,7 +1699,7 @@
     "focalLengthMax": 85,
     "maxAperture": 1.8,
     "minAperture": 16,
-    "weightGram": 438,
+    "weightGram": 443,
     "filterThreadMm": 62,
     "minFocusDistanceM": 0.8,
     "maxMagnification": 0.13,
@@ -2108,7 +2109,7 @@
     "category": [
       "Wide Angle"
     ],
-    "releaseYear": 2023,
+    "releaseYear": 2022,
     "officialUrl": "https://leica-camera.com/en-US/photography/lenses/sl/super-apo-summicron-sl-21-f2-asph",
     "sourceUrls": [
       "https://www.cined.com/leica-super-apo-summicron-sl-21mm-f-2-asph-announced-high-end-wide-angle-prime-lens/",
@@ -2189,7 +2190,7 @@
       "Standard",
       "Portrait"
     ],
-    "releaseYear": 2016,
+    "releaseYear": 2015,
     "officialUrl": "https://leica-camera.com/en-US/photography/lenses/cl-tl/summilux-tl-35mm-f1-4-asph-black",
     "sourceUrls": [
       "https://leicarumors.com/2016/03/22/leica-summilux-tl-35mm-f1-4-asph-lens-officially-announced.aspx/",
@@ -2229,7 +2230,7 @@
     "category": [
       "Wide Angle"
     ],
-    "releaseYear": 2019,
+    "releaseYear": 2018,
     "officialUrl": "https://leica-camera.com/en-US/photography/lenses/sl/apo-summicron-sl-35mm-f2-asph",
     "sourceUrls": [
       "https://leica-camera.com/sites/default/files/pm-55403-11184_Datenblatt_APO_Summicron-SL-35mm-ASPH_en.pdf",
@@ -2390,7 +2391,7 @@
     "category": [
       "Portrait"
     ],
-    "releaseYear": 2018,
+    "releaseYear": 2017,
     "officialUrl": "https://leica-camera.com/en-US/photography/lenses/sl/apo-summicron-sl-75mm-f2-asph-black",
     "sourceUrls": [
       "https://leica-camera.com/sites/default/files/pm-55397-11178_Datenblatt_APO-Summicron-SL-75mm-ASPH_e.pdf",
@@ -3440,8 +3441,8 @@
       "https://phillipreeve.net/blog/review-meike-24mm-f-1-4-mix/"
     ],
     "notes": {
-      "en": "Meike's fastest wide-angle AF prime, announced August 2025; the L-mount version is slightly shorter and lighter (550g) than the Sony E copy.",
-      "zh": "美科目前最快的广角自动对焦定焦头，2025 年 8 月发布；L 卡口版本比索尼 E 卡口版本略短且更轻（550 克）。"
+      "en": "Meike's fastest wide-angle AF prime, announced August 2025. Minimum aperture (f/16) is confirmed; Meike's official page does not publish a weight figure for the L-mount version, so the 550g shown here could not be confirmed via official channels.",
+      "zh": "美科目前最快的广角自动对焦定焦头，2025 年 8 月发布。最小光圈（f/16）已确认；美科官方页面未公布 L 卡口版本的重量数据，此处 550 克的数值未能通过官方渠道核实。"
     },
     "affiliateUrls": [],
     "retailerSearchUrls": [
@@ -3463,7 +3464,7 @@
     "focalLengthMin": 35,
     "focalLengthMax": 35,
     "maxAperture": 2,
-    "minAperture": 16,
+    "minAperture": 22,
     "weightGram": 300,
     "filterThreadMm": 58,
     "minFocusDistanceM": 0.45,
@@ -3480,8 +3481,8 @@
       "https://www.ephotozine.com/article/meike-unveils-35mm-f2-0-autofocus-portrait-lens-for-sony-e--nikon-z--and-l-mount-cameras-36979"
     ],
     "notes": {
-      "en": "Entry-level AF wide prime launched September 2024 for Sony E, Nikon Z and L mount; minimum aperture and magnification are estimated since Meike does not publish them.",
-      "zh": "入门级自动对焦广角定焦头，2024 年 9 月发布，提供索尼 E、尼康 Z 和 L 卡口版本；由于美科未公布最小光圈和放大倍率数据，此处为估算值。"
+      "en": "Entry-level AF wide prime launched September 2024 for Sony E, Nikon Z and L mount. Minimum aperture (f/22) is confirmed; weight could not be confirmed via Meike's official channels, so the 300g shown here is unverified.",
+      "zh": "入门级自动对焦广角定焦头，2024 年 9 月发布，提供索尼 E、尼康 Z 和 L 卡口版本。最小光圈（f/22）已确认；重量未能通过美科官方渠道核实，此处 300 克的数值为未证实数据。"
     },
     "affiliateUrls": [],
     "retailerSearchUrls": [
@@ -3520,8 +3521,8 @@
       "https://fstoppers.com/reviews/reviews-meike-35mm-f18-pro-af-amazing-performance-price-717725"
     ],
     "notes": {
-      "en": "Pro-tier redesign of Meike's 35mm STM lens with a metal body and click-stop aperture ring, released July 2025 for E/Z/L mounts.",
-      "zh": "美科 35mm STM 定焦头的 Pro 升级版，金属机身配合有级光圈环，2025 年 7 月发布，提供 E/Z/L 卡口版本。"
+      "en": "Pro-tier redesign of Meike's 35mm STM lens with a metal body and click-stop aperture ring, released July 2025 for E/Z/L mounts. Minimum aperture (f/16) is confirmed; Meike's official page does not publish a weight figure, so the 400g shown here could not be confirmed via official channels.",
+      "zh": "美科 35mm STM 定焦头的 Pro 升级版，金属机身配合有级光圈环，2025 年 7 月发布，提供 E/Z/L 卡口版本。最小光圈（f/16）已确认；美科官方页面未公布重量数据，此处 400 克的数值未能通过官方渠道核实。"
     },
     "affiliateUrls": [],
     "retailerSearchUrls": [
@@ -3554,7 +3555,7 @@
       "Standard"
     ],
     "releaseYear": 2024,
-    "officialUrl": "https://meikeglobal.com/products/50mm-f1-8-auto-focus-lens-for-portrait-photography",
+    "officialUrl": "https://meikeglobal.com/products/5018l",
     "sourceUrls": [
       "https://meikeglobal.com/products/50mm-f1-8-auto-focus-lens-for-portrait-photography",
       "https://petapixel.com/2024/07/11/meike-brings-its-very-affordable-170-50mm-f-1-8-af-prime-lens-to-l-mount/"
@@ -3601,8 +3602,8 @@
       "https://www.ephotozine.com/article/meike-unveils-pro-series-55mm-f1-8-full-frame-autofocus-portrait-lens-37017"
     ],
     "notes": {
-      "en": "Pro-tier 55mm AF prime announced October 2024 for E/Z/L mounts, using a stepping motor with an auxiliary focus drive system.",
-      "zh": "Pro 系列 55mm 自动对焦定焦头，2024 年 10 月发布，提供 E/Z/L 卡口版本，采用步进马达配合辅助对焦驱动系统。"
+      "en": "Pro-tier 55mm AF prime announced October 2024 for E/Z/L mounts, using a stepping motor with an auxiliary focus drive system. Minimum aperture (f/16) is confirmed; Meike's official page does not publish a weight figure, so the 364g shown here could not be confirmed via official channels.",
+      "zh": "Pro 系列 55mm 自动对焦定焦头，2024 年 10 月发布，提供 E/Z/L 卡口版本，采用步进马达配合辅助对焦驱动系统。最小光圈（f/16）已确认；美科官方页面未公布重量数据，此处 364 克的数值未能通过官方渠道核实。"
     },
     "affiliateUrls": [],
     "retailerSearchUrls": [
@@ -3635,7 +3636,7 @@
       "Portrait"
     ],
     "releaseYear": 2024,
-    "officialUrl": "https://meikeglobal.com/products/meike-85mm-f1-4-auto-focus-lens",
+    "officialUrl": "https://meikeglobal.com/products/8514l",
     "sourceUrls": [
       "https://meikeglobal.com/products/meike-85mm-f1-4-auto-focus-lens",
       "https://www.newsshooter.com/2024/07/20/meike-85mm-f1-4-full-frame-auto-focus-lens-in-l-mount/"
@@ -3665,7 +3666,7 @@
     "focalLengthMax": 85,
     "maxAperture": 1.4,
     "minAperture": 16,
-    "weightGram": 648,
+    "weightGram": 653,
     "filterThreadMm": 77,
     "minFocusDistanceM": 0.81,
     "maxMagnification": 0.12,
@@ -3745,7 +3746,7 @@
     "focalLengthMax": 85,
     "maxAperture": 1.8,
     "minAperture": 16,
-    "weightGram": 389,
+    "weightGram": 388,
     "filterThreadMm": 62,
     "minFocusDistanceM": 0.85,
     "maxMagnification": 0.11,
@@ -3876,7 +3877,7 @@
       "Standard"
     ],
     "releaseYear": 2024,
-    "officialUrl": "https://na.panasonic.com/news/panasonic-introduces-the-worlds-smallest-and-lightest-zoom-lens-lumix-s-18-40mm-f4.5-6.3-s-r1840",
+    "officialUrl": "https://shop.panasonic.com/products/s-series-18-40mm-f4-5-6-3-l-mount-lens",
     "sourceUrls": [
       "https://na.panasonic.com/news/panasonic-introduces-the-worlds-smallest-and-lightest-zoom-lens-lumix-s-18-40mm-f4.5-6.3-s-r1840",
       "https://www.neocamera.com/lens/panasonic/lumix_s_18-40mm_f4.5-6.3"
