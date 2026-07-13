@@ -4335,5 +4335,87 @@
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+50mm+F1.8"
       }
     ]
+  },
+  {
+    "id": "viltrox-af-28mm-f4-5",
+    "brand": "Viltrox",
+    "model": "AF 28mm F4.5 Chip",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 28,
+    "focalLengthMax": 28,
+    "maxAperture": 4.5,
+    "minAperture": 4.5,
+    "weightGram": 60,
+    "filterThreadMm": null,
+    "minFocusDistanceM": 0.32,
+    "maxMagnification": 0.11,
+    "stabilization": false,
+    "weatherSealed": false,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://viltrox.com/products/af-28mm-f4-5-l",
+    "sourceUrls": [
+      "https://viltrox.com/products/af-28mm-f4-5-l",
+      "https://viltrox.com/products/28mm-f4-5-fe",
+      "https://www.newsshooter.com/2026/06/16/viltrox-af-28mm-f4-5-chip-l/"
+    ],
+    "notes": {
+      "en": "Ultra-thin autofocus pancake weighing about 60g. The aperture is fixed at f/4.5: the lens has no diaphragm and cannot be stopped down, and it has no front filter thread. Autofocus only, with no manual focus ring. The L-mount version followed the Sony E and Fujifilm X versions in June 2026. The magnification figure is Viltrox’s own, published for the identical optical unit on the E-mount page.",
+      "zh": "约 60g 的超薄自动对焦饼干头。光圈固定为 f/4.5——镜头没有光圈叶片，无法收缩光圈，也没有前置滤镜螺纹。仅支持自动对焦，没有手动对焦环。L 卡口版本于 2026 年 6 月推出，晚于索尼 E 和富士 X 版本。放大倍率取自唯卓仕为同一光学结构在 E 卡口页面公布的数值。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Viltrox%20AF%2028mm%20F4.5%20Chip%20L"
+      }
+    ]
+  },
+  {
+    "id": "ttartisan-tilt-50mm-f1-4",
+    "brand": "TTArtisan",
+    "model": "Tilt 50mm F1.4",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 50,
+    "focalLengthMax": 50,
+    "maxAperture": 1.4,
+    "minAperture": 16,
+    "weightGram": 452,
+    "filterThreadMm": 62,
+    "minFocusDistanceM": 0.5,
+    "maxMagnification": 0.12,
+    "stabilization": false,
+    "weatherSealed": false,
+    "category": [
+      "Standard"
+    ],
+    "releaseYear": 2022,
+    "officialUrl": "https://www.ttartisan.com/?full-frame-lenses/60.html",
+    "sourceUrls": [
+      "https://www.ttartisan.com/?full-frame-lenses/60.html",
+      "https://photorumors.com/2022/10/13/ttartisan-has-a-new-50mm-f-1-4-tilt-lens-for-sony-e-and-leica-l-cameras/",
+      "https://phillipreeve.net/blog/review-ttartisan-50mm-1-4-tilt/"
+    ],
+    "notes": {
+      "en": "Manual tilt lens giving ±8° of tilt, with the tilt axis rotatable through 90°. It tilts only and does not shift. Fully mechanical: manual focus, manual aperture ring, no electronic contacts and no EXIF. Leica L was one of the two launch mounts in October 2022. Distinct from the TTArtisan 50mm F1.4 ASPH and from the Leica M-mount M 50mm F1.4. The manufacturer does not publish a magnification figure; the value shown is a reviewer measurement.",
+      "zh": "手动倾角镜头，可实现 ±8° 倾角，倾轴可旋转 90°。只有倾角，没有平移。全机械结构：手动对焦、机械光圈环、无电子触点、不记录 EXIF。徕卡 L 是 2022 年 10 月首发的两个卡口之一。注意与 TTArtisan 50mm F1.4 ASPH 以及徕卡 M 卡口的 M 50mm F1.4 区分。厂商未公布最大放大倍率，此处为评测实测值。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=TTArtisan%20Tilt%2050mm%20F1.4%20L"
+      }
+    ]
   }
 ]
