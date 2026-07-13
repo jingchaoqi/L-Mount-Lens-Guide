@@ -68,6 +68,24 @@ required.
    over third-party retailers or blogs. `officialUrl` should also generally
    be a manufacturer link.
 
+   **Watch for mount-specific values.** Many manufacturer spec pages list a
+   different weight (and sometimes aperture blade count) per mount — always
+   read the L-Mount-specific row, not just whichever number the page shows
+   first. Copying a value from another mount's row has been the single most
+   common source of bad data in this project so far (e.g. a Sigma prime's
+   weight was once recorded from its Sony E-mount row instead of L-Mount's,
+   and a Leica zoom's weight was accidentally copied from a completely
+   different Leica lens).
+
+   **If the manufacturer's international/English site doesn't show an
+   L-Mount option, check their official Chinese site or store before
+   concluding the mount doesn't exist.** Several third-party manufacturers
+   in this database (Viltrox, TTArtisan, 7Artisans, Meike, Sirui,
+   Laowa/Venus Optics) are China-based, and their Chinese-language official
+   site can list a mount the English site omits or hasn't caught up on.
+   Third-party retailer listings don't count as confirmation either way —
+   only an official manufacturer channel (international or Chinese) does.
+
 7. **`notes`** — an object of short, factual free text keyed by locale code,
    e.g. `{ "en": "...", "zh": "..." }`. The English key (`"en"`) is
    **required**; every other locale is optional and falls back to the English
