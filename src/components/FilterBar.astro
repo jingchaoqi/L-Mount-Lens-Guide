@@ -1,5 +1,5 @@
 ---
-import { getBrandsGrouped, getFocalRange, COMMON_FOCAL_LENGTHS, WEIGHT_BUCKETS } from '../lib/lenses';
+import { getBrandsGrouped, getFocalRange, COMMON_FOCAL_LENGTHS } from '../lib/lenses';
 import { t, brandName, type Lang } from '../lib/i18n';
 
 interface Props {
@@ -82,14 +82,6 @@ const focalTicks = COMMON_FOCAL_LENGTHS.filter((v) => v >= focalRange.min && v <
         <option value="all">{t(lang, 'filterBar.allLenses')}</option>
         <option value="true">{t(lang, 'filterBar.allianceMember')}</option>
         <option value="false">{t(lang, 'filterBar.thirdParty')}</option>
-      </select>
-    </div>
-
-    <div class="filter-group">
-      <label for="filter-weight">{t(lang, 'filterBar.weight')}</label>
-      <select id="filter-weight" data-filter="weight">
-        <option value="all">{t(lang, 'filterBar.anyWeight')}</option>
-        {WEIGHT_BUCKETS.map((bucket) => <option value={bucket.id}>{bucket.label}</option>)}
       </select>
     </div>
 

@@ -102,7 +102,6 @@ function init() {
       if (key === 'focusType' && row.dataset.focusType !== value) return false;
       if (key === 'lensType' && row.dataset.lensType !== value) return false;
       if (key === 'alliance' && row.dataset.alliance !== value) return false;
-      if (key === 'weight' && row.dataset.weightBucket !== value) return false;
     }
 
     if (focalMinInput && focalMaxInput) {
