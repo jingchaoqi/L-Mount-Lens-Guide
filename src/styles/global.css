@@ -1443,6 +1443,26 @@ select:focus-visible,
   box-shadow: 0 0 0 1px var(--color-accent), 0 0 0 5px var(--color-accent-ring);
 }
 
+/* Tick labels were sitting in a big empty band well below the track. The
+   slider reserves ~20px of height for its 16px thumbs, so the tick block
+   started that far down. Pull it up snug under the thumbs and lengthen the
+   marks so they visibly bridge the track and the numbers. */
+.range-slider {
+  margin-bottom: 0;
+}
+
+.range-slider__ticks {
+  margin-top: -8px;
+}
+
+.range-slider__tick {
+  padding-top: 0;
+}
+
+.range-slider__tick-mark {
+  height: 7px;
+}
+
 /* ---------- badges ---------- */
 
 .badge {
