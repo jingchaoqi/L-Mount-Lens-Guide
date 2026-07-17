@@ -42,6 +42,9 @@ export const dict = {
 
     'home.title': 'L-Mount Lens Database',
     'home.intro': 'An unofficial, community-maintained directory of L-Mount lenses.',
+    'home.statLenses': 'Lenses',
+    'home.statBrands': 'Brands',
+    'home.statAlliance': 'Alliance brands',
 
     'filterBar.searchPlaceholder': 'Search brand, model, or focal length (e.g. "Sigma 35mm")',
     'filterBar.searchAriaLabel': 'Search lenses',
@@ -274,6 +277,9 @@ export const dict = {
 
     'home.title': 'L 卡口镜头数据库',
     'home.intro': '一个非官方、社区维护的 L 卡口镜头目录',
+    'home.statLenses': '支镜头',
+    'home.statBrands': '个品牌',
+    'home.statAlliance': '个联盟品牌',
 
     'filterBar.searchPlaceholder': '搜索品牌、型号或焦段（例如 "适马 35mm"）',
     'filterBar.searchAriaLabel': '搜索镜头',

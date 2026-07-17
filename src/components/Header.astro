@@ -20,8 +20,25 @@ const otherLanguages = localeAlternates(path).filter((alt) => alt.lang !== lang)
 <header class="site-header">
   <div class="container site-header__inner">
     <a class="site-header__brand" href={localeHref(lang)}>
-      L-Mount Lens Guide
-      <small>{t(lang, 'site.tagline')}</small>
+      {/* Original geometric aperture/iris mark — hand-drawn, not a vendor
+          logo or trademarked graphic (see the project's icon convention). */}
+      <svg
+        class="site-header__mark"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <circle cx="12" cy="12" r="9.25" />
+        <path d="M12 7.4 L19.79 7.5 M15.98 9.7 L19.79 16.5 M15.98 14.3 L12 21 M12 16.6 L4.21 16.5 M8.02 14.3 L4.21 7.5 M8.02 9.7 L12 3" />
+      </svg>
+      <span class="site-header__brand-text">
+        L-Mount Lens Guide
+        <small>{t(lang, 'site.tagline')}</small>
+      </span>
     </a>
     <nav class="site-header__nav">
       <a href={localeHref(lang)}>{t(lang, 'nav.lenses')}</a>

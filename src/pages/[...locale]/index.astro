@@ -15,6 +15,12 @@ export function getStaticPaths() {
 
 const lang = langFromParam(Astro.params.locale);
 const lenses = getAllLenses();
+
+// Hero stat chips — derived from the data, never hard-coded.
+const brandCount = new Set(lenses.map((l) => l.brand)).size;
+const allianceBrandCount = new Set(
+  lenses.filter((l) => l.allianceMember).map((l) => l.brand)
+).size;
 ---
 <Layout
   lang={lang}
@@ -22,8 +28,26 @@ const lenses = getAllLenses();
   title={t(lang, 'seo.homeTitle')}
   description={t(lang, 'seo.homeDescription', { count: lenses.length })}
 >
-  <h1 style="margin-top:1.5rem;">{t(lang, 'home.title')}</h1>
-  <p style="color:var(--color-text-muted); max-width:70ch;">{t(lang, 'home.intro')}</p>
+  <section class="hero">
+    <div class="hero__main">
+      <h1 class="hero__title">{t(lang, 'home.title')}</h1>
+      <p class="hero__intro">{t(lang, 'home.intro')}</p>
+    </div>
+    <div class="hero__stats">
+      <div class="hero__stat">
+        <span class="hero__stat-num">{lenses.length}</span>
+        <span class="hero__stat-label">{t(lang, 'home.statLenses')}</span>
+      </div>
+      <div class="hero__stat">
+        <span class="hero__stat-num">{brandCount}</span>
+        <span class="hero__stat-label">{t(lang, 'home.statBrands')}</span>
+      </div>
+      <div class="hero__stat">
+        <span class="hero__stat-num">{allianceBrandCount}</span>
+        <span class="hero__stat-label">{t(lang, 'home.statAlliance')}</span>
+      </div>
+    </div>
+  </section>
 
   <FilterBar lang={lang} total={lenses.length} />
 

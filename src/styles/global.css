@@ -1,11 +1,19 @@
 :root {
-  --color-bg: #ffffff;
-  --color-bg-alt: #f5f6f8;
-  --color-border: #e0e2e7;
-  --color-text: #1a1c20;
-  --color-text-muted: #5a5f6a;
+  color-scheme: light;
+  --color-bg: #f6f8fa;
+  --color-bg-alt: #eceff3;
+  /* Cards, panels and inputs sit on --color-bg as raised white surfaces. */
+  --color-surface: #ffffff;
+  --color-border: #e2e7ee;
+  --color-border-strong: #cfd6e0;
+  --color-text: #16202c;
+  --color-text-muted: #59636f;
   --color-accent: #2b6cb0;
+  --color-accent-hover: #22568c;
   --color-accent-contrast: #ffffff;
+  /* Faint accent wash for hovers / focus tints. */
+  --color-accent-soft: #e6eef7;
+  --color-accent-ring: rgba(43, 108, 176, 0.28);
   --color-badge-alliance: #2b6cb0;
   --color-badge-third-party: #8a5a1f;
   --color-warning-bg: #fff6e5;
@@ -14,20 +22,31 @@
   --color-success-contrast: #ffffff;
   --color-danger: #d1373f;
   --color-danger-contrast: #ffffff;
-  --radius: 8px;
+  --radius: 10px;
+  --radius-sm: 6px;
+  --radius-lg: 14px;
   --max-width: 1200px;
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --shadow-sm: 0 1px 2px rgba(16, 26, 40, 0.04), 0 1px 3px rgba(16, 26, 40, 0.06);
+  --shadow-md: 0 6px 18px rgba(16, 26, 40, 0.09);
+  --shadow-lg: 0 14px 40px rgba(16, 26, 40, 0.16);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #14161a;
-    --color-bg-alt: #1c1f24;
-    --color-border: #2c3038;
-    --color-text: #eceef1;
-    --color-text-muted: #9aa0ab;
+    color-scheme: dark;
+    --color-bg: #0d1117;
+    --color-bg-alt: #161c24;
+    --color-surface: #151b23;
+    --color-border: #26303c;
+    --color-border-strong: #35414f;
+    --color-text: #e6edf3;
+    --color-text-muted: #8b97a6;
     --color-accent: #5b9bd8;
+    --color-accent-hover: #7db3e5;
     --color-accent-contrast: #0b1420;
+    --color-accent-soft: #17293b;
+    --color-accent-ring: rgba(91, 155, 216, 0.32);
     --color-badge-alliance: #3d7ab8;
     --color-badge-third-party: #b8863f;
     --color-warning-bg: #2a2412;
@@ -36,6 +55,9 @@
     --color-success-contrast: #06210b;
     --color-danger: #e5646b;
     --color-danger-contrast: #2a0507;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.42);
+    --shadow-lg: 0 16px 44px rgba(0, 0, 0, 0.55);
   }
 }
 
@@ -1106,4 +1128,481 @@ a {
 
 .prose ul {
   padding-left: 1.2rem;
+}
+
+/* ============================================================================
+   Visual polish — a cohesive "technical, light & clean" pass.
+
+   Additive layer: it refines the base rules above WITHOUT touching any of the
+   measured layout values (compare column widths, card min-heights, slider
+   constants, compare row heights). Where it overrides an earlier rule it does
+   so by later-same-specificity source order, so the originals stay readable
+   and this whole block can be lifted out in one piece.
+   ============================================================================ */
+
+/* ---------- base refinements ---------- */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-text);
+}
+
+a {
+  transition: color 0.15s ease;
+}
+
+/* One consistent keyboard-focus ring across every interactive control.
+   Mouse clicks don't trigger :focus-visible, so this stays invisible to
+   pointer users while remaining a real a11y affordance. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Refined scrollbars on the horizontally-scrolling data surfaces (WebKit). */
+.compare-grid::-webkit-scrollbar,
+.lens-table-wrap::-webkit-scrollbar,
+.compare-panel::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.compare-grid::-webkit-scrollbar-thumb,
+.lens-table-wrap::-webkit-scrollbar-thumb,
+.compare-panel::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: 999px;
+  border: 2px solid var(--color-surface);
+}
+
+/* ---------- header ---------- */
+
+.site-header {
+  /* Translucent + blur so content scrolls under a frosted bar. Falls back to
+     the opaque base rule above if color-mix / backdrop-filter is unsupported. */
+  background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+  -webkit-backdrop-filter: saturate(1.6) blur(10px);
+  backdrop-filter: saturate(1.6) blur(10px);
+}
+
+.site-header__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+/* Original geometric aperture mark — a hand-drawn iris, not a vendor logo. */
+.site-header__mark {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  color: var(--color-accent);
+}
+
+.site-header__nav a:not(.btn) {
+  position: relative;
+}
+
+/* Understated hover underline that wipes in from the left. */
+.site-header__nav a:not(.btn)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.18s ease;
+}
+
+.site-header__nav a:not(.btn):hover::after {
+  transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header__nav a:not(.btn)::after {
+    transition: none;
+  }
+}
+
+/* ---------- home hero ---------- */
+
+/* Compact two-column band: text on the left, the data counts pulled out to
+   the right and baseline-aligned with the intro, so the whole hero stays
+   short and the first card row is visible without scrolling. Wraps to two
+   stacked rows on narrow screens. */
+.hero {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem 2.5rem;
+  margin: 1.25rem 0 0.75rem;
+  padding: 0.25rem 0 0;
+}
+
+.hero__main {
+  min-width: 0;
+}
+
+/* Faint blueprint dot-grid behind the hero, masked so it fades out toward the
+   edges — a "technical" hint that never competes with the text. */
+.hero::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: -0.75rem -1rem auto;
+  height: 150px;
+  background-image: radial-gradient(var(--color-border-strong) 1px, transparent 1.4px);
+  background-size: 22px 22px;
+  opacity: 0.5;
+  -webkit-mask-image: radial-gradient(120% 100% at 15% 0%, #000 0%, transparent 66%);
+  mask-image: radial-gradient(120% 100% at 15% 0%, #000 0%, transparent 66%);
+  pointer-events: none;
+}
+
+.hero__title {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.7rem, 3.2vw, 2.35rem);
+  font-weight: 750;
+  line-height: 1.1;
+  letter-spacing: -0.022em;
+}
+
+.hero__intro {
+  margin: 0;
+  max-width: 60ch;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+.hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.75rem;
+  flex-shrink: 0;
+  padding-bottom: 0.2rem;
+}
+
+.hero__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.hero__stat-num {
+  font-variant-numeric: tabular-nums;
+  font-size: 1.45rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--color-text);
+}
+
+.hero__stat-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* ---------- generic page head (compare, etc.) ---------- */
+
+.page-title {
+  margin: 1.75rem 0 0.4rem;
+  font-size: clamp(1.7rem, 3vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.page-intro {
+  margin: 0 0 0.5rem;
+  max-width: 70ch;
+  color: var(--color-text-muted);
+}
+
+/* ---------- buttons ---------- */
+
+.btn {
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease,
+    box-shadow 0.15s ease, transform 0.06s ease;
+}
+
+.btn:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-text);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn--primary,
+.btn--primary:hover {
+  color: var(--color-accent-contrast);
+}
+
+.btn--primary:hover {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+}
+
+/* Keep the active view-toggle button reading as accent even though the
+   generic .btn:hover above would otherwise tint it. */
+.view-toggle button.is-active,
+.view-toggle button.is-active:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-accent-contrast);
+}
+
+/* ---------- filter bar ---------- */
+
+.filter-bar {
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.filter-bar__search {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%237a8494' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0.85rem center;
+  background-size: 18px 18px;
+  padding-left: 2.6rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.filter-bar__search:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-ring);
+  outline: none;
+}
+
+/* Native selects, restyled to match: our own chevron + a focus ring. */
+.filter-group select,
+.sort-bar select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237a8494' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  padding-right: 2rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.filter-group select:focus,
+.sort-bar select:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-ring);
+  outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .filter-bar__search {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%238b97a6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
+  }
+
+  .filter-group select,
+  .sort-bar select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238b97a6' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  }
+}
+
+/* ---------- range slider ---------- */
+
+.range-slider__fill {
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-hover));
+}
+
+.range-slider input[type='range']::-webkit-slider-thumb:hover,
+.range-slider input[type='range']:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 1px var(--color-accent), 0 0 0 5px var(--color-accent-ring);
+}
+
+.range-slider input[type='range']::-moz-range-thumb:hover,
+.range-slider input[type='range']:active::-moz-range-thumb {
+  box-shadow: 0 0 0 1px var(--color-accent), 0 0 0 5px var(--color-accent-ring);
+}
+
+/* ---------- badges ---------- */
+
+.badge {
+  letter-spacing: 0.01em;
+}
+
+/* Give the outline badges a faint fill so they read as chips on white cards. */
+.badge--outline {
+  background: var(--color-bg-alt);
+}
+
+/* ---------- cards ---------- */
+
+.lens-card {
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.lens-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+}
+
+/* Same UI font as the rest of the card; tabular figures only so the values
+   line up cleanly down the right-hand column. */
+.lens-card__specs dd {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lens-card {
+    transition: box-shadow 0.18s ease, border-color 0.18s ease;
+  }
+
+  .lens-card:hover {
+    transform: none;
+  }
+}
+
+/* ---------- table view ---------- */
+
+.lens-table tbody tr {
+  transition: background-color 0.12s ease;
+}
+
+.lens-table tbody tr:hover {
+  background: var(--color-accent-soft);
+}
+
+.lens-table a:hover {
+  color: var(--color-accent);
+}
+
+/* ---------- detail page: spec sheet ---------- */
+
+.detail-header__model {
+  letter-spacing: -0.02em;
+}
+
+/* Same UI font as the labels; tabular figures only so numeric values align. */
+.spec-table td {
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text);
+}
+
+.spec-table th {
+  font-weight: 500;
+}
+
+.spec-table tr:nth-child(even) th,
+.spec-table tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--color-bg-alt) 55%, transparent);
+}
+
+.spec-table tbody tr:hover th,
+.spec-table tr:hover th,
+.spec-table tr:hover td {
+  background: var(--color-accent-soft);
+}
+
+/* A short accent tick before each section heading — a quiet structural marker. */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.section-title::before {
+  content: '';
+  flex-shrink: 0;
+  width: 3px;
+  height: 1.05em;
+  border-radius: 2px;
+  background: var(--color-accent);
+}
+
+/* ---------- about / prose ---------- */
+
+.prose h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  letter-spacing: -0.02em;
+}
+
+.prose h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 1.2rem;
+}
+
+.prose h2::before {
+  content: '';
+  flex-shrink: 0;
+  width: 3px;
+  height: 1em;
+  border-radius: 2px;
+  background: var(--color-accent);
+}
+
+.prose li {
+  margin: 0.35rem 0;
+}
+
+.prose code {
+  font-family: inherit;
+  font-size: 0.9em;
+  padding: 0.1rem 0.35rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-alt);
+}
+
+.prose a {
+  text-underline-offset: 2px;
+}
+
+/* ---------- disclaimer banner ---------- */
+
+.disclaimer-banner {
+  border-left: 3px solid var(--color-warning-border);
+}
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  background: var(--color-bg-alt);
+}
+
+.site-footer a:hover {
+  color: var(--color-accent);
+}
+
+/* ---------- compare: floating widget shadows ---------- */
+
+.compare-bar {
+  box-shadow: var(--shadow-lg);
+}
+
+.compare-panel {
+  box-shadow: var(--shadow-lg);
 }
