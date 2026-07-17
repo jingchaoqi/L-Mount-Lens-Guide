@@ -29,7 +29,7 @@ Full license text: https://creativecommons.org/licenses/by-sa/4.0/
 - You may copy, redistribute, and adapt the data for any purpose, including
   commercially.
 - You must give appropriate credit (e.g. "Lens data from the L-Mount Lens
-  Guide project, https://github.com/<org>/L-Mount-Lens-Guide") and indicate
+  Guide project, https://github.com/jingchaoqi/L-Mount-Lens-Guide") and indicate
   if changes were made.
 - If you publish a modified/derived version of the dataset, it must be
   distributed under the same CC BY-SA 4.0 license.
