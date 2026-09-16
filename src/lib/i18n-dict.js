@@ -27,6 +27,9 @@ export const dict = {
     'brand.7Artisans': '7Artisans',
     'brand.Laowa': 'Laowa',
     'brand.Meike': 'Meike',
+    'brand.Mitakon': 'Mitakon',
+    'brand.AstrHori': 'AstrHori',
+    'brand.Brightin Star': 'Brightin Star',
 
     'footer.copyright': '© {year} L-Mount Lens Guide contributors',
     'footer.codeUnder': 'Code under',
@@ -263,6 +266,9 @@ export const dict = {
     'brand.7Artisans': '七工匠',
     'brand.Laowa': '老蛙',
     'brand.Meike': '美科',
+    'brand.Mitakon': '中一光学',
+    'brand.AstrHori': '岩石星',
+    'brand.Brightin Star': '星曜',
 
     'footer.copyright': '© {year} L-Mount Lens Guide 贡献者',
     'footer.codeUnder': '代码遵循',

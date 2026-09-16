@@ -4418,5 +4418,1304 @@
         "url": "https://www.bhphotovideo.com/c/search?Ntt=TTArtisan%20Tilt%2050mm%20F1.4%20L"
       }
     ]
+  },
+  {
+    "id": "sigma-300-600mm-f4-dg-os-sports",
+    "brand": "Sigma",
+    "model": "300-600mm F4 DG OS Sports",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Zoom",
+    "focusType": "AF",
+    "focalLengthMin": 300,
+    "focalLengthMax": 600,
+    "maxAperture": 4,
+    "minAperture": 22,
+    "weightGram": 3985,
+    "filterThreadMm": null,
+    "minFocusDistanceM": 2.8,
+    "maxMagnification": 0.17,
+    "stabilization": true,
+    "weatherSealed": true,
+    "category": [
+      "Telephoto"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/s025_300_600_4/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/s025_300_600_4/",
+      "https://www.sigma-global.com/en/news/2025/02/24/010843"
+    ],
+    "notes": {
+      "en": "Constant-F4 super-telephoto zoom with optical stabilization and a rear drop-in filter holder (40.5mm) instead of a front filter thread. Minimum focus is 2.8m at 300mm and 4.5m at 600mm.",
+      "zh": "恒定 F4 光圈的超长焦变焦镜头，带光学防抖；无前置滤镜螺纹，改用后置插入式滤镜座（40.5mm）。最近对焦距离 300mm 端 2.8m、600mm 端 4.5m。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%20300-600mm%20F4%20DG%20OS%20Sports"
+      }
+    ]
+  },
+  {
+    "id": "sigma-17-40mm-f1-8-dc-art",
+    "brand": "Sigma",
+    "model": "17-40mm F1.8 DC Art",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "APS-C",
+    "lensType": "Zoom",
+    "focusType": "AF",
+    "focalLengthMin": 17,
+    "focalLengthMax": 40,
+    "maxAperture": 1.8,
+    "minAperture": 16,
+    "weightGram": 535,
+    "filterThreadMm": 67,
+    "minFocusDistanceM": 0.28,
+    "maxMagnification": 0.21,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Wide Angle",
+      "Standard"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/a025_17_40_18/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/a025_17_40_18/",
+      "https://www.sigma-global.com/en/news/2025/06/17/011063/"
+    ],
+    "notes": {
+      "en": "Constant-F1.8 APS-C standard zoom with internal zooming, succeeding the 18-35mm F1.8 DC HSM Art. Maximum magnification 1:4.8 at 40mm.",
+      "zh": "恒定 F1.8 光圈的 APS-C 标准变焦镜头，内变焦设计，是 18-35mm F1.8 DC HSM Art 的后继型号。40mm 端最大放大倍率 1:4.8。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2017-40mm%20F1.8%20DC%20Art"
+      }
+    ]
+  },
+  {
+    "id": "sigma-35mm-f1-4-dg-ii-art",
+    "brand": "Sigma",
+    "model": "35mm F1.4 DG II Art",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 35,
+    "focalLengthMax": 35,
+    "maxAperture": 1.4,
+    "minAperture": 16,
+    "weightGram": 530,
+    "filterThreadMm": 67,
+    "minFocusDistanceM": 0.28,
+    "maxMagnification": 0.19,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Standard"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/a026_35_14/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/a026_35_14/",
+      "https://www.sigma-global.com/en/news/2026/02/24/011999/"
+    ],
+    "notes": {
+      "en": "Second version of the 35mm F1.4 DG DN Art, shorter and lighter, with dual linear-motor autofocus and an 11-blade aperture.",
+      "zh": "35mm F1.4 DG DN Art 的第二代，镜身更短更轻，采用双直线马达自动对焦和 11 片光圈叶片。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2035mm%20F1.4%20DG%20II%20Art"
+      }
+    ]
+  },
+  {
+    "id": "sigma-85mm-f1-2-dg-art",
+    "brand": "Sigma",
+    "model": "85mm F1.2 DG Art",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 85,
+    "focalLengthMax": 85,
+    "maxAperture": 1.2,
+    "minAperture": 16,
+    "weightGram": 905,
+    "filterThreadMm": 82,
+    "minFocusDistanceM": 0.84,
+    "maxMagnification": 0.11,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Portrait"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/a026_85_12/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/a026_85_12/",
+      "https://www.sigma-global.com/en/news/2026/02/26/012003/",
+      "https://www.sigma-global.com/en/news/2026/09/08/012286/"
+    ],
+    "notes": {
+      "en": "F1.2 portrait prime with dual linear-motor autofocus and a 13-blade aperture, weighing 905g in L-Mount.",
+      "zh": "F1.2 大光圈人像定焦镜头，双直线马达自动对焦，13 片光圈叶片，L 卡口版重 905g。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2085mm%20F1.2%20DG%20Art"
+      }
+    ]
+  },
+  {
+    "id": "sigma-20-60mm-f2-8-4-dg-contemporary",
+    "brand": "Sigma",
+    "model": "20-60mm F2.8-4 DG Contemporary",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Zoom",
+    "focusType": "AF",
+    "focalLengthMin": 20,
+    "focalLengthMax": 60,
+    "maxAperture": 2.8,
+    "minAperture": 22,
+    "weightGram": 385,
+    "filterThreadMm": 67,
+    "minFocusDistanceM": 0.158,
+    "maxMagnification": 0.43,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Wide Angle",
+      "Standard"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/c026_20_60_28_4/"
+    ],
+    "notes": {
+      "en": "Compact variable-aperture standard zoom starting at 20mm, weighing 385g in L-Mount. Close focus of 15.8cm at 28mm gives up to 1:2.3 magnification at 35mm; minimum aperture is F22-32.",
+      "zh": "起始焦段为 20mm 的小巧浮动光圈标准变焦镜头，L 卡口版重 385g。28mm 端最近对焦 15.8cm，35mm 端最大放大倍率 1:2.3；最小光圈 F22-32。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2020-60mm%20F2.8-4%20DG%20Contemporary"
+      }
+    ]
+  },
+  {
+    "id": "leica-vario-elmarit-sl-28-70mm-f2-8-asph",
+    "brand": "Leica",
+    "model": "Vario-Elmarit-SL 28-70 f/2.8 ASPH.",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Zoom",
+    "focusType": "AF",
+    "focalLengthMin": 28,
+    "focalLengthMax": 70,
+    "maxAperture": 2.8,
+    "minAperture": 22,
+    "weightGram": 572,
+    "filterThreadMm": 67,
+    "minFocusDistanceM": 0.19,
+    "maxMagnification": 0.3,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Standard"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://leica-camera.com/en-US/photography/lenses/sl/vario-elmarit-sl-28-70-f2-8-asph-black",
+    "sourceUrls": [
+      "https://leica-camera.com/en-US/photography/lenses/sl/vario-elmarit-sl-28-70-f2-8-asph-black/technical-specification",
+      "https://leica-camera.com/en-US/press/new-leica-vario-elmarit-sl-28-70-f28-asph"
+    ],
+    "notes": {
+      "en": "The lightest and most compact zoom in the SL lineup at 572 g. Close focus is 0.19 m at 28mm (1:3.3) and 0.38 m at 70mm.",
+      "zh": "SL 系列中最轻、最紧凑的变焦镜头，重 572 g。28mm 端最近对焦 0.19 m（1:3.3），70mm 端为 0.38 m。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?q=Leica+Vario-Elmarit-SL+28-70mm+f2.8+ASPH"
+      }
+    ]
+  },
+  {
+    "id": "leica-summilux-sl-50mm-f1-4-asph-2026",
+    "brand": "Leica",
+    "model": "Summilux-SL 50 f/1.4 ASPH. (2026)",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 50,
+    "focalLengthMax": 50,
+    "maxAperture": 1.4,
+    "minAperture": 16,
+    "weightGram": 584,
+    "filterThreadMm": 67,
+    "minFocusDistanceM": 0.5,
+    "maxMagnification": 0.13,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Standard"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://leica-camera.com/en-US/photography/lenses/sl/summilux-sl-50mm-f1-4-asph-black-anodized-finish",
+    "sourceUrls": [
+      "https://leica-camera.com/en-US/photography/lenses/sl/summilux-sl-50mm-f1-4-asph-black-anodized-finish/technical-specification",
+      "https://leica-camera.com/en-US/press/new-leica-sl3-p"
+    ],
+    "notes": {
+      "en": "Redesigned 2026 version, far lighter than the 2016 Summilux-SL 50 (584 g vs 1065 g); 11 elements in 6 groups, 11 aperture blades, IP54 sealing. Shipping from the end of 2026.",
+      "zh": "2026 年重新设计的版本，比 2016 年款 Summilux-SL 50 轻得多（584 g 对 1065 g）；11 片 6 组、11 片光圈叶片，IP54 防护。2026 年底起发售。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?q=Leica+Summilux-SL+50mm+f1.4+ASPH"
+      }
+    ]
+  },
+  {
+    "id": "leica-apo-macro-elmarit-sl-100mm-f2-8",
+    "brand": "Leica",
+    "model": "APO-Macro-Elmarit-SL 100 f/2.8",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 100,
+    "focalLengthMax": 100,
+    "maxAperture": 2.8,
+    "minAperture": 22,
+    "weightGram": 801,
+    "filterThreadMm": 67,
+    "minFocusDistanceM": 0.29,
+    "maxMagnification": 1,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Macro",
+      "Portrait",
+      "Telephoto"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://leica-camera.com/en-US/photography/lenses/sl/apo-macro-elmarit-sl-100mm-f2-8-black",
+    "sourceUrls": [
+      "https://leica-camera.com/en-US/photography/lenses/sl/apo-macro-elmarit-sl-100mm-f2-8-black/technical-specification",
+      "https://leica-camera.com/en-US/press/new-leica-sl3-p"
+    ],
+    "notes": {
+      "en": "First true 1:1 macro lens in the Leica SL system; 801 g without hood (862 g with), IP54 sealing. Shipping from the end of 2026.",
+      "zh": "徕卡 SL 系统首支真正 1:1 微距镜头；不含遮光罩 801 g（含遮光罩 862 g），IP54 防护。2026 年底起发售。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?q=Leica+APO-Macro-Elmarit-SL+100mm+f2.8"
+      }
+    ]
+  },
+  {
+    "id": "panasonic-lumix-s-20mm-f2-5",
+    "brand": "Panasonic",
+    "model": "LUMIX S 20mm F2.5",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 20,
+    "focalLengthMax": 20,
+    "maxAperture": 2.5,
+    "minAperture": 22,
+    "weightGram": 142,
+    "filterThreadMm": 62,
+    "minFocusDistanceM": 0.18,
+    "maxMagnification": 0.15,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://shop.panasonic.com/products/lumix-s-20mm-f2-5-l-mount-camera-lens",
+    "sourceUrls": [
+      "https://shop.panasonic.com/products/lumix-s-20mm-f2-5-l-mount-camera-lens",
+      "https://na.panasonic.com/news/lumix-s-20mm-f2-5-lens-firmware-updates-2026"
+    ],
+    "notes": {
+      "en": "Compact 142 g ultra-wide prime (model S-S20) sharing the size of the LUMIX S 40mm F2; dust-, splash- and freeze-resistant. Shipping expected from October 2026.",
+      "zh": "仅 142 g 的紧凑型超广角定焦（型号 S-S20），外形尺寸与 LUMIX S 40mm F2 相同；防尘防溅防冻。预计 2026 年 10 月开始发货。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?q=Panasonic+Lumix+S+20mm+F2.5"
+      }
+    ]
+  },
+  {
+    "id": "ttartisan-af-50mm-f1-8-neo",
+    "brand": "TTArtisan",
+    "model": "AF 50mm F1.8 Neo",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 50,
+    "focalLengthMax": 50,
+    "maxAperture": 1.8,
+    "minAperture": 16,
+    "weightGram": 167,
+    "filterThreadMm": 52,
+    "minFocusDistanceM": 0.48,
+    "maxMagnification": 0.12,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Standard"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://www.ttartisan.com/?af-lens/355.html",
+    "sourceUrls": [
+      "https://www.ttartisan.com/?af-lens/355.html",
+      "https://ttartisan.store/products/ttartisan-af-50mm-f1-8-neo",
+      "https://photorumors.com/2026/07/03/new-ttartisan-af-50mm-f-1-8-neo-lens-e-z-l-announced/"
+    ],
+    "notes": {
+      "en": "Budget STM autofocus 50mm with no focus or aperture ring, 12 elements in 8 groups and 7 aperture blades. TTArtisan lists the weight only as a 156-167g range across mounts (upper value used); maximum magnification is an estimate, not verified through official channels.",
+      "zh": "入门级 STM 自动对焦 50mm 定焦，取消对焦环和光圈环，12 片 8 组、7 片光圈叶片。官方仅给出各卡口 156-167g 的重量区间（此处取上限）；最大放大倍率为估算值，未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=TTArtisan+AF+50mm+F1.8+Neo+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "ttartisan-af-85mm-f1-8-neo",
+    "brand": "TTArtisan",
+    "model": "AF 85mm F1.8 Neo",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 85,
+    "focalLengthMax": 85,
+    "maxAperture": 1.8,
+    "minAperture": 16,
+    "weightGram": 338,
+    "filterThreadMm": 62,
+    "minFocusDistanceM": 0.8,
+    "maxMagnification": 0.12,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Portrait"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://www.ttartisan.com/?af-lens/359.html",
+    "sourceUrls": [
+      "https://www.ttartisan.com/?af-lens/359.html",
+      "https://ttartisan.store/products/ttartisan-af-85mm-f1-8-neo",
+      "https://photorumors.com/2026/04/24/ttartisan-announced-two-full-frame-af-lenses-from-the-new-neo-series-50mm-f-1-8-85mm-f-1-8/"
+    ],
+    "notes": {
+      "en": "Ringless STM autofocus 85mm portrait prime with 12 elements in 8 groups including ED glass and 11 aperture blades. Official weight is a 332-338g range across mounts (upper value used); maximum magnification is an estimate, not verified through official channels.",
+      "zh": "无对焦环/光圈环设计的 STM 自动对焦 85mm 人像定焦，12 片 8 组（含 ED 镜片），11 片光圈叶片。官方重量为各卡口 332-338g 区间（此处取上限）；最大放大倍率为估算值，未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=TTArtisan+AF+85mm+F1.8+Neo+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "ttartisan-14mm-f2-8-asph",
+    "brand": "TTArtisan",
+    "model": "14mm F2.8 ASPH.",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 14,
+    "focalLengthMax": 14,
+    "maxAperture": 2.8,
+    "minAperture": 16,
+    "weightGram": 445,
+    "filterThreadMm": null,
+    "minFocusDistanceM": 0.2,
+    "maxMagnification": 0.1,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://www.ttartisan.com/?full-frame-lenses/347.html",
+    "sourceUrls": [
+      "https://www.ttartisan.com/?full-frame-lenses/347.html",
+      "https://ttartisan.store/products/14mm-f2-8",
+      "https://petapixel.com/2025/08/22/ttartisans-200-14mm-f-2-8-lens-shoots-for-the-stars/"
+    ],
+    "notes": {
+      "en": "Manual-focus all-metal ultra-wide with a 114-degree view, 13 elements in 10 groups including two aspherical elements, and 8 aperture blades. It has no front filter thread; 77mm filters attach via the supplied filter holder. Official weight is 437-445g across mounts (upper value used); maximum magnification is an estimate, not verified through official channels.",
+      "zh": "全金属手动对焦超广角镜头，114° 视角，13 片 10 组（含 2 片非球面镜片），8 片光圈叶片。无前置滤镜螺纹，77mm 滤镜需通过随附滤镜支架安装。官方重量为各卡口 437-445g（此处取上限）；最大放大倍率为估算值，未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=TTArtisan+14mm+F2.8+ASPH+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "ttartisan-tilt-shift-17mm-f4-asph",
+    "brand": "TTArtisan",
+    "model": "Tilt-Shift 17mm F4 ASPH.",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 17,
+    "focalLengthMax": 17,
+    "maxAperture": 4,
+    "minAperture": 16,
+    "weightGram": 1056,
+    "filterThreadMm": null,
+    "minFocusDistanceM": 0.3,
+    "maxMagnification": 0.07,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://www.ttartisan.com/?full-frame-lenses/345.html",
+    "sourceUrls": [
+      "https://www.ttartisan.com/?full-frame-lenses/345.html",
+      "https://ttartisan.store/products/tilt-shift-17mm-f4-asph",
+      "https://leicarumors.com/2026/03/08/ttartisan-announced-a-new-17mm-f-4-tilt-shift-lens-for-l-mount.aspx/"
+    ],
+    "notes": {
+      "en": "Manual ultra-wide tilt-shift lens with ±8° tilt, ±8mm shift and 360° rotation, 17 elements in 11 groups and 10 aperture blades; its large image circle also covers medium format. No front filter thread is listed; official weight is 1051-1056g (upper value used) and maximum magnification is an estimate, not verified through official channels.",
+      "zh": "手动对焦超广角移轴镜头，±8° 倾斜、±8mm 平移，支持 360° 旋转，17 片 11 组，10 片光圈叶片，像场可覆盖中画幅。官方未列出前置滤镜螺纹；官方重量为 1051-1056g（此处取上限），最大放大倍率为估算值，未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=TTArtisan+Tilt-Shift+17mm+F4+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "7artisans-af-10mm-f2-5",
+    "brand": "7Artisans",
+    "model": "AF 10mm F2.5 Fisheye",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 10,
+    "focalLengthMax": 10,
+    "maxAperture": 2.5,
+    "minAperture": 16,
+    "weightGram": 504,
+    "filterThreadMm": null,
+    "minFocusDistanceM": 0.15,
+    "maxMagnification": 0.1,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://7artisans.store/products/af-10mm-f2-5-full-frame-lens-for-e-z-l",
+    "sourceUrls": [
+      "https://7artisans.store/products/af-10mm-f2-5-full-frame-lens-for-e-z-l",
+      "https://www.7artisans.com/prod_view.aspx?nid=3&typeid=125&id=576",
+      "https://petapixel.com/2026/08/27/7artisans-full-frame-10mm-f-2-5-af-fisheye-breaks-new-ground/"
+    ],
+    "notes": {
+      "en": "Autofocus full-frame diagonal fisheye (MAX series) with a 185-degree view, 11 elements in 8 groups and 9 aperture blades; no front filter thread. The official 504g weight is for the Sony E version (L-mount weight not published), and maximum magnification is an estimate, not verified through official channels.",
+      "zh": "自动对焦全画幅对角线鱼眼镜头（MAX 系列），185° 视角，11 片 8 组，9 片光圈叶片，无前置滤镜螺纹。官方 504g 重量为索尼 E 卡口版本数据（L 卡口版本重量未公布），最大放大倍率为估算值，未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=7Artisans+AF+10mm+F2.5+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "7artisans-af-135mm-f1-8",
+    "brand": "7Artisans",
+    "model": "AF 135mm F1.8",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 135,
+    "focalLengthMax": 135,
+    "maxAperture": 1.8,
+    "minAperture": 16,
+    "weightGram": 1014,
+    "filterThreadMm": 82,
+    "minFocusDistanceM": 0.68,
+    "maxMagnification": 0.25,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Telephoto",
+      "Portrait"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://7artisans.store/products/af-135mm-f1-8-full-frame-lens-for-e-z-l",
+    "sourceUrls": [
+      "https://7artisans.store/products/af-135mm-f1-8-full-frame-lens-for-e-z-l",
+      "https://www.7artisans.com/prod_view.aspx?nid=3&typeid=125&id=552",
+      "https://petapixel.com/2026/07/02/7artisans-affordable-af-135mm-f-1-8-prime-arrives-on-full-frame-e-and-l-mount-cameras/"
+    ],
+    "notes": {
+      "en": "STM autofocus 135mm (MAX series) with 16 elements in 13 groups including 6 ED elements, 12 aperture blades and 0.25x maximum magnification. The official 1014g weight is for the Sony E version; the L-mount weight is not published.",
+      "zh": "STM 自动对焦 135mm 定焦（MAX 系列），16 片 13 组（含 6 片 ED 镜片），12 片光圈叶片，最大放大倍率 0.25x。官方 1014g 重量为索尼 E 卡口版本数据，L 卡口版本重量未公布。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=7Artisans+AF+135mm+F1.8+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "7artisans-af-40mm-f2-5",
+    "brand": "7Artisans",
+    "model": "AF 40mm F2.5",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 40,
+    "focalLengthMax": 40,
+    "maxAperture": 2.5,
+    "minAperture": 16,
+    "weightGram": 90,
+    "filterThreadMm": 46,
+    "minFocusDistanceM": 0.4,
+    "maxMagnification": 0.12,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Standard"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://7artisans.store/products/af-40mm-f2-5-full-frame-lens-for-e-z-l",
+    "sourceUrls": [
+      "https://7artisans.store/products/af-40mm-f2-5-full-frame-lens-for-e-z-l",
+      "https://www.7artisans.com/prod_view.aspx?nid=3&typeid=125&id=529",
+      "https://petapixel.com/2026/08/05/7artisans-159-af-40mm-f-2-5-comes-to-full-frame-l-and-z-mount-cameras/"
+    ],
+    "notes": {
+      "en": "Tiny STM autofocus pancake (LITE series) with 7 elements in 6 groups and 9 aperture blades. The official 90g weight is for the Sony E version (L-mount weight not published), and maximum magnification is an estimate, not verified through official channels.",
+      "zh": "小巧的 STM 自动对焦饼干头（LITE 系列），7 片 6 组，9 片光圈叶片。官方 90g 重量为索尼 E 卡口版本数据（L 卡口版本重量未公布），最大放大倍率为估算值，未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=7Artisans+AF+40mm+F2.5+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "7artisans-14mm-f2-8",
+    "brand": "7Artisans",
+    "model": "14mm F2.8",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 14,
+    "focalLengthMax": 14,
+    "maxAperture": 2.8,
+    "minAperture": 22,
+    "weightGram": 504,
+    "filterThreadMm": 77,
+    "minFocusDistanceM": 0.43,
+    "maxMagnification": 0.04,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://7artisans.store/products/14mm-f-2-8-full-frame-wide-angle-lens-for-sony-e-canon-eos-r-nikon-z-panasonic-l",
+    "sourceUrls": [
+      "https://7artisans.store/products/14mm-f-2-8-full-frame-wide-angle-lens-for-sony-e-canon-eos-r-nikon-z-panasonic-l",
+      "https://petapixel.com/2025/08/01/7artisans-ultra-wide-14mm-f-2-8-full-frame-lens-promises-dramatic-photos/"
+    ],
+    "notes": {
+      "en": "Manual-focus metal ultra-wide with a 116-degree view, 13 elements in 9 groups, 10 aperture blades and a clicked/de-clicked aperture switch. The 77mm filter thread is on its removable threaded hood; the official 504g weight is for the Sony E version, and maximum magnification is an estimate, not verified through official channels.",
+      "zh": "全金属手动对焦超广角镜头，116° 视角，13 片 9 组，10 片光圈叶片，光圈环可切换有级/无级。77mm 滤镜螺纹位于可拆卸的螺纹遮光罩上；官方 504g 重量为索尼 E 卡口版本数据，最大放大倍率为估算值，未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=7Artisans+14mm+F2.8+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "7artisans-75mm-f1-4",
+    "brand": "7Artisans",
+    "model": "75mm F1.4",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 75,
+    "focalLengthMax": 75,
+    "maxAperture": 1.4,
+    "minAperture": 16,
+    "weightGram": 408,
+    "filterThreadMm": 58,
+    "minFocusDistanceM": 0.88,
+    "maxMagnification": 0.1,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Portrait"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://7artisans.store/products/75mm-f-1-4-full-frame-lens-for-sony-e-canon-eos-r-nikon-z-panasonic-l-lumix-s",
+    "sourceUrls": [
+      "https://7artisans.store/products/75mm-f-1-4-full-frame-lens-for-sony-e-canon-eos-r-nikon-z-panasonic-l-lumix-s",
+      "https://www.7artisans.com/prod_view.aspx?nid=3&typeid=103&id=586",
+      "https://petapixel.com/2025/07/31/7artisans-unusual-75mm-f-1-4-portrait-prime-is-just-189/"
+    ],
+    "notes": {
+      "en": "Compact manual-focus metal portrait prime with a simple 6-element, 6-group design and 13 aperture blades. The official spec sheet gives about 408g without naming a mount; maximum magnification is an estimate, not verified through official channels.",
+      "zh": "小巧的全金属手动对焦人像定焦，6 片 6 组简洁光学结构，13 片光圈叶片。官方参数表给出约 408g，未区分卡口；最大放大倍率为估算值，未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=7Artisans+75mm+F1.4+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "meike-85mm-f1-8-se-ii",
+    "brand": "Meike",
+    "model": "85mm F1.8 SE Mark II STM",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 85,
+    "focalLengthMax": 85,
+    "maxAperture": 1.8,
+    "minAperture": 16,
+    "weightGram": 369,
+    "filterThreadMm": 62,
+    "minFocusDistanceM": 0.65,
+    "maxMagnification": 0.15,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Portrait"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://www.meikeglobal.com/products/8518se-l",
+    "sourceUrls": [
+      "https://www.meikeglobal.com/products/8518se-l",
+      "https://www.meikeglobal.com/products/8518ii-se-e-mount",
+      "https://petapixel.com/2025/11/12/meikes-new-85mm-f-1-8-se-ii-for-e-l-and-z-mount-costs-just-230/"
+    ],
+    "notes": {
+      "en": "Second-generation budget 85mm f/1.8 STM autofocus lens with 11 elements in 7 groups, a closer 0.65m minimum focus and a USB-C firmware port; weight about 369g per Meike. Minimum aperture and maximum magnification are estimates, not verified through official channels.",
+      "zh": "第二代平价 85mm f/1.8 STM 自动对焦镜头，11 片 7 组，最近对焦距离缩短至 0.65 米，配备 USB-C 固件升级接口；官方重量约 369g。最小光圈与最大放大倍率为估算值，未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Meike+85mm+F1.8+SE+II+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "samyang-af-14-24mm-f2-8",
+    "brand": "Samyang",
+    "model": "AF 14-24mm F2.8",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Zoom",
+    "focusType": "AF",
+    "focalLengthMin": 14,
+    "focalLengthMax": 24,
+    "maxAperture": 2.8,
+    "minAperture": 22,
+    "weightGram": 441,
+    "filterThreadMm": 77,
+    "minFocusDistanceM": 0.18,
+    "maxMagnification": 0.26,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://www.lksamyang.com/en/product/product-view.php?seq=685",
+    "sourceUrls": [
+      "https://www.lksamyang.com/en/product/product-view.php?seq=685",
+      "https://www.dpreview.com/news/4291657782/lk-samyang-14-24mm-f2p8-l-mount-announcement"
+    ],
+    "notes": {
+      "en": "Compact ultra-wide F2.8 zoom from LK Samyang, co-developed with Schneider-Kreuznach; the L-Mount version was announced in April 2026. The f/22 minimum aperture is not verified through official channels.",
+      "zh": "LK Samyang 与 Schneider-Kreuznach 合作开发的小型 F2.8 超广角变焦，L 卡口版本于 2026 年 4 月发布。最小光圈 f/22 未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Samyang+14-24mm+F2.8+L+mount"
+      }
+    ]
+  },
+  {
+    "id": "samyang-af-60-180mm-f2-8",
+    "brand": "Samyang",
+    "model": "AF 60-180mm F2.8",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Zoom",
+    "focusType": "AF",
+    "focalLengthMin": 60,
+    "focalLengthMax": 180,
+    "maxAperture": 2.8,
+    "minAperture": 22,
+    "weightGram": 728,
+    "filterThreadMm": 77,
+    "minFocusDistanceM": 0.35,
+    "maxMagnification": 0.26,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Telephoto"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://www.lksamyang.com/en/product/product-view.php?seq=694",
+    "sourceUrls": [
+      "https://www.lksamyang.com/en/product/product-view.php?seq=694",
+      "https://www.dpreview.com/news/3753144366/lk-samyang-af-60-180mm-f2p8-lens-announcement"
+    ],
+    "notes": {
+      "en": "Compact telephoto F2.8 zoom from LK Samyang, co-developed with Schneider-Kreuznach; announced June 2026. Maximum magnification is 0.26x at the wide end; the f/22 minimum aperture is not verified through official channels.",
+      "zh": "LK Samyang 与 Schneider-Kreuznach 合作开发的小型 F2.8 长焦变焦，2026 年 6 月发布。最大放大倍率 0.26x（广角端）；最小光圈 f/22 未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Samyang+60-180mm+F2.8+L+mount"
+      }
+    ]
+  },
+  {
+    "id": "laowa-15mm-f4-5-0-5x-macro",
+    "brand": "Laowa",
+    "model": "15mm F4.5 0.5X Wide Angle Macro",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 15,
+    "focalLengthMax": 15,
+    "maxAperture": 4.5,
+    "minAperture": 32,
+    "weightGram": 308,
+    "filterThreadMm": 62,
+    "minFocusDistanceM": 0.129,
+    "maxMagnification": 0.5,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Wide Angle",
+      "Macro"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://www.venuslens.net/product/laowa-15mm-f-4-5-0-5x-wide-angle-macro/",
+    "sourceUrls": [
+      "https://www.venuslens.net/product/laowa-15mm-f-4-5-0-5x-wide-angle-macro/",
+      "https://petapixel.com/2025/05/15/new-laowa-15mm-f-4-5-0-5x-macro-lens-gives-your-close-ups-a-much-wider-background/"
+    ],
+    "notes": {
+      "en": "Ultra-wide manual-focus macro announced May 2025 with 0.5x magnification; the L-Mount version has manual aperture control only, unlike the electronically-coupled Sony E/Nikon Z/Canon EF versions.",
+      "zh": "2025年5月发布的超广角手动微距镜头，最大放大倍率0.5x；L卡口版本仅支持手动光圈操作，不同于索尼E/尼康Z/佳能EF电子光圈版本。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Laowa+15mm+f%2F4.5+0.5x+Macro+L+Mount"
+      }
+    ]
+  },
+  {
+    "id": "laowa-8-15mm-f2-8-ff-zoom-fisheye",
+    "brand": "Laowa",
+    "model": "8-15mm F2.8 FF Zoom Fisheye",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Zoom",
+    "focusType": "MF",
+    "focalLengthMin": 8,
+    "focalLengthMax": 15,
+    "maxAperture": 2.8,
+    "minAperture": 22,
+    "weightGram": 650,
+    "filterThreadMm": null,
+    "minFocusDistanceM": 0.16,
+    "maxMagnification": 0.23,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://www.venuslens.net/product/laowa-8-15mm-f-2-8-ff-zoom-fisheye-2/",
+    "sourceUrls": [
+      "https://www.venuslens.net/product/laowa-8-15mm-f-2-8-ff-zoom-fisheye-2/",
+      "https://leicarumors.com/2025/06/06/venus-optics-announced-a-new-laowa-8-15mm-f-2-8-ff-zoom-fisheye-lens-for-leica-l-mount.aspx/"
+    ],
+    "notes": {
+      "en": "First full-frame constant-f/2.8 zoom fisheye, announced June 2025; gives a circular fisheye at 8mm and a full-frame rectangular fisheye at 15mm. No front filter thread. Manual focus.",
+      "zh": "2025年6月发布的世界首款全画幅恒定f/2.8变焦鱼眼镜头；8mm端为圆形鱼眼，15mm端为全画幅矩形鱼眼效果，无前置滤镜螺纹，手动对焦。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Laowa+8-15mm+f%2F2.8+Zoom+Fisheye+L+Mount"
+      }
+    ]
+  },
+  {
+    "id": "laowa-af-180mm-f4-5-1-5x-ultra-macro-apo",
+    "brand": "Laowa",
+    "model": "AF 180mm F4.5 1.5X Ultra Macro APO",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 180,
+    "focalLengthMax": 180,
+    "maxAperture": 4.5,
+    "minAperture": 32,
+    "weightGram": 521,
+    "filterThreadMm": 62,
+    "minFocusDistanceM": 0.3,
+    "maxMagnification": 1.5,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Telephoto",
+      "Macro"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://www.venuslens.net/product/laowa-180mm-f-4-5-1-5x-ultra-macro-apo/",
+    "sourceUrls": [
+      "https://www.venuslens.net/product/laowa-180mm-f-4-5-1-5x-ultra-macro-apo/",
+      "https://nikonrumors.com/2025/09/16/venus-optics-laowa-180mm-f-4-5-apo-ca-dreamer-1-5x-ultra-macro-full-frame-autofocus-lens-for-nikon-z-mount.aspx/"
+    ],
+    "notes": {
+      "en": "Laowa's first tele-macro APO lens, announced September 2025. Autofocus on Sony E/Nikon Z/Canon EF; the Leica L and Canon RF versions are manual-focus only, with a wider f/4.5-32 aperture range than the AF versions' f/4.5-22.",
+      "zh": "徕沃首款远摄微距APO镜头，2025年9月发布。索尼E/尼康Z/佳能EF版本支持自动对焦；徕卡L卡口和佳能RF版本仅支持手动对焦，光圈范围为f/4.5-32，比自动对焦版本（f/4.5-22）更大。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Laowa+180mm+f%2F4.5+1.5x+Ultra+Macro+APO+L+Mount"
+      }
+    ]
+  },
+  {
+    "id": "laowa-35mm-f2-8-zero-d-tilt-shift-0-5x-macro",
+    "brand": "Laowa",
+    "model": "35mm F2.8 Zero-D Tilt-Shift 0.5X Macro",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 35,
+    "focalLengthMax": 35,
+    "maxAperture": 2.8,
+    "minAperture": 22,
+    "weightGram": 1350,
+    "filterThreadMm": 77,
+    "minFocusDistanceM": 0.228,
+    "maxMagnification": 0.5,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Macro",
+      "Standard"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://www.venuslens.net/product/the-laowa-35mm-f-2-8-zero-d-tilt-shift-0-5x-macro/",
+    "sourceUrls": [
+      "https://www.venuslens.net/product/the-laowa-35mm-f-2-8-zero-d-tilt-shift-0-5x-macro/",
+      "https://petapixel.com/2025/11/25/laowa-35mm-f-2-8-zero-d-tilt-shift-0-5x-macro-lens-promises-unparalleled-versatility/"
+    ],
+    "notes": {
+      "en": "Tilt-shift macro lens announced November 2025, offering ±10° tilt, ±12mm shift and 0.5x magnification with near-zero distortion; includes a built-in Arca-Swiss tripod foot. Manual focus.",
+      "zh": "2025年11月发布的移轴微距镜头，提供±10°俯仰、±12mm偏移及0.5x最大放大倍率，畸变极低，内置Arca-Swiss快装脚，手动对焦。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Laowa+35mm+f%2F2.8+Zero-D+Tilt-Shift+0.5x+Macro+L+Mount"
+      }
+    ]
+  },
+  {
+    "id": "laowa-aksen-45mm-f2-8-1-5x-ultra-macro-apo",
+    "brand": "Laowa",
+    "model": "Aksen 45mm F2.8 1-5X Ultra Macro APO",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 45,
+    "focalLengthMax": 45,
+    "maxAperture": 2.8,
+    "minAperture": 11,
+    "weightGram": 599,
+    "filterThreadMm": null,
+    "minFocusDistanceM": 0.041,
+    "maxMagnification": 5,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Macro"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://www.venuslens.net/product/laowa-aksen-ultra-macro-apo/",
+    "sourceUrls": [
+      "https://www.venuslens.net/product/laowa-aksen-ultra-macro-apo/",
+      "https://petapixel.com/2026/07/31/laowa-aksen-45mm-f-2-8-and-17-5mm-f-1-7-are-parfocal-ultra-macro-lenses/"
+    ],
+    "notes": {
+      "en": "Parfocal ultra-macro lens announced July 31, 2026, zooming from 1x to 5x magnification without refocusing; has a 37mm rear (not front) filter thread and no front filter thread, so filterThreadMm is recorded as null here. Weight and minimum working distance are sourced from retailer listings, not a directly fetched official spec page (venuslens.net blocked automated fetches), so treat them as best available rather than fully officially confirmed.",
+      "zh": "2026年7月31日发布的准焦式超微距镜头，可在1x至5x放大倍率间变焦而无需重新对焦；采用37mm后置滤镜螺纹（无前置滤镜螺纹，故此处filterThreadMm记为null）。重量和最近工作距离数据来自零售商页面，而非直接抓取到的官方规格页（venuslens.net拦截了自动抓取），请视为最佳可得数据而非完全经官方核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Laowa+Aksen+45mm+f%2F2.8+1-5x+Ultra+Macro+APO+L+Mount"
+      }
+    ]
+  },
+  {
+    "id": "laowa-aksen-17-5mm-f1-7-5-10x-ultra-macro-apo",
+    "brand": "Laowa",
+    "model": "Aksen 17.5mm F1.7 5-10X Ultra Macro APO",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 17.5,
+    "focalLengthMax": 17.5,
+    "maxAperture": 1.7,
+    "minAperture": 5.6,
+    "weightGram": 570,
+    "filterThreadMm": 42,
+    "minFocusDistanceM": 0.0225,
+    "maxMagnification": 10,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Macro"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://www.venuslens.net/product/laowa-aksen-ultra-macro-apo/",
+    "sourceUrls": [
+      "https://www.venuslens.net/product/laowa-aksen-ultra-macro-apo/",
+      "https://www.neocamera.com/lens/venus/laowa_aksen_17.5mm_f1.7_5-10x_ultra_macro/ll"
+    ],
+    "notes": {
+      "en": "Parfocal ultra-macro lens announced July 31, 2026, the first lens on the market covering 5x-10x magnification; fixed ~22.5mm working distance throughout the zoom. Weight and dimensions are sourced from retailer/press listings, not a directly fetched official spec page (venuslens.net blocked automated fetches), so treat them as best available rather than fully officially confirmed.",
+      "zh": "2026年7月31日发布的准焦式超微距镜头，是市面上首款覆盖5x-10x放大倍率的镜头，变焦过程中工作距离固定在约22.5mm。重量与尺寸数据来自零售商/媒体页面，而非直接抓取到的官方规格页（venuslens.net拦截了自动抓取），请视为最佳可得数据而非完全经官方核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Laowa+Aksen+17.5mm+f%2F1.7+5-10x+Ultra+Macro+APO+L+Mount"
+      }
+    ]
+  },
+  {
+    "id": "mitakon-55mm-f2-8-1-5x-macro",
+    "brand": "Mitakon",
+    "model": "55mm F2.8 1-5X Macro",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 55,
+    "focalLengthMax": 55,
+    "maxAperture": 2.8,
+    "minAperture": 2.8,
+    "weightGram": 690,
+    "filterThreadMm": 58,
+    "minFocusDistanceM": 0.279,
+    "maxMagnification": 5,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Macro"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://zyoptics.net/product/mitakon-55mm-f-2-8-1-5x-macro-lens/",
+    "sourceUrls": [
+      "https://zyoptics.net/product/mitakon-55mm-f-2-8-1-5x-macro-lens/",
+      "https://www.bhphotovideo.com/c/product/1915425-REG/mitakon_zhongyi_mtk55mf28l_55mm_f_2_8_1_5x_macro.html"
+    ],
+    "notes": {
+      "en": "Manual-focus macro lens dedicated to 1x-5x magnification, sold in many mounts including L-Mount. The official page does not state the aperture range in text, so the minimum aperture value is not verified through official channels.",
+      "zh": "手动对焦微距镜头，专为 1-5 倍放大倍率设计，有包括 L 卡口在内的多种卡口版本。官方页面未以文字给出光圈范围，最小光圈数值未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Mitakon+55mm+f2.8+1-5x+Macro+L-mount"
+      }
+    ]
+  },
+  {
+    "id": "astrhori-af-85mm-f1-8-mark-ii",
+    "brand": "AstrHori",
+    "model": "AF 85mm F1.8 Mark II",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 85,
+    "focalLengthMax": 85,
+    "maxAperture": 1.8,
+    "minAperture": 16,
+    "weightGram": 441,
+    "filterThreadMm": 72,
+    "minFocusDistanceM": 0.8,
+    "maxMagnification": 0.13,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Portrait"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://www.astrhori.cn/products/af-85mm-f1-8-mark-ii-full-frame-lens-for-e-l-z",
+    "sourceUrls": [
+      "https://www.astrhori.cn/products/af-85mm-f1-8-mark-ii-full-frame-lens-for-e-l-z",
+      "https://photorumors.com/2025/10/22/announced-new-astrhori-af-85mm-f-1-8-mark-ii-full-frame-lens-for-e-l-z/"
+    ],
+    "notes": {
+      "en": "Second-generation autofocus 85mm portrait prime, announced October 2025. The official page gives no text spec sheet, so weight, minimum aperture, closest focus and magnification are not verified through official channels.",
+      "zh": "第二代自动对焦 85mm 人像定焦，2025 年 10 月发布。官方页面没有文字规格表，重量、最小光圈、最近对焦距离和放大倍率均未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=AstrHori+85mm+F1.8+Mark+II"
+      }
+    ]
+  },
+  {
+    "id": "astrhori-6mm-f2-8-fisheye",
+    "brand": "AstrHori",
+    "model": "MF 6mm F2.8 Full-Frame Circular Fisheye",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 6,
+    "focalLengthMax": 6,
+    "maxAperture": 2.8,
+    "minAperture": 16,
+    "weightGram": 280,
+    "filterThreadMm": null,
+    "minFocusDistanceM": 0.08,
+    "maxMagnification": 0.1,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://www.astrhori.cn/products/6mm-f2-8-full-frame-circular-fisheye-lens-for-e-l-rf-z",
+    "sourceUrls": [
+      "https://www.astrhori.cn/products/6mm-f2-8-full-frame-circular-fisheye-lens-for-e-l-rf-z",
+      "https://leicarumors.com/2025/08/27/astrhori-announced-a-new-6mm-f-2-8-full-frame-circular-fisheye-lens-for-leica-l-mount-299.aspx/"
+    ],
+    "notes": {
+      "en": "Manual-focus full-frame circular fisheye, announced August 2025, with no front filter thread. Weight and magnification are not verified through official channels.",
+      "zh": "手动对焦全画幅圆形鱼眼镜头，2025 年 8 月发布，无前置滤镜螺纹。重量和放大倍率未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=AstrHori+6mm+F2.8+Fisheye"
+      }
+    ]
+  },
+  {
+    "id": "brightin-star-35mm-f1-4",
+    "brand": "Brightin Star",
+    "model": "MF 35mm F1.4",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 35,
+    "focalLengthMax": 35,
+    "maxAperture": 1.4,
+    "minAperture": 16,
+    "weightGram": 218,
+    "filterThreadMm": 49,
+    "minFocusDistanceM": 0.3,
+    "maxMagnification": 0.15,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Standard",
+      "Wide Angle"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://brightinstar.com/products/mf-35mm-f1-4-full-frame-prime-lens-l-mount",
+    "sourceUrls": [
+      "https://brightinstar.com/products/mf-35mm-f1-4-full-frame-prime-lens-l-mount",
+      "https://www.bhphotovideo.com/c/product/1946210-REG/brightin_star_6977732096530_mf_35mm_f_1_4_lens.html",
+      "https://www.newsshooter.com/2025/12/28/brightinstar-mf-35mm-f1-4/"
+    ],
+    "notes": {
+      "en": "Compact manual-focus full-frame 35mm prime, announced December 2025. Minimum aperture and magnification are not verified through official channels.",
+      "zh": "小巧的手动对焦全画幅 35mm 定焦，2025 年 12 月发布。最小光圈和放大倍率未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Brightin+Star+35mm+F1.4"
+      }
+    ]
+  },
+  {
+    "id": "panasonic-lumix-s-pro-70-200mm-f4-ois-2026",
+    "brand": "Panasonic",
+    "model": "LUMIX S PRO 70-200mm F4 O.I.S. (2026)",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Zoom",
+    "focusType": "AF",
+    "focalLengthMin": 70,
+    "focalLengthMax": 200,
+    "maxAperture": 4,
+    "minAperture": 22,
+    "weightGram": 985,
+    "filterThreadMm": 77,
+    "minFocusDistanceM": 0.92,
+    "maxMagnification": 0.25,
+    "stabilization": true,
+    "weatherSealed": true,
+    "category": [
+      "Telephoto"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://panasonic.jp/dc/products/S-R70200A.html",
+    "sourceUrls": [
+      "https://panasonic.jp/dc/products/S-R70200A/spec.html",
+      "https://petapixel.com/2026/08/25/panasonic-refreshes-four-lenses-including-three-for-micro-four-thirds/"
+    ],
+    "notes": {
+      "en": "Updated version (model S-R70200A) of the 2019 S-R70200, announced August 2026 and on sale from September 17, 2026. Optics and core specs are unchanged; it adds a fluorine-coated front element and a nameplate redesigned to suppress flare.",
+      "zh": "2019 年款 S-R70200 的更新版（型号 S-R70200A），2026 年 8 月发布，9 月 17 日开售。光学结构和主要规格不变，新增前镜片氟涂层，并重新设计了铭牌以抑制眩光。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+S-R70200A"
+      }
+    ]
   }
 ]
