@@ -2432,7 +2432,7 @@
       "Wide Angle"
     ],
     "releaseYear": 2023,
-    "officialUrl": "https://www.sigma-global.com/en/lenses/a023_14_14/",
+    "officialUrl": "https://www.sigma-global.com/en/lenses/a023_14_14_re/",
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/a023_14_14/",
       "https://dustinabbott.net/2023/06/sigma-14mm-f1-4-dg-dn-art-review/"
@@ -2592,7 +2592,7 @@
       "Wide Angle"
     ],
     "releaseYear": 2023,
-    "officialUrl": "https://www.sigma-global.com/en/lenses/c023_17_4/",
+    "officialUrl": "https://www.sigma-global.com/en/lenses/c023_17_4_re/",
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c023_17_4/",
       "https://dustinabbott.net/2023/05/sigma-17mm-f4-dg-dn-iseries-review/"
@@ -2672,7 +2672,7 @@
       "Wide Angle"
     ],
     "releaseYear": 2022,
-    "officialUrl": "https://www.sigma-global.com/en/lenses/c022_20_2/",
+    "officialUrl": "https://www.sigma-global.com/en/lenses/c022_20_2_re/",
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c022_20_2/",
       "https://www.dpreview.com/news/0718810103/sigma-announces-699-20mm-f2-dg-dn-lens-for-e-mount-l-mount-camera-systems"
@@ -2752,7 +2752,7 @@
       "Wide Angle"
     ],
     "releaseYear": 2021,
-    "officialUrl": "https://www.sigma-global.com/en/lenses/c021_24_2/",
+    "officialUrl": "https://www.sigma-global.com/en/lenses/c021_24_2_re/",
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c021_24_2/",
       "https://www.dpreview.com/news/5961283520/sigma-introduces-24mm-f2-and-90mm-f2-8-dg-dn-contemporary-lenses"
@@ -2793,7 +2793,7 @@
       "Macro"
     ],
     "releaseYear": 2021,
-    "officialUrl": "https://www.sigma-global.com/en/lenses/c021_24_35/",
+    "officialUrl": "https://www.sigma-global.com/en/lenses/c021_24_35_re/",
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c021_24_35/",
       "http://findingrange.com/2021/05/03/sigma-24mm-f3-5-dg-dn-contemporary-lens-review/"
@@ -2953,7 +2953,7 @@
       "Standard"
     ],
     "releaseYear": 2020,
-    "officialUrl": "https://www.sigma-global.com/en/lenses/c020_35_2/",
+    "officialUrl": "https://www.sigma-global.com/en/lenses/c020_35_2_re/",
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c020_35_2/",
       "https://www.sigmaphoto.com/35mm-f2-dg-dn-c"
@@ -3023,7 +3023,7 @@
     "focalLengthMax": 45,
     "maxAperture": 2.8,
     "minAperture": 22,
-    "weightGram": 215,
+    "weightGram": 220,
     "filterThreadMm": 55,
     "minFocusDistanceM": 0.24,
     "maxMagnification": 0.25,
@@ -3033,7 +3033,7 @@
       "Standard"
     ],
     "releaseYear": 2019,
-    "officialUrl": "https://www.sigma-global.com/en/lenses/c019_45_28/",
+    "officialUrl": "https://www.sigma-global.com/en/lenses/c019_45_28_re/",
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c019_45_28/",
       "https://www.bhphotovideo.com/c/product/1881827-REG/sigma_36s969_45mm_f2_8_dg_silver.html"
@@ -3113,7 +3113,7 @@
       "Standard"
     ],
     "releaseYear": 2023,
-    "officialUrl": "https://www.sigma-global.com/en/lenses/c023_50_2/",
+    "officialUrl": "https://www.sigma-global.com/en/lenses/c023_50_2_re/",
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c023_50_2/",
       "https://www.bhphotovideo.com/c/product/1757613-REG/sigma_314969_50mm_f_2_dg_dn.html"
@@ -3233,7 +3233,7 @@
       "Portrait"
     ],
     "releaseYear": 2021,
-    "officialUrl": "https://www.sigma-global.com/en/lenses/c021_90_28/",
+    "officialUrl": "https://www.sigma-global.com/en/lenses/c021_90_28_re/",
     "sourceUrls": [
       "https://www.sigma-global.com/en/lenses/c021_90_28/",
       "https://www.sigma-global.com/en/news/2021/09/09/16339/"
@@ -5715,6 +5715,1030 @@
       {
         "label": "B&H Photo",
         "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+S-R70200A"
+      }
+    ]
+  },
+  {
+    "id": "sigma-50mm-f1-2-dg-dn-art",
+    "brand": "Sigma",
+    "model": "50mm F1.2 DG DN Art",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 50,
+    "focalLengthMax": 50,
+    "maxAperture": 1.2,
+    "minAperture": 16,
+    "weightGram": 745,
+    "filterThreadMm": 72,
+    "minFocusDistanceM": 0.4,
+    "maxMagnification": 0.161,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Standard"
+    ],
+    "releaseYear": 2024,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/a024_50_12/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/a024_50_12/"
+    ],
+    "notes": {
+      "en": "Fast standard prime with a 13-blade aperture; 17 elements in 12 groups. Dust- and splash-resistant with a water- and oil-repellent front element. Release year taken from the A024 edition code, not stated on the product page.",
+      "zh": "大光圈标准定焦，13 片光圈叶片，12 组 17 片。具备防尘防滴结构与前镜片防水防油涂层。发布年份依据 A024 版本代码推定，产品页未直接写明。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma+50mm+F1.2+DG+DN+Art+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "sigma-85mm-f1-4-dg-dn-art",
+    "brand": "Sigma",
+    "model": "85mm F1.4 DG DN Art",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 85,
+    "focalLengthMax": 85,
+    "maxAperture": 1.4,
+    "minAperture": 16,
+    "weightGram": 630,
+    "filterThreadMm": 77,
+    "minFocusDistanceM": 0.85,
+    "maxMagnification": 0.119,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Portrait"
+    ],
+    "releaseYear": 2020,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/a020_85_14/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/a020_85_14/"
+    ],
+    "notes": {
+      "en": "Mirrorless-native 85mm portrait prime with an 11-blade rounded aperture; 15 elements in 11 groups. Dust- and splash-resistant structure. Release year taken from the A020 edition code.",
+      "zh": "为无反设计的 85mm 人像定焦，11 片圆形光圈叶片，11 组 15 片。具备防尘防滴结构。发布年份依据 A020 版本代码推定。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma+85mm+F1.4+DG+DN+Art+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "sigma-24-70mm-f2-8-dg-dn-ii-art",
+    "brand": "Sigma",
+    "model": "24-70mm F2.8 DG DN II Art",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Zoom",
+    "focusType": "AF",
+    "focalLengthMin": 24,
+    "focalLengthMax": 70,
+    "maxAperture": 2.8,
+    "minAperture": 22,
+    "weightGram": 745,
+    "filterThreadMm": 82,
+    "minFocusDistanceM": 0.17,
+    "maxMagnification": 0.37,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Wide Angle",
+      "Standard"
+    ],
+    "releaseYear": 2024,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/a024_24_70_28_ii/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/a024_24_70_28_ii/"
+    ],
+    "notes": {
+      "en": "Second-generation constant-f/2.8 standard zoom; 19 elements in 15 groups. Minimum focus is 17 cm at wide and 34 cm at tele (1:2.7 at wide). Dust- and splash-resistant. Release year taken from the A024 edition code.",
+      "zh": "第二代恒定 F2.8 标准变焦，15 组 19 片。最近对焦距离广角端 17cm、长焦端 34cm（广角端最大放大倍率 1:2.7）。具备防尘防滴结构。发布年份依据 A024 版本代码推定。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma+24-70mm+F2.8+DG+DN+II+Art+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "sigma-20mm-f1-4-dg-hsm-art",
+    "brand": "Sigma",
+    "model": "20mm F1.4 DG HSM Art",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 20,
+    "focalLengthMax": 20,
+    "maxAperture": 1.4,
+    "minAperture": 16,
+    "weightGram": 1035,
+    "filterThreadMm": null,
+    "minFocusDistanceM": 0.276,
+    "maxMagnification": 0.141,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2015,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/a015_20_14/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/a015_20_14/"
+    ],
+    "notes": {
+      "en": "DSLR-era Art design (edition A015) that Sigma also produced in native L-Mount; the official page marks it discontinued. Bulbous front element with no front filter thread.",
+      "zh": "单反时代的 Art 设计（版本号 A015），适马亦推出过原生 L 卡口版本；官方页面已标注停产。前镜片外凸，无前置滤镜螺纹。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2020mm%20F1.4%20DG%20HSM%20Art%20L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "sigma-24mm-f1-4-dg-hsm-art",
+    "brand": "Sigma",
+    "model": "24mm F1.4 DG HSM Art",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 24,
+    "focalLengthMax": 24,
+    "maxAperture": 1.4,
+    "minAperture": 16,
+    "weightGram": 755,
+    "filterThreadMm": 77,
+    "minFocusDistanceM": 0.25,
+    "maxMagnification": 0.189,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2015,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/a015_24_14/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/a015_24_14/"
+    ],
+    "notes": {
+      "en": "DSLR-era Art design (edition A015) that Sigma also produced in native L-Mount; the official page marks it discontinued.",
+      "zh": "单反时代的 Art 设计（版本号 A015），适马亦推出过原生 L 卡口版本；官方页面已标注停产。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2024mm%20F1.4%20DG%20HSM%20Art%20L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "sigma-28mm-f1-4-dg-hsm-art",
+    "brand": "Sigma",
+    "model": "28mm F1.4 DG HSM Art",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 28,
+    "focalLengthMax": 28,
+    "maxAperture": 1.4,
+    "minAperture": 16,
+    "weightGram": 960,
+    "filterThreadMm": 77,
+    "minFocusDistanceM": 0.28,
+    "maxMagnification": 0.185,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2019,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/a019_28_14/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/a019_28_14/"
+    ],
+    "notes": {
+      "en": "DSLR-era Art design (edition A019) that Sigma also produced in native L-Mount; the official page marks it discontinued. Sigma describes a dust- and splash-resistant structure.",
+      "zh": "单反时代的 Art 设计（版本号 A019），适马亦推出过原生 L 卡口版本；官方页面已标注停产。官方称具备防尘防溅结构。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2028mm%20F1.4%20DG%20HSM%20Art%20L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "sigma-35mm-f1-4-dg-hsm-art",
+    "brand": "Sigma",
+    "model": "35mm F1.4 DG HSM Art",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 35,
+    "focalLengthMax": 35,
+    "maxAperture": 1.4,
+    "minAperture": 16,
+    "weightGram": 755,
+    "filterThreadMm": 67,
+    "minFocusDistanceM": 0.3,
+    "maxMagnification": 0.192,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Standard"
+    ],
+    "releaseYear": 2012,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/a012_35_14/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/a012_35_14/"
+    ],
+    "notes": {
+      "en": "DSLR-era Art design (edition A012) that Sigma also produced in native L-Mount; the official page marks it discontinued. The first Art-line lens; superseded on L-Mount by the 35mm F1.4 DG DN Art.",
+      "zh": "单反时代的 Art 设计（版本号 A012），适马亦推出过原生 L 卡口版本；官方页面已标注停产。Art 系列首支镜头；L 卡口上已由 35mm F1.4 DG DN Art 取代。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2035mm%20F1.4%20DG%20HSM%20Art%20L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "sigma-50mm-f1-4-dg-hsm-art",
+    "brand": "Sigma",
+    "model": "50mm F1.4 DG HSM Art",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 50,
+    "focalLengthMax": 50,
+    "maxAperture": 1.4,
+    "minAperture": 16,
+    "weightGram": 905,
+    "filterThreadMm": 77,
+    "minFocusDistanceM": 0.4,
+    "maxMagnification": 0.179,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Standard"
+    ],
+    "releaseYear": 2014,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/a014_50_14/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/a014_50_14/"
+    ],
+    "notes": {
+      "en": "DSLR-era Art design (edition A014) that Sigma also produced in native L-Mount; the official page marks it discontinued. Superseded on L-Mount by the 50mm F1.4 DG DN Art.",
+      "zh": "单反时代的 Art 设计（版本号 A014），适马亦推出过原生 L 卡口版本；官方页面已标注停产。L 卡口上已由 50mm F1.4 DG DN Art 取代。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2050mm%20F1.4%20DG%20HSM%20Art%20L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "sigma-85mm-f1-4-dg-hsm-art",
+    "brand": "Sigma",
+    "model": "85mm F1.4 DG HSM Art",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 85,
+    "focalLengthMax": 85,
+    "maxAperture": 1.4,
+    "minAperture": 16,
+    "weightGram": 1215,
+    "filterThreadMm": 86,
+    "minFocusDistanceM": 0.85,
+    "maxMagnification": 0.118,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Portrait"
+    ],
+    "releaseYear": 2016,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/a016_85_14/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/a016_85_14/"
+    ],
+    "notes": {
+      "en": "DSLR-era Art design (edition A016) that Sigma also produced in native L-Mount; the official page marks it discontinued. Sigma describes a dust- and splash-resistant mount. Superseded by the mirrorless 85mm F1.4 DG DN Art.",
+      "zh": "单反时代的 Art 设计（版本号 A016），适马亦推出过原生 L 卡口版本；官方页面已标注停产。官方称卡口具备防尘防溅结构。已由无反专用的 85mm F1.4 DG DN Art 取代。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%2085mm%20F1.4%20DG%20HSM%20Art%20L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "sigma-135mm-f1-8-dg-hsm-art",
+    "brand": "Sigma",
+    "model": "135mm F1.8 DG HSM Art",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 135,
+    "focalLengthMax": 135,
+    "maxAperture": 1.8,
+    "minAperture": 16,
+    "weightGram": 1220,
+    "filterThreadMm": 82,
+    "minFocusDistanceM": 0.875,
+    "maxMagnification": 0.2,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Portrait",
+      "Telephoto"
+    ],
+    "releaseYear": 2017,
+    "officialUrl": "https://www.sigma-global.com/en/lenses/a017_135_18/",
+    "sourceUrls": [
+      "https://www.sigma-global.com/en/lenses/a017_135_18/"
+    ],
+    "notes": {
+      "en": "DSLR-era Art design (edition A017) that Sigma also produced in native L-Mount; the official page marks it discontinued.",
+      "zh": "单反时代的 Art 设计（版本号 A017），适马亦推出过原生 L 卡口版本；官方页面已标注停产。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Sigma%20135mm%20F1.8%20DG%20HSM%20Art%20L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "leica-apo-summicron-sl-28mm-f2-asph",
+    "brand": "Leica",
+    "model": "APO-Summicron-SL 28 f/2 ASPH.",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 28,
+    "focalLengthMax": 28,
+    "maxAperture": 2,
+    "minAperture": 22,
+    "weightGram": 700,
+    "filterThreadMm": 67,
+    "minFocusDistanceM": 0.24,
+    "maxMagnification": 0.2,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2021,
+    "officialUrl": "https://leica-camera.com/en-US/photography/lenses/sl/apo-summicron-sl-28-f2-asph-black-finish",
+    "sourceUrls": [
+      "https://leica-camera.com/en-US/photography/lenses/sl/apo-summicron-sl-28-f2-asph-black-finish",
+      "https://leica-camera.com/sites/default/files/pm-15029-Tech_Data_APO-Summicron-SL_28_EN.pdf"
+    ],
+    "notes": {
+      "en": "Order no. 11183; 13 elements in 10 groups with nine anomalous-dispersion elements. Weight is about 700 g without the hood (750 g with it); housing is sealed against dust and moisture.",
+      "zh": "订货号 11183；13 片 10 组，其中 9 片为反常色散镜片。不含遮光罩约 700 g（含遮光罩约 750 g），镜身防尘防潮。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica+APO-Summicron-SL+28+f2+ASPH"
+      }
+    ]
+  },
+  {
+    "id": "leica-super-vario-elmarit-sl-14-24mm-f2-8-asph",
+    "brand": "Leica",
+    "model": "Super-Vario-Elmarit-SL 14-24 f/2.8 ASPH.",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Zoom",
+    "focusType": "AF",
+    "focalLengthMin": 14,
+    "focalLengthMax": 24,
+    "maxAperture": 2.8,
+    "minAperture": 22,
+    "weightGram": 855,
+    "filterThreadMm": null,
+    "minFocusDistanceM": 0.28,
+    "maxMagnification": 0.135,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2023,
+    "officialUrl": "https://leica-camera.com/en-US/photography/lenses/sl/leica-super-vario-elmarit-sl-14-24-f28-asph-black-anodized-finish",
+    "sourceUrls": [
+      "https://leica-camera.com/en-US/photography/lenses/sl/leica-super-vario-elmarit-sl-14-24-f28-asph-black-anodized-finish",
+      "https://leica-camera.com/sites/default/files/pm-15095-EN_Datenblatt_Super-Vario-Elmarit-SL_14-24_ASPH.pdf"
+    ],
+    "notes": {
+      "en": "Order no. 11194. The hood is built in, so there is no front filter thread; a rear holder takes gel filters. Largest scale is 1:7.4 at 24 mm.",
+      "zh": "订货号 11194。遮光罩为固定式，没有前置滤镜螺纹，可在卡口处的滤镜座使用插片滤镜。最大放大倍率为 1:7.4（24mm 端）。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica+Super-Vario-Elmarit-SL+14-24+f2.8+ASPH"
+      }
+    ]
+  },
+  {
+    "id": "leica-vario-elmarit-sl-70-200mm-f2-8-asph",
+    "brand": "Leica",
+    "model": "Vario-Elmarit-SL 70-200 f/2.8 ASPH.",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Zoom",
+    "focusType": "AF",
+    "focalLengthMin": 70,
+    "focalLengthMax": 200,
+    "maxAperture": 2.8,
+    "minAperture": 22,
+    "weightGram": 1540,
+    "filterThreadMm": 82,
+    "minFocusDistanceM": 0.65,
+    "maxMagnification": 0.196,
+    "stabilization": true,
+    "weatherSealed": true,
+    "category": [
+      "Telephoto",
+      "Portrait"
+    ],
+    "releaseYear": 2024,
+    "officialUrl": "https://leica-camera.com/en-US/photography/lenses/sl/vario-elmarit-sl-70-200-f28-asph-black-anodized-finish",
+    "sourceUrls": [
+      "https://leica-camera.com/en-US/photography/lenses/sl/vario-elmarit-sl-70-200-f28-asph-black-anodized-finish",
+      "https://leica-camera.com/sites/default/files/pm-20386-EN_Datenblatt_Vario-Elmar-SL_70-200.pdf"
+    ],
+    "notes": {
+      "en": "Order no. 11096; has optical image stabilisation and a tripod clamp. Closest focus is 0.65 m at 70 mm and 1.0 m at 200 mm, where the largest scale is 1:5.1. Weight is 1540 g without the hood.",
+      "zh": "订货号 11096；带光学防抖和三脚架环。最近对焦距离为 0.65 m（70mm 端）和 1.0 m（200mm 端），最大放大倍率 1:5.1 出现在 200mm 端。不含遮光罩重 1540 g。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Leica+Vario-Elmarit-SL+70-200+f2.8+ASPH"
+      }
+    ]
+  },
+  {
+    "id": "panasonic-lumix-s-26mm-f8",
+    "brand": "Panasonic",
+    "model": "LUMIX S 26mm F8",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 26,
+    "focalLengthMax": 26,
+    "maxAperture": 8,
+    "minAperture": 8,
+    "weightGram": 58,
+    "filterThreadMm": null,
+    "minFocusDistanceM": 0.25,
+    "maxMagnification": 0.14,
+    "stabilization": false,
+    "weatherSealed": false,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2024,
+    "officialUrl": "https://shop.panasonic.com/products/s-series-26mm-f8-full-frame-lens",
+    "sourceUrls": [
+      "https://shop.panasonic.com/products/s-series-26mm-f8-full-frame-lens",
+      "https://panasonic.jp/dc/products/S-R26/spec.html"
+    ],
+    "notes": {
+      "en": "S-R26 is a pancake lens about 18 mm thick. It is manual focus only with a fixed F8 aperture, so maxAperture equals minAperture. It takes no filters, and Panasonic does not list dust/splash resistance.",
+      "zh": "S-R26 是一支约 18 mm 厚的饼干镜头。仅支持手动对焦，光圈固定在 F8，因此最大与最小光圈相同。不能装滤镜，官方规格未标注防尘防滴。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Panasonic+LUMIX+S+26mm+F8+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "viltrox-af-14mm-f4-0-air",
+    "brand": "Viltrox",
+    "model": "AF 14mm F4.0 Air",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 14,
+    "focalLengthMax": 14,
+    "maxAperture": 4,
+    "minAperture": 16,
+    "weightGram": 172,
+    "filterThreadMm": 58,
+    "minFocusDistanceM": 0.13,
+    "maxMagnification": 0.23,
+    "stabilization": false,
+    "weatherSealed": true,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://viltrox.com/products/af-14mm-f4-0-l",
+    "sourceUrls": [
+      "https://viltrox.com/products/af-14mm-f4-0-l"
+    ],
+    "notes": {
+      "en": "Compact Air-series full-frame prime with an STM motor and USB-C firmware port; 12 elements in 9 groups (4 ED, 2 HR, 2 aspherical), about 172 g. Viltrox describes the body as sealed for outdoor use; the exact extent of sealing is not specified.",
+      "zh": "Air 系列小型全画幅定焦，STM 马达，带 USB-C 固件升级接口；12 片 9 组（4 ED, 2 HR, 2 aspherical），约 172 克。官方称其机身具备密封设计，具体密封范围未说明。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Viltrox+AF+14mm+F4.0+Air+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "viltrox-af-20mm-f2-8-air",
+    "brand": "Viltrox",
+    "model": "AF 20mm F2.8 Air",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 20,
+    "focalLengthMax": 20,
+    "maxAperture": 2.8,
+    "minAperture": 16,
+    "weightGram": 159,
+    "filterThreadMm": 52,
+    "minFocusDistanceM": 0.19,
+    "maxMagnification": 0.17,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://viltrox.com/products/af-20mm-f2-8-l",
+    "sourceUrls": [
+      "https://viltrox.com/products/af-20mm-f2-8-l"
+    ],
+    "notes": {
+      "en": "Compact Air-series full-frame prime with an STM motor and USB-C firmware port; 10 elements in 8 groups (2 ED, 1 HR, 2 aspherical), about 159 g. Official page mentions only a water- and dust-repellent front-element coating, not body sealing.",
+      "zh": "Air 系列小型全画幅定焦，STM 马达，带 USB-C 固件升级接口；10 片 8 组（2 ED, 1 HR, 2 aspherical），约 159 克。官方仅提及前组镜片的防水防尘镀膜，未说明机身密封。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Viltrox+AF+20mm+F2.8+Air+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "viltrox-af-40mm-f2-5-air",
+    "brand": "Viltrox",
+    "model": "AF 40mm F2.5 Air",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 40,
+    "focalLengthMax": 40,
+    "maxAperture": 2.5,
+    "minAperture": 16,
+    "weightGram": 169,
+    "filterThreadMm": 52,
+    "minFocusDistanceM": 0.34,
+    "maxMagnification": 0.14,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Standard"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://viltrox.com/products/af-40mm-f2-5-l",
+    "sourceUrls": [
+      "https://viltrox.com/products/af-40mm-f2-5-l"
+    ],
+    "notes": {
+      "en": "Compact Air-series full-frame prime with an STM motor and USB-C firmware port; 10 elements in 6 groups (1 ED, 3 HR, 1 aspherical), about 169 g. Official page mentions only a water- and dust-repellent front-element coating, not body sealing.",
+      "zh": "Air 系列小型全画幅定焦，STM 马达，带 USB-C 固件升级接口；10 片 6 组（1 ED, 3 HR, 1 aspherical），约 169 克。官方仅提及前组镜片的防水防尘镀膜，未说明机身密封。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Viltrox+AF+40mm+F2.5+Air+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "viltrox-af-50mm-f2-0-air",
+    "brand": "Viltrox",
+    "model": "AF 50mm F2.0 Air",
+    "mount": "L-Mount",
+    "allianceMember": true,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "AF",
+    "focalLengthMin": 50,
+    "focalLengthMax": 50,
+    "maxAperture": 2,
+    "minAperture": 16,
+    "weightGram": 205,
+    "filterThreadMm": 58,
+    "minFocusDistanceM": 0.51,
+    "maxMagnification": 0.11,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Standard"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://viltrox.com/products/af-50mm-f2-0-l",
+    "sourceUrls": [
+      "https://viltrox.com/products/af-50mm-f2-0-l"
+    ],
+    "notes": {
+      "en": "Compact Air-series full-frame prime with an STM motor and USB-C firmware port; 13 elements in 9 groups (3 ED, 4 HR, 1 aspherical), about 205 g. Official page mentions only a water- and dust-repellent front-element coating, not body sealing.",
+      "zh": "Air 系列小型全画幅定焦，STM 马达，带 USB-C 固件升级接口；13 片 9 组（3 ED, 4 HR, 1 aspherical），约 205 克。官方仅提及前组镜片的防水防尘镀膜，未说明机身密封。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Viltrox+AF+50mm+F2.0+Air+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "laowa-ffii-ts-24mm-f2-c-dreamer",
+    "brand": "Laowa",
+    "model": "FFII TS 24mm F2 C-Dreamer",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 24,
+    "focalLengthMax": 24,
+    "maxAperture": 2,
+    "minAperture": 22,
+    "weightGram": 860,
+    "filterThreadMm": 77,
+    "minFocusDistanceM": 0.25,
+    "maxMagnification": 0.194,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://www.laowalens.com/camera-lens-101",
+    "sourceUrls": [
+      "https://www.laowalens.com/camera-lens-101"
+    ],
+    "notes": {
+      "en": "Manual-focus tilt-shift lens with an f/2 maximum aperture and a 14-blade diaphragm; Laowa's Chinese site lists L-Mount among six mounts. Launched in China in September 2026, ahead of the global release.",
+      "zh": "手动对焦移轴镜头，最大光圈 F2，14 片光圈叶片；老蛙中国官网的卡口列表中包含 L 口。2026 年 9 月先在中国发售，早于全球上市。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Laowa+TS+24mm+f2+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "laowa-acris-35mm-f2-8-1x-macro-apo",
+    "brand": "Laowa",
+    "model": "ACRIS 35mm F2.8 1X Macro APO (MF)",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 35,
+    "focalLengthMax": 35,
+    "maxAperture": 2.8,
+    "minAperture": 22,
+    "weightGram": 530,
+    "filterThreadMm": 67,
+    "minFocusDistanceM": 0.18,
+    "maxMagnification": 1,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Standard",
+      "Macro"
+    ],
+    "releaseYear": 2026,
+    "officialUrl": "https://www.laowalens.com/camera-lens-100",
+    "sourceUrls": [
+      "https://www.laowalens.com/camera-lens-100"
+    ],
+    "notes": {
+      "en": "1:1 macro at 35mm. Autofocus versions exist for E/Z/EF/X, but the L-Mount version is manual focus only (13 aperture blades, 67mm filter, 0.18m close focus). Laowa only publishes weights for the AF versions (530g is the EF figure), so the L-Mount weight is an estimate not verified through official channels.",
+      "zh": "35mm 焦段 1:1 微距。E/Z/EF/X 卡口为自动对焦版，L 口仅有手动对焦版（13 片光圈叶片、67mm 滤镜、最近对焦 0.18m）。官方只公布了 AF 版重量（530g 为 EF 版数据），L 口版重量为估算值，未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Laowa+35mm+f2.8+1x+Macro+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "laowa-ffii-12mm-f2-8-c-d-dreamer",
+    "brand": "Laowa",
+    "model": "FFII 12mm F2.8 C&D-Dreamer (MF)",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 12,
+    "focalLengthMax": 12,
+    "maxAperture": 2.8,
+    "minAperture": 22,
+    "weightGram": 480,
+    "filterThreadMm": 72,
+    "minFocusDistanceM": 0.14,
+    "maxMagnification": 0.21,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Wide Angle"
+    ],
+    "releaseYear": 2025,
+    "officialUrl": "https://www.laowalens.com/camera-lens-89",
+    "sourceUrls": [
+      "https://www.laowalens.com/camera-lens-89"
+    ],
+    "notes": {
+      "en": "Near-zero-distortion 12mm (122°) that takes 72mm screw-in filters. Autofocus is offered only for E/Z; the L-Mount version is manual focus, with 5- or 14-blade aperture options. The 480g weight is Laowa's figure for the MF RF version; the L-Mount weight and release year are not verified through official channels.",
+      "zh": "近乎零畸变的 12mm（122°）超广角，可直接安装 72mm 螺纹滤镜。自动对焦版仅有 E/Z 卡口，L 口为手动对焦版，可选 5 片或 14 片光圈叶片。480g 为官方公布的 MF RF 版重量，L 口版的重量与发布年份未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Laowa+12mm+f2.8+Zero-D+FF+II+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "mitakon-200mm-f4-1x-macro",
+    "brand": "Mitakon",
+    "model": "200mm F4 1X Macro",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 200,
+    "focalLengthMax": 200,
+    "maxAperture": 4,
+    "minAperture": 32,
+    "weightGram": 1300,
+    "filterThreadMm": 67,
+    "minFocusDistanceM": 0.48,
+    "maxMagnification": 1,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Telephoto",
+      "Macro"
+    ],
+    "releaseYear": 2023,
+    "officialUrl": "https://zyoptics.net/product/mitakon-200mm-f-4-1x-macro-lens/",
+    "sourceUrls": [
+      "https://zyoptics.net/product/mitakon-200mm-f-4-1x-macro-lens/"
+    ],
+    "notes": {
+      "en": "Manual-focus 1:1 telephoto macro; Zhongyi lists Leica L among its mounts. The 1,300g weight is the official figure, which does not say which mount it applies to.",
+      "zh": "手动对焦长焦 1:1 微距镜头；中一光学官网的卡口列表中包含 Leica L。1300g 为官方重量，未注明对应哪个卡口。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Mitakon+200mm+f4+Macro+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "ttartisan-500mm-f6-3",
+    "brand": "TTArtisan",
+    "model": "500mm F6.3",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 500,
+    "focalLengthMax": 500,
+    "maxAperture": 6.3,
+    "minAperture": 32,
+    "weightGram": 1617,
+    "filterThreadMm": 82,
+    "minFocusDistanceM": 3.3,
+    "maxMagnification": 0.18,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Telephoto"
+    ],
+    "releaseYear": 2023,
+    "officialUrl": "https://www.ttartisan.com/?full-frame-lenses/500-F6-3.html",
+    "sourceUrls": [
+      "https://www.ttartisan.com/?full-frame-lenses/500-F6-3.html"
+    ],
+    "notes": {
+      "en": "Manual-focus super-telephoto with 8 elements in 5 groups (2 ED) and a tripod collar. TTArtisan lists weight only as about 1564-1617 g across mounts (upper bound used); maximum magnification is an estimate - not verified through official channels.",
+      "zh": "手动对焦超长焦镜头，8 组 5 片中含 2 片 ED 镜片，附脚架环。官方仅给出各卡口约 1564-1617g 的重量区间（此处取上限）；最大放大倍率为估算值，未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=TTArtisan+500mm+F6.3+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "ttartisan-100mm-f2-8-macro-2x",
+    "brand": "TTArtisan",
+    "model": "100mm F2.8 Macro 2X",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 100,
+    "focalLengthMax": 100,
+    "maxAperture": 2.8,
+    "minAperture": 22,
+    "weightGram": 748,
+    "filterThreadMm": 67,
+    "minFocusDistanceM": 0.25,
+    "maxMagnification": 2,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Macro",
+      "Portrait"
+    ],
+    "releaseYear": 2024,
+    "officialUrl": "https://www.ttartisan.com/?full-frame-lenses/TS-100-Macro.html",
+    "sourceUrls": [
+      "https://www.ttartisan.com/?full-frame-lenses/TS-100-Macro.html"
+    ],
+    "notes": {
+      "en": "Manual-focus 2x macro (non tilt-shift version) with 14 elements in 10 groups. TTArtisan lists weight only as about 700-748 g across mounts (upper bound used), not verified through official channels for L-Mount.",
+      "zh": "手动对焦 2 倍微距镜头（非移轴版），14 组 10 片。官方仅给出各卡口约 700-748g 的重量区间（此处取上限），L 卡口重量未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=TTArtisan+100mm+F2.8+Macro+2X+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "meike-50mm-f1-2",
+    "brand": "Meike",
+    "model": "50mm F1.2",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 50,
+    "focalLengthMax": 50,
+    "maxAperture": 1.2,
+    "minAperture": 22,
+    "weightGram": 620,
+    "filterThreadMm": 67,
+    "minFocusDistanceM": 0.6,
+    "maxMagnification": 0.1,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Standard"
+    ],
+    "releaseYear": 2021,
+    "officialUrl": "https://meikeglobal.com/products/5012l",
+    "sourceUrls": [
+      "https://meikeglobal.com/products/5012l"
+    ],
+    "notes": {
+      "en": "Manual-focus full-frame fast standard prime, 12 elements in 7 groups. Meike does not publish magnification (estimated), and the release year refers to the lens line; the L-Mount version's launch date is not verified through official channels.",
+      "zh": "手动对焦全画幅大光圈标准定焦，12 片 7 组。美科未公布放大倍率（此为估算），发布年份为该系列首发年份，L 卡口版的上市时间未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Meike+50mm+F1.2+L-Mount"
+      }
+    ]
+  },
+  {
+    "id": "meike-50mm-f1-7",
+    "brand": "Meike",
+    "model": "50mm F1.7",
+    "mount": "L-Mount",
+    "allianceMember": false,
+    "format": "Full Frame",
+    "lensType": "Prime",
+    "focusType": "MF",
+    "focalLengthMin": 50,
+    "focalLengthMax": 50,
+    "maxAperture": 1.7,
+    "minAperture": 22,
+    "weightGram": 310,
+    "filterThreadMm": 52,
+    "minFocusDistanceM": 0.5,
+    "maxMagnification": 0.12,
+    "stabilization": false,
+    "weatherSealed": null,
+    "category": [
+      "Standard"
+    ],
+    "releaseYear": 2019,
+    "officialUrl": "https://meikeglobal.com/products/5017l",
+    "sourceUrls": [
+      "https://meikeglobal.com/products/5017l"
+    ],
+    "notes": {
+      "en": "Compact manual-focus full-frame standard prime, 6 elements in 5 groups. Magnification and release year (lens line, not specifically the L version) are estimates, not verified through official channels.",
+      "zh": "小巧的手动对焦全画幅标准定焦，6 片 5 组。放大倍率和发布年份（指该系列而非 L 卡口版）为估算值，未能通过官方渠道核实。"
+    },
+    "affiliateUrls": [],
+    "retailerSearchUrls": [
+      {
+        "label": "B&H Photo",
+        "url": "https://www.bhphotovideo.com/c/search?Ntt=Meike+50mm+F1.7+L-Mount"
       }
     ]
   }
