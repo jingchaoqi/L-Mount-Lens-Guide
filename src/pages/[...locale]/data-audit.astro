@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getAllLenses, auditFieldLabel } from '../../lib/lenses';
+import { t, brandName, localeHref, localeStaticPaths, langFromParam } from '../../lib/i18n';
+import report from '../../../docs/lens-audit-2026-10-21.json';
+
+export function getStaticPaths() { return localeStaticPaths(); }
+const lang = langFromParam(Astro.params.locale);
+const lenses = getAllLenses();
+const records = new Map(report.entries.map((entry) => [entry.id, entry]));
+---
+<Layout lang={lang} path="data-audit" title={t(lang, 'audit.title')} description={t(lang, 'audit.intro')}>
+  <a class="back-link" href={localeHref(lang)}>{t(lang, 'detail.back')}</a>
+  <h1 class="page-title">{t(lang, 'audit.title')}</h1>
+  <p>{t(lang, 'audit.checked', { date: report.checkedAt })}</p>
+  <p>{t(lang, 'audit.intro')}</p>
+  <p>{t(lang, 'audit.catalog')}</p>
+  <p>{t(lang, 'audit.yearMeaning')}</p>
+  {lenses.map((lens) => {
+    const record = records.get(lens.id);
+    const pending = [...new Set(lens.verification.unresolvedFields.map((field) => auditFieldLabel(field, lang)))];
+    return <section id={lens.id} data-audit-lens={lens.id}>
+      <h2><a href={localeHref(lang, `lenses/${lens.id}`)}>{brandName(lang, lens.brand)} {lens.model}</a></h2>
+      <p>{t(lang, lens.verification.mountConfirmed ? 'audit.confirmedMount' : 'audit.heldMount')}</p>
+      <p>{pending.length ? `${t(lang, 'audit.pendingFields')}: ${pending.join(' / ')}` : t(lang, 'audit.completeFields')}</p>
+      <details>
+        <summary>{t(lang, 'detail.dataSources')}</summary>
+        <ul>{record?.sources.map((source) => <li>
+          <a href={source.url} target="_blank" rel="noopener noreferrer">{source.url}</a>
+          <blockquote style="white-space:pre-line; overflow-wrap:anywhere;">{source.excerpt}</blockquote>
+        </li>)}</ul>
+      </details>
+    </section>;
+  })}
+</Layout>

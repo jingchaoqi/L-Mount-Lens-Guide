@@ -25,6 +25,10 @@ Camera AG, the L-Mount Alliance, Panasonic, Sigma, or any other manufacturer.**
 "L-Mount" is a trademark of Leica Camera AG. See
 [`/about`](src/pages/[...locale]/about.astro) for the full disclaimer.
 
+## Source verification
+
+All 168 stored entries were individually reviewed on 2026-10-21. Native L-Mount availability is confirmed for all 168, including the original Meike 85mm F1.8 STM after its archived manufacturer page was recovered. Evidence gaps are displayed as “Awaiting confirmation”, rather than inferred specifications. See the [review report](docs/lens-audit-2026-10-21.md) and the site's `/data-audit` page. Passing the data validator checks structure and evidence coverage; it does not independently prove factual accuracy.
+
 ## Goals
 
 - A fast, searchable, filterable directory of L-Mount lenses — a single page
@@ -81,8 +85,8 @@ wrong-language flash to hide.
 
 - **URLs**: the default language (English) is served un-prefixed — `/`,
   `/about`, `/compare`, `/lenses/<id>`. Every other language is served under its
-  own prefix — `/zh/`, `/zh/about`, `/zh/compare`, `/zh/lenses/<id>`. With 112
-  lenses and 2 languages, the build emits 230 pages (115 per language).
+  own prefix — `/zh/`, `/zh/about`, `/zh/compare`, `/zh/lenses/<id>`. With 168 stored
+  lenses and 2 languages, including the audit page, the build emits 344 pages (172 per language).
 - **First visit**: a small blocking inline script in `<head>`, present on
   un-prefixed pages only, picks a language — in order of precedence: an
   explicitly saved choice (`localStorage`), then the browser's

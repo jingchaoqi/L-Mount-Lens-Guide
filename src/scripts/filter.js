@@ -1,3 +1,4 @@
+import { compareKnownValues } from '../lib/verification.js';
 // Client-side filter / sort / view toggle for the lens list page.
 // Works against server-rendered card + table rows, matched in pairs by
 // the shared `data-lens-id` attribute, so no data is re-fetched or
@@ -112,6 +113,7 @@ function init() {
         const selMax = focalRawToMm(maxRaw);
         // Overlap test (not containment): a zoom lens like 24-70mm should still
         // show up if only part of its range falls inside the selected slider range.
+        if (row.dataset.focalMin === undefined || row.dataset.focalMax === undefined) return false;
         const rowMin = Number(row.dataset.focalMin);
         const rowMax = Number(row.dataset.focalMax);
         if (rowMax < selMin || rowMin > selMax) return false;
@@ -125,19 +127,19 @@ function init() {
     switch (key) {
       case 'focal-asc':
         // Zooms sort by their shortest reach, e.g. a 16-35mm ranks by 16mm.
-        return Number(row.dataset.focalMin);
+        return row.dataset.focalMin === undefined ? undefined : Number(row.dataset.focalMin);
       case 'focal-desc':
         // ...and by their longest reach when sorting the other way, e.g.
         // a 100-400mm ranks by 400mm, not 100mm.
-        return Number(row.dataset.focalMax);
+        return row.dataset.focalMax === undefined ? undefined : Number(row.dataset.focalMax);
       case 'aperture-asc':
-        return Number(row.dataset.maxAperture);
+        return row.dataset.maxAperture === undefined ? undefined : Number(row.dataset.maxAperture);
       case 'weight-asc':
       case 'weight-desc':
-        return Number(row.dataset.weight);
+        return row.dataset.weight === undefined ? undefined : Number(row.dataset.weight);
       case 'year-asc':
       case 'year-desc':
-        return Number(row.dataset.releaseYear);
+        return row.dataset.releaseYear === undefined ? undefined : Number(row.dataset.releaseYear);
       default:
         return row.dataset.brand.toLowerCase();
     }
@@ -148,8 +150,8 @@ function init() {
     const sorted = [...rows].sort((a, b) => {
       const va = sortValue(a, sortKey);
       const vb = sortValue(b, sortKey);
-      if (va < vb) return descending ? 1 : -1;
-      if (va > vb) return descending ? -1 : 1;
+      const comparison = compareKnownValues(va, vb, descending);
+      if (comparison !== 0) return comparison;
       return a.dataset.search.localeCompare(b.dataset.search);
     });
     return sorted;

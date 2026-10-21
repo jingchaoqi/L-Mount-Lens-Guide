@@ -2,7 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CompareBar from '../components/CompareBar.astro';
-import { getAllLenses } from '../lib/lenses';
+import { getPublishedLenses } from '../lib/lenses';
 import {
   LOCALES,
   DEFAULT_LOCALE,
@@ -25,9 +25,10 @@ interface Props {
   /** Already translated by the page — this layout does not translate them. */
   title: string;
   description: string;
+  noindex?: boolean;
 }
 
-const { lang, path, title, description } = Astro.props;
+const { lang, path, title, description, noindex = false } = Astro.props;
 
 const locale = getLocale(lang);
 const isDefaultLocale = lang === DEFAULT_LOCALE;
@@ -50,7 +51,7 @@ const redirectLocales = LOCALES.map((l) => ({ code: l.code, prefixes: l.matchPre
 // delimiter inside the JSON string would otherwise end the element
 // early. No current lens name contains one, but it costs nothing.
 const lensIndexJson = JSON.stringify(
-  getAllLenses().map((lens) => ({ id: lens.id, brand: lens.brand, model: lens.model }))
+  getPublishedLenses().map((lens) => ({ id: lens.id, brand: lens.brand, model: lens.model }))
 ).replace(/</g, '\\u003c');
 ---
 <!doctype html>
@@ -141,6 +142,7 @@ const lensIndexJson = JSON.stringify(
     )}
 
     <title>{title}</title>
+    {noindex && <meta name="robots" content="noindex, follow" />}
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
     <meta name="robots" content="index, follow" />
