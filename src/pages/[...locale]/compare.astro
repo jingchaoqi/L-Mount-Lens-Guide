@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import CompareToggleButton from '../../components/CompareToggleButton.astro';
-import { getAllLenses, focalLengthLabel, apertureLabel, weightLabel } from '../../lib/lenses';
+import { getPublishedLenses, specLabel } from '../../lib/lenses';
 import { t, brandName, localeHref, localeStaticPaths, langFromParam } from '../../lib/i18n';
 
 export function getStaticPaths() {
@@ -9,7 +9,7 @@ export function getStaticPaths() {
 }
 
 const lang = langFromParam(Astro.params.locale);
-const lenses = getAllLenses();
+const lenses = getPublishedLenses();
 const homeHref = localeHref(lang);
 ---
 <Layout
@@ -54,26 +54,20 @@ const homeHref = localeHref(lang);
             </a>
             <CompareToggleButton lens={lens} lang={lang} class="compare-remove" />
           </div>
-          <div class="compare-row">{t(lang, lens.allianceMember ? 'spec.yes' : 'spec.noThirdParty')}</div>
-          <div class="compare-row">{t(lang, lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc')}</div>
-          <div class="compare-row">{t(lang, lens.lensType === 'Prime' ? 'filterBar.prime' : 'filterBar.zoom')}</div>
-          <div class="compare-row">{t(lang, lens.focusType === 'AF' ? 'detail.af' : 'detail.mf')}</div>
-          <div class="compare-row">{focalLengthLabel(lens)}</div>
-          <div class="compare-row">{apertureLabel(lens)}</div>
-          <div class="compare-row">f/{lens.minAperture}</div>
-          <div class="compare-row">{weightLabel(lens)}</div>
-          <div class="compare-row">
-            {lens.filterThreadMm ? `${lens.filterThreadMm}mm` : t(lang, 'spec.filterThreadNone')}
-          </div>
-          <div class="compare-row">{lens.minFocusDistanceM}m</div>
-          <div class="compare-row">{lens.maxMagnification}x</div>
-          <div class="compare-row">{t(lang, lens.stabilization ? 'spec.yes' : 'spec.no')}</div>
-          <div class="compare-row">
-            {lens.weatherSealed === null
-              ? t(lang, 'spec.notSpecified')
-              : t(lang, lens.weatherSealed ? 'spec.yes' : 'spec.no')}
-          </div>
-          <div class="compare-row">{lens.releaseYear}</div>
+          <div class="compare-row" data-spec="allianceMember">{specLabel(lens, 'allianceMember', lang)}</div>
+          <div class="compare-row" data-spec="format">{specLabel(lens, 'format', lang)}</div>
+          <div class="compare-row" data-spec="lensType">{specLabel(lens, 'lensType', lang)}</div>
+          <div class="compare-row" data-spec="focusType">{specLabel(lens, 'focusType', lang)}</div>
+          <div class="compare-row" data-spec="focalLengthMin">{specLabel(lens, 'focalLengthMin', lang)}</div>
+          <div class="compare-row" data-spec="maxAperture">{specLabel(lens, 'maxAperture', lang)}</div>
+          <div class="compare-row" data-spec="minAperture">{specLabel(lens, 'minAperture', lang)}</div>
+          <div class="compare-row" data-spec="weightGram">{specLabel(lens, 'weightGram', lang)}</div>
+          <div class="compare-row" data-spec="filterThreadMm">{specLabel(lens, 'filterThreadMm', lang)}</div>
+          <div class="compare-row" data-spec="minFocusDistanceM">{specLabel(lens, 'minFocusDistanceM', lang)}</div>
+          <div class="compare-row" data-spec="maxMagnification">{specLabel(lens, 'maxMagnification', lang)}</div>
+          <div class="compare-row" data-spec="stabilization">{specLabel(lens, 'stabilization', lang)}</div>
+          <div class="compare-row" data-spec="weatherSealed">{specLabel(lens, 'weatherSealed', lang)}</div>
+          <div class="compare-row" data-spec="releaseYear">{specLabel(lens, 'releaseYear', lang)}</div>
         </div>
       ))}
     </div>

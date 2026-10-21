@@ -3,11 +3,10 @@ import Layout from '../../../layouts/Layout.astro';
 import {
   getAllLenses,
   getLensById,
-  focalLengthLabel,
-  apertureLabel,
-  weightLabel,
   lensSeo,
   lensNotes,
+  specLabel,
+  isFieldVerified,
 } from '../../../lib/lenses';
 import { t, brandName, localeHref, localeStaticPaths, langFromParam } from '../../../lib/i18n';
 
@@ -31,30 +30,30 @@ const { title, description } = lensSeo(lens, lang);
 const brand = brandName(lang, lens.brand);
 const homeHref = localeHref(lang);
 ---
-<Layout lang={lang} path={`lenses/${lens.id}`} title={title} description={description}>
+<Layout lang={lang} path={`lenses/${lens.id}`} title={title} description={description} noindex={!lens.verification?.mountConfirmed}>
   <a class="back-link" href={homeHref}>{t(lang, 'detail.back')}</a>
 
   <div class="detail-header">
     <div class="detail-header__brand">{brand}</div>
     <h1 class="detail-header__model">{lens.model}</h1>
     <div class="lens-card__badges">
-      <span class={`badge ${lens.allianceMember ? 'badge--alliance' : 'badge--third-party'}`}>
-        {t(lang, lens.allianceMember ? 'detail.allianceMember' : 'detail.thirdParty')}
+      <span class={`badge ${!isFieldVerified(lens, 'allianceMember') ? 'badge--outline' : lens.allianceMember ? 'badge--alliance' : 'badge--third-party'}`}>
+        {isFieldVerified(lens, 'allianceMember') ? t(lang, lens.allianceMember ? 'detail.allianceMember' : 'detail.thirdParty') : t(lang, 'spec.unconfirmed')}
       </span>
       <span class="badge badge--outline">
-        {t(lang, lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc')}
+        {specLabel(lens, 'format', lang)}
       </span>
       <span class="badge badge--outline">
-        {t(lang, lens.lensType === 'Prime' ? 'filterBar.prime' : 'filterBar.zoom')}
+        {specLabel(lens, 'lensType', lang)}
       </span>
       <span class="badge badge--outline">
-        {t(lang, lens.focusType === 'AF' ? 'detail.af' : 'detail.mf')}
+        {specLabel(lens, 'focusType', lang)}
       </span>
       {lens.category.map((cat) => <span class="badge badge--outline">{t(lang, `category.${cat}`)}</span>)}
     </div>
   </div>
 
-  {!lens.allianceMember && (
+  {isFieldVerified(lens, 'allianceMember') && !lens.allianceMember && (
     <div class="disclaimer-banner">
       <strong>{t(lang, 'detail.notAlliance')}</strong>{' '}
       <span>{brand}</span>{' '}
@@ -73,26 +72,30 @@ const homeHref = localeHref(lang);
     ))}
   </div>
 
+  <div class="disclaimer-banner" data-verification-status>
+    <strong>{t(lang, 'audit.checked', { date: lens.verification?.checkedAt ?? '—' })}</strong>
+    <p>{t(lang, lens.verification?.mountConfirmed ? 'audit.pending' : 'audit.mountPending')}</p>
+    <a href={localeHref(lang, 'data-audit')}>{t(lang, 'audit.link')}</a>
+  </div>
   <h2 class="section-title">{t(lang, 'detail.specifications')}</h2>
-  <table class="spec-table">
-    <tbody>
-      <tr><th>{t(lang, 'spec.mount')}</th><td>{lens.mount}</td></tr>
-      <tr><th>{t(lang, 'spec.format')}</th><td>{t(lang, lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc')}</td></tr>
-      <tr><th>{t(lang, 'spec.lensType')}</th><td>{t(lang, lens.lensType === 'Prime' ? 'filterBar.prime' : 'filterBar.zoom')}</td></tr>
-      <tr><th>{t(lang, 'spec.focusType')}</th><td>{t(lang, lens.focusType === 'AF' ? 'detail.af' : 'detail.mf')}</td></tr>
-      <tr><th>{t(lang, 'spec.focalLength')}</th><td>{focalLengthLabel(lens)}</td></tr>
-      <tr><th>{t(lang, 'spec.maxAperture')}</th><td>{apertureLabel(lens)}</td></tr>
-      <tr><th>{t(lang, 'spec.minAperture')}</th><td>f/{lens.minAperture}</td></tr>
-      <tr><th>{t(lang, 'spec.weight')}</th><td>{weightLabel(lens)} ({lens.weightGram}g)</td></tr>
-      <tr><th>{t(lang, 'spec.filterThread')}</th><td>{lens.filterThreadMm ? `${lens.filterThreadMm}mm` : t(lang, 'spec.filterThreadNone')}</td></tr>
-      <tr><th>{t(lang, 'spec.minFocusDistance')}</th><td>{lens.minFocusDistanceM}m</td></tr>
-      <tr><th>{t(lang, 'spec.maxMagnification')}</th><td>{lens.maxMagnification}x</td></tr>
-      <tr><th>{t(lang, 'spec.stabilization')}</th><td>{t(lang, lens.stabilization ? 'spec.yes' : 'spec.no')}</td></tr>
-      <tr><th>{t(lang, 'spec.weatherSealed')}</th><td>{lens.weatherSealed === null ? t(lang, 'spec.notSpecified') : t(lang, lens.weatherSealed ? 'spec.yes' : 'spec.no')}</td></tr>
-      <tr><th>{t(lang, 'spec.releaseYear')}</th><td>{lens.releaseYear}</td></tr>
-      <tr><th>{t(lang, 'spec.allianceMember')}</th><td>{t(lang, lens.allianceMember ? 'spec.yes' : 'spec.noThirdParty')}</td></tr>
-    </tbody>
-  </table>
+  <table class="spec-table"><tbody>
+    <tr><th>{t(lang, 'spec.mount')}</th><td data-spec="mount">{specLabel(lens, 'mount', lang)}</td></tr>
+    <tr><th>{t(lang, 'spec.format')}</th><td data-spec="format">{specLabel(lens, 'format', lang)}</td></tr>
+    <tr><th>{t(lang, 'spec.lensType')}</th><td data-spec="lensType">{specLabel(lens, 'lensType', lang)}</td></tr>
+    <tr><th>{t(lang, 'spec.focusType')}</th><td data-spec="focusType">{specLabel(lens, 'focusType', lang)}</td></tr>
+    <tr><th>{t(lang, 'spec.focalLength')}</th><td data-spec="focalLengthMin">{specLabel(lens, 'focalLengthMin', lang)}</td></tr>
+    <tr><th>{t(lang, 'spec.maxAperture')}</th><td data-spec="maxAperture">{specLabel(lens, 'maxAperture', lang)}</td></tr>
+    <tr><th>{t(lang, 'spec.minAperture')}</th><td data-spec="minAperture">{specLabel(lens, 'minAperture', lang)}</td></tr>
+    <tr><th>{t(lang, 'spec.weight')}</th><td data-spec="weightGram">{specLabel(lens, 'weightGram', lang)}</td></tr>
+    <tr><th>{t(lang, 'spec.filterThread')}</th><td data-spec="filterThreadMm">{specLabel(lens, 'filterThreadMm', lang)}</td></tr>
+    <tr><th>{t(lang, 'spec.minFocusDistance')}</th><td data-spec="minFocusDistanceM">{specLabel(lens, 'minFocusDistanceM', lang)}</td></tr>
+    <tr><th>{t(lang, 'spec.maxMagnification')}</th><td data-spec="maxMagnification">{specLabel(lens, 'maxMagnification', lang)}</td></tr>
+    <tr><th>{t(lang, 'spec.stabilization')}</th><td data-spec="stabilization">{specLabel(lens, 'stabilization', lang)}</td></tr>
+    <tr><th>{t(lang, 'spec.weatherSealed')}</th><td data-spec="weatherSealed">{specLabel(lens, 'weatherSealed', lang)}</td></tr>
+    <tr><th>{t(lang, 'spec.releaseYear')}</th><td data-spec="releaseYear">{specLabel(lens, 'releaseYear', lang)}</td></tr>
+    <tr><th>{t(lang, 'spec.allianceMember')}</th><td data-spec="allianceMember">{specLabel(lens, 'allianceMember', lang)}</td></tr>
+  </tbody></table>
+  <p>{t(lang, 'audit.yearMeaning')}</p>
 
   <h2 class="section-title">{t(lang, 'detail.notes')}</h2>
   <p>{lensNotes(lens, lang)}</p>
