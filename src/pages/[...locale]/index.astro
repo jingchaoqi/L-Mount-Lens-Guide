@@ -49,8 +49,8 @@ const allianceBrandCount = new Set(
     </div>
   </section>
 
-  <div class="disclaimer-banner">
-    <p>{t(lang, 'audit.catalog')}</p>
+  <div class="disclaimer-banner catalog-notice">
+    <span>{t(lang, 'audit.catalog')}</span>{' '}
     <a href={localeHref(lang, 'data-audit')}>{t(lang, 'audit.link')}</a>
   </div>
   <FilterBar lang={lang} total={lenses.length} />

@@ -188,6 +188,11 @@ a {
   font-weight: 600;
 }
 
+.catalog-notice {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
 /* ---------- badges ---------- */
 
 .badge {
