@@ -1,6 +1,8 @@
 import rawLenses from '../data/lenses.json';
 import type { Lens } from './types';
 import { t, brandName, localized, LOCALE_CODES, type Lang } from './i18n';
+import { isFieldVerified } from './verification.js';
+export { isFieldVerified, verifiedAttribute } from './verification.js';
 
 export const lenses = rawLenses as unknown as Lens[];
 
@@ -8,40 +10,90 @@ export function getAllLenses(): Lens[] {
   return lenses;
 }
 
+/** Historical detail routes stay available; the directory requires evidence of an L version. */
+export function getPublishedLenses(): Lens[] {
+  return lenses.filter((lens) => lens.verification?.mountConfirmed === true);
+}
+
 export function getLensById(id: string): Lens | undefined {
   return lenses.find((lens) => lens.id === id);
 }
 
 /** Alliance-member brands first (A-Z), then third-party brands (A-Z). */
-export function getBrandsGrouped(): { alliance: string[]; thirdParty: string[] } {
+export function getBrandsGrouped(): { alliance: string[]; thirdParty: string[]; unconfirmed: string[] } {
   const allianceBrands = new Set<string>();
   const thirdPartyBrands = new Set<string>();
-  for (const lens of lenses) {
-    (lens.allianceMember ? allianceBrands : thirdPartyBrands).add(lens.brand);
+  const unconfirmedBrands = new Set<string>();
+  for (const lens of getPublishedLenses()) {
+    (!isFieldVerified(lens, 'allianceMember') ? unconfirmedBrands : lens.allianceMember ? allianceBrands : thirdPartyBrands).add(lens.brand);
   }
   const sortAsc = (a: string, b: string) => a.localeCompare(b);
   return {
     alliance: Array.from(allianceBrands).sort(sortAsc),
     thirdParty: Array.from(thirdPartyBrands).sort(sortAsc),
+    unconfirmed: Array.from(unconfirmedBrands).sort(sortAsc),
   };
 }
 
 /** Human-readable focal length label, e.g. "35mm" or "24-70mm" */
-export function focalLengthLabel(lens: Lens): string {
+export function focalLengthLabel(lens: Lens, lang: Lang = 'en'): string {
+  if (!isFieldVerified(lens, 'focalLengthMin') || !isFieldVerified(lens, 'focalLengthMax')) return t(lang, 'spec.unconfirmed');
   return lens.focalLengthMin === lens.focalLengthMax
     ? `${lens.focalLengthMin}mm`
     : `${lens.focalLengthMin}-${lens.focalLengthMax}mm`;
 }
 
 /** Human-readable aperture label, e.g. "f/1.4" or "f/2.8-4" */
-export function apertureLabel(lens: Lens): string {
-  return `f/${lens.maxAperture}`;
+export function apertureLabel(lens: Lens, lang: Lang = 'en'): string {
+  if (!isFieldVerified(lens, 'maxAperture')) return t(lang, 'spec.unconfirmed');
+  return isFieldVerified(lens, 'maxApertureTele') && lens.maxApertureTele !== lens.maxAperture
+    ? `f/${lens.maxAperture}-${lens.maxApertureTele}` : `f/${lens.maxAperture}`;
 }
 
-export function weightLabel(lens: Lens): string {
+export function weightLabel(lens: Lens, lang: Lang = 'en'): string {
+  if (!isFieldVerified(lens, 'weightGram')) return t(lang, 'spec.unconfirmed');
   return lens.weightGram >= 1000
     ? `${(lens.weightGram / 1000).toFixed(2)}kg`
     : `${lens.weightGram}g`;
+}
+
+/** Shared by detail, cards, SEO and comparison so unknowns cannot become yes/no or zero. */
+export function specLabel(lens: Lens, field: string, lang: Lang): string {
+  if (!isFieldVerified(lens, field)) return t(lang, 'spec.unconfirmed');
+  switch (field) {
+    case 'mount': return lens.mount;
+    case 'format': return t(lang, lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc');
+    case 'lensType': return t(lang, lens.lensType === 'Prime' ? 'filterBar.prime' : 'filterBar.zoom');
+    case 'focusType': return t(lang, lens.focusType === 'AF' ? 'detail.af' : 'detail.mf');
+    case 'focalLengthMin': return focalLengthLabel(lens, lang);
+    case 'maxAperture': return apertureLabel(lens, lang);
+    case 'minAperture': return isFieldVerified(lens, 'minApertureWide') && lens.minApertureWide !== lens.minAperture
+      ? `f/${lens.minApertureWide}-${lens.minAperture}` : `f/${lens.minAperture}`;
+    case 'weightGram': return weightLabel(lens, lang);
+    case 'filterThreadMm': return lens.filterThreadMm === null ? t(lang, 'spec.filterThreadNone') : `${lens.filterThreadMm}mm`;
+    case 'minFocusDistanceM': return `${lens.minFocusDistanceM}m`;
+    case 'maxMagnification': return `${lens.maxMagnification}×`;
+    case 'stabilization': return t(lang, lens.stabilization ? 'spec.yes' : 'spec.no');
+    case 'weatherSealed': return lens.weatherSealed === null ? t(lang, 'spec.notSpecified') : t(lang, lens.weatherSealed ? 'spec.yes' : 'spec.no');
+    case 'releaseYear': return String(lens.releaseYear);
+    case 'allianceMember': return t(lang, lens.allianceMember ? 'spec.yes' : 'spec.noThirdParty');
+    default: return t(lang, 'spec.unconfirmed');
+  }
+}
+
+export function auditFieldLabel(field: string, lang: Lang): string {
+  const labels: Record<string, string> = {
+    model: 'audit.model', notes: 'audit.notes', mount: 'spec.mount',
+    format: 'spec.format', lensType: 'spec.lensType', focusType: 'spec.focusType',
+    focalLengthMin: 'spec.focalLength', focalLengthMax: 'spec.focalLength',
+    maxAperture: 'spec.maxAperture', maxApertureTele: 'spec.maxAperture',
+    minAperture: 'spec.minAperture', minApertureWide: 'spec.minAperture',
+    weightGram: 'spec.weight', filterThreadMm: 'spec.filterThread',
+    minFocusDistanceM: 'spec.minFocusDistance', maxMagnification: 'spec.maxMagnification',
+    stabilization: 'spec.stabilization', weatherSealed: 'spec.weatherSealed',
+    releaseYear: 'spec.releaseYear', allianceMember: 'spec.allianceMember',
+  };
+  return t(lang, labels[field] ?? 'spec.unconfirmed');
 }
 
 export const WEIGHT_BUCKETS: { id: string; label: string; min: number; max: number }[] = [
@@ -60,9 +112,10 @@ export function weightBucketId(weightGram: number): string {
 
 /** Focal length range across the whole catalog, used to bound the focal-length slider. */
 export function getFocalRange(): { min: number; max: number } {
+  const confirmed = getPublishedLenses().filter((lens) => isFieldVerified(lens, 'focalLengthMin') && isFieldVerified(lens, 'focalLengthMax'));
   return {
-    min: Math.min(...lenses.map((l) => l.focalLengthMin)),
-    max: Math.max(...lenses.map((l) => l.focalLengthMax)),
+    min: Math.min(...confirmed.map((l) => l.focalLengthMin)),
+    max: Math.max(...confirmed.map((l) => l.focalLengthMax)),
   };
 }
 
@@ -82,19 +135,19 @@ export function lensSeo(lens: Lens, lang: Lang): { title: string; description: s
     description: t(lang, 'seo.lensDescription', {
       brand,
       model: lens.model,
-      focal: focalLengthLabel(lens),
-      aperture: apertureLabel(lens),
-      format: t(lang, lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc'),
-      focus: t(lang, lens.focusType === 'AF' ? 'detail.af' : 'detail.mf'),
-      weight: weightLabel(lens),
-      alliance: t(lang, lens.allianceMember ? 'seo.lensAlliance' : 'seo.lensThirdParty'),
+      focal: focalLengthLabel(lens, lang),
+      aperture: apertureLabel(lens, lang),
+      format: specLabel(lens, 'format', lang),
+      focus: specLabel(lens, 'focusType', lang),
+      weight: weightLabel(lens, lang),
+      alliance: specLabel(lens, 'allianceMember', lang),
     }),
   };
 }
 
 /** The lens's notes in `lang`, falling back to the default locale. */
 export function lensNotes(lens: Lens, lang: Lang): string {
-  return localized(lens.notes, lang);
+  return isFieldVerified(lens, 'notes') ? localized(lens.notes, lang) : t(lang, 'audit.notesPending');
 }
 
 /**

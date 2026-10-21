@@ -33,8 +33,14 @@ jobs:
       - name: Validate lens data
         run: npm run validate:data
 
+      - name: Test evidence handling
+        run: node --test tests/verification.test.mjs
+
       - name: Build site
         run: npm run build
+
+      - name: Verify rendered audit states
+        run: node scripts/validate-rendered-audit.mjs
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3

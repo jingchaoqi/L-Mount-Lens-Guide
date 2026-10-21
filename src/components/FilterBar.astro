@@ -12,7 +12,7 @@ interface Props {
 
 const { lang, total } = Astro.props;
 
-const { alliance: allianceBrands, thirdParty: thirdPartyBrands } = getBrandsGrouped();
+const { alliance: allianceBrands, thirdParty: thirdPartyBrands, unconfirmed: unconfirmedBrands } = getBrandsGrouped();
 const focalRange = getFocalRange();
 
 // The slider itself runs on a log scale (raw 0-1000) rather than linear mm,
@@ -46,6 +46,9 @@ const focalTicks = COMMON_FOCAL_LENGTHS.filter((v) => v >= focalRange.min && v <
         <optgroup label={t(lang, 'filterBar.thirdPartyBrandsGroup')}>
           {thirdPartyBrands.map((brand) => <option value={brand}>{brandName(lang, brand)}</option>)}
         </optgroup>
+        {unconfirmedBrands.length > 0 && <optgroup label={t(lang, 'filterBar.unconfirmedBrandsGroup')}>
+          {unconfirmedBrands.map((brand) => <option value={brand}>{brandName(lang, brand)}</option>)}
+        </optgroup>}
       </select>
     </div>
 
@@ -82,6 +85,7 @@ const focalTicks = COMMON_FOCAL_LENGTHS.filter((v) => v >= focalRange.min && v <
         <option value="all">{t(lang, 'filterBar.allLenses')}</option>
         <option value="true">{t(lang, 'filterBar.allianceMember')}</option>
         <option value="false">{t(lang, 'filterBar.thirdParty')}</option>
+        <option value="unconfirmed">{t(lang, 'spec.unconfirmed')}</option>
       </select>
     </div>
 

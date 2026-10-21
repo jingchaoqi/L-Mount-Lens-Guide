@@ -3,8 +3,8 @@ import Layout from '../../layouts/Layout.astro';
 import FilterBar from '../../components/FilterBar.astro';
 import LensCard from '../../components/LensCard.astro';
 import LensTable from '../../components/LensTable.astro';
-import { getAllLenses } from '../../lib/lenses';
-import { t, localeStaticPaths, langFromParam } from '../../lib/i18n';
+import { getPublishedLenses, isFieldVerified } from '../../lib/lenses';
+import { t, localeHref, localeStaticPaths, langFromParam } from '../../lib/i18n';
 
 // One statically-rendered page per locale: '/' for the default locale,
 // '/<code>/' for every other one. Adding a language to locales.js adds its
@@ -14,12 +14,12 @@ export function getStaticPaths() {
 }
 
 const lang = langFromParam(Astro.params.locale);
-const lenses = getAllLenses();
+const lenses = getPublishedLenses();
 
 // Hero stat chips — derived from the data, never hard-coded.
 const brandCount = new Set(lenses.map((l) => l.brand)).size;
 const allianceBrandCount = new Set(
-  lenses.filter((l) => l.allianceMember).map((l) => l.brand)
+  lenses.filter((l) => isFieldVerified(l, 'allianceMember') && l.allianceMember).map((l) => l.brand)
 ).size;
 ---
 <Layout
@@ -49,6 +49,10 @@ const allianceBrandCount = new Set(
     </div>
   </section>
 
+  <div class="disclaimer-banner">
+    <p>{t(lang, 'audit.catalog')}</p>
+    <a href={localeHref(lang, 'data-audit')}>{t(lang, 'audit.link')}</a>
+  </div>
   <FilterBar lang={lang} total={lenses.length} />
 
   <div id="view-container" class="view-cards">

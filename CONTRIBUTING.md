@@ -105,6 +105,16 @@ required.
 Same file, find the existing entry by `id`, update the fields, and make sure
 `sourceUrls` reflects where the corrected value comes from.
 
+## Evidence records
+
+Before marking a specification confirmed, check the native L-Mount version against the manufacturer's specification, manual, or dated availability announcement. Do not infer absence of optical stabilization or protection from silence, use another mount's weight, or treat working distance as minimum focus distance. `releaseYear` means first actual L-Mount availability.
+
+Every lens requires `verification` metadata and a matching entry in `docs/lens-audit-2026-10-21.json`. Record reviewed fields, unresolved fields, source URLs and short original evidence excerpts; record each confirmed value in `confirmedValues`. A new or changed value without evidence remains unresolved. Keep conflicting or failed source attempts visible in the record. Never resolve uncertainty just to pass validation. Update the report's dates only for work actually reviewed; if undertaking a new dated audit, update the report paths in validation and the audit page together.
+
+The catalog and comparison withhold entries without confirmed native L-Mount availability. Detail routes remain accessible with a warning and noindex. Fields without adequate evidence are shown as awaiting confirmation. Historical values may remain stored for traceability, but must not be surfaced as confirmed values.
+
+Run `node --test tests/verification.test.mjs` and, after building, `node scripts/validate-rendered-audit.mjs`. These checks cover unknown values, stale evidence records and public presentation. See the [audit report](docs/lens-audit-2026-10-21.md) for the current review scope and limitations.
+
 ## Validating your changes
 
 Before opening a pull request, run:

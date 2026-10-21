@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 import { LOCALE_CODES, DEFAULT_LOCALE } from '../src/lib/locales.js';
+import { validateAudit } from './validate-audit.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, '..', 'src', 'data', 'lenses.json');
@@ -226,7 +227,14 @@ function main() {
     process.exit(1);
   }
 
-  console.log(`Data validation passed: ${data.length} lenses, all IDs unique, all required fields and URLs valid.`);
+  try {
+    const report = JSON.parse(readFileSync(path.join(__dirname, '..', 'docs', 'lens-audit-2026-10-21.json'), 'utf8'));
+    validateAudit(data, report);
+  } catch (error) {
+    console.error(`Audit coverage validation failed: ${error.message}`);
+    process.exit(1);
+  }
+  console.log(`Data structure and audit coverage passed: ${data.length} lenses. This does not independently verify factual accuracy.`);
 }
 
 main();
