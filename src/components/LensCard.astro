@@ -6,6 +6,9 @@ import {
   weightLabel,
   weightBucketId,
   lensSearchText,
+  specLabel,
+  isFieldVerified,
+  verifiedAttribute,
 } from '../lib/lenses';
 import { t, brandName, localeHref, type Lang } from '../lib/i18n';
 import CompareToggleButton from './CompareToggleButton.astro';
@@ -21,17 +24,18 @@ const brand = brandName(lang, lens.brand);
 <div
   class="lens-card"
   data-lens-row
+  data-lens-id={lens.id}
   data-brand={lens.brand}
-  data-format={lens.format}
-  data-focus-type={lens.focusType}
-  data-lens-type={lens.lensType}
-  data-alliance={String(lens.allianceMember)}
-  data-weight-bucket={weightBucketId(lens.weightGram)}
-  data-weight={lens.weightGram}
-  data-focal-min={lens.focalLengthMin}
-  data-focal-max={lens.focalLengthMax}
-  data-max-aperture={lens.maxAperture}
-  data-release-year={lens.releaseYear}
+  data-format={verifiedAttribute(lens, 'format')}
+  data-focus-type={verifiedAttribute(lens, 'focusType')}
+  data-lens-type={verifiedAttribute(lens, 'lensType')}
+  data-alliance={isFieldVerified(lens, 'allianceMember') ? String(lens.allianceMember) : 'unconfirmed'}
+  data-weight-bucket={isFieldVerified(lens, 'weightGram') ? weightBucketId(lens.weightGram) : undefined}
+  data-weight={verifiedAttribute(lens, 'weightGram')}
+  data-focal-min={verifiedAttribute(lens, 'focalLengthMin')}
+  data-focal-max={verifiedAttribute(lens, 'focalLengthMax')}
+  data-max-aperture={verifiedAttribute(lens, 'maxAperture')}
+  data-release-year={verifiedAttribute(lens, 'releaseYear')}
   data-search={lensSearchText(lens)}
 >
   <a
@@ -47,13 +51,13 @@ const brand = brandName(lang, lens.brand);
       the button's space, in any language. */}
   <div class="lens-card__top">
     <div class="lens-card__badges">
-      <span class={`badge ${lens.allianceMember ? 'badge--alliance' : 'badge--third-party'}`}>
-        {t(lang, lens.allianceMember ? 'card.allianceMember' : 'card.thirdParty')}
+      <span class={`badge ${!isFieldVerified(lens, 'allianceMember') ? 'badge--outline' : lens.allianceMember ? 'badge--alliance' : 'badge--third-party'}`}>
+        {isFieldVerified(lens, 'allianceMember') ? t(lang, lens.allianceMember ? 'card.allianceMember' : 'card.thirdParty') : t(lang, 'spec.unconfirmed')}
       </span>
       <span class="badge badge--outline">
-        {t(lang, lens.format === 'Full Frame' ? 'filterBar.fullFrame' : 'filterBar.apsc')}
+        {specLabel(lens, 'format', lang)}
       </span>
-      <span class="badge badge--outline">{lens.focusType}</span>
+      <span class="badge badge--outline">{specLabel(lens, 'focusType', lang)}</span>
     </div>
     <CompareToggleButton lens={lens} lang={lang} class="lens-card__compare-toggle" />
   </div>
@@ -61,12 +65,12 @@ const brand = brandName(lang, lens.brand);
   <div class="lens-card__model">{lens.model}</div>
   <dl class="lens-card__specs">
     <dt>{t(lang, 'card.focalLength')}</dt>
-    <dd>{focalLengthLabel(lens)}</dd>
+    <dd>{focalLengthLabel(lens, lang)}</dd>
     <dt>{t(lang, 'card.maxAperture')}</dt>
-    <dd>{apertureLabel(lens)}</dd>
+    <dd>{apertureLabel(lens, lang)}</dd>
     <dt>{t(lang, 'card.weight')}</dt>
-    <dd>{weightLabel(lens)}</dd>
+    <dd>{weightLabel(lens, lang)}</dd>
     <dt>{t(lang, 'card.released')}</dt>
-    <dd>{lens.releaseYear}</dd>
+    <dd>{specLabel(lens, 'releaseYear', lang)}</dd>
   </dl>
 </div>

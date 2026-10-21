@@ -45,8 +45,12 @@ export interface Lens {
   focalLengthMax: number;
   /** Widest (smallest number) aperture, e.g. 1.4 */
   maxAperture: number;
+  /** Maximum aperture at the tele end of a variable-aperture zoom, if confirmed. */
+  maxApertureTele?: number;
   /** Narrowest (largest number) aperture, e.g. 16 */
   minAperture: number;
+  /** Minimum aperture at the wide end, if different and confirmed. */
+  minApertureWide?: number;
   weightGram: number;
   filterThreadMm: number | null;
   minFocusDistanceM: number;
@@ -64,4 +68,11 @@ export interface Lens {
   affiliateUrls: RetailerSearchUrl[];
   /** Non-monetized "search this lens at a retailer" links. */
   retailerSearchUrls: RetailerSearchUrl[];
+  /** Evidence coverage, not a guarantee that every stored value is confirmed. */
+  verification: {
+    checkedAt: string;
+    mountConfirmed: boolean;
+    verifiedFields: string[];
+    unresolvedFields: string[];
+  };
 }
